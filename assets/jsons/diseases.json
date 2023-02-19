@@ -123,14 +123,14 @@
     "photo": "assets/diseases/cancer.jpg",
     "description": "Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. These contrast with benign tumors, which do not spread. Over 100 types of cancers affect humans.",
     "foods": [
-      {"name": "Tomato",
-       "image: /assets/veggies/tomato.png", 
-       "url: /veggies/tomato"
+      { "name": "Tomato",
+       "image" : "/assets/vegs/tomato.jpg",
+       "url" : "/veggies/tomato"
       },
       {"name": "Banana",
-       "image: /assets/veggies/banana.png", 
-       "url: /veggies/banana"
-      },            
+       "image" : "/assets/veggs/banana.jpg", 
+       "url" : "/veggies/banana"
+      }          
     ],
     "symptoms": [
       "Possible signs and symptoms include a lump, abnormal bleeding",

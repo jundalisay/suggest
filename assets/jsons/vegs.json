@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Tomato",
-    "photo": "assets/veggies/tomato.jpg",
+    "photo": "assets/vegs/tomato.jpg",
     "description": "Tomato is red.",
     "precautions": [
       "Remove the skin"
@@ -12,12 +12,12 @@
       "Pandamart",
       "Alfamart",
       "Robinsons"
-    ],
+    ]
   },
   {
     "id": "2",
     "name": "Banana",
-    "photo": "assets/veggies/banana.jpg",
+    "photo": "assets/vegs/banana.jpg",
     "description": "Banana is yellow",
     "precautions": [
       "Overripe is better"
@@ -27,6 +27,6 @@
       "Pandamart url",
       "Alfamart url",
       "Robinsons url"
-    ],
+    ]
   }
 ]

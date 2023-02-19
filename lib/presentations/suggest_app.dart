@@ -6,8 +6,8 @@ import 'package:suggestion_app/bindings/veg_binder.dart';
 import 'package:suggestion_app/presentations/vegs.dart';
 import 'package:suggestion_app/presentations/index.dart';
 
-
 import 'intro_screen.dart';
+
 
 class SuggestApp extends StatelessWidget {
   const SuggestApp({super.key});

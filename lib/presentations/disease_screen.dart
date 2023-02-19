@@ -31,6 +31,9 @@ class DiseaseScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             ...drug.foods!.map((value) {
+
+              // how to show a card that has a the details of the veg which will open to the Veg Screen of that veg?  link that  
+
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -38,6 +41,7 @@ class DiseaseScreen extends StatelessWidget {
                   SizedBox(height: 10.0)
                 ],
               );
+
             }),
           ],
         ),
