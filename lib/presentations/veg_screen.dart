@@ -1,36 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:suggestion_app/models/disease.dart';
+import 'package:suggestion_app/models/veg.dart';
 
 
-class DiseaseScreen extends StatelessWidget {
-  final Disease drug;
-  const DiseaseScreen(this.drug, {super.key});
+class VegScreen extends StatelessWidget {
+  final Veg veg;
+  const VegScreen(this.veg, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(drug.name),
+        title: Text(veg.name),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            Image.asset(drug.photo),
+            Image.asset(veg.photo),
             const SizedBox(height: 20,),
             Text(
-              drug.name,
+              veg.name,
               style: Theme.of(context).textTheme.headline1,
             ),
             const SizedBox(height: 10),
-            Text(drug.description),
+            Text(veg.description),
             const SizedBox(height: 20.0),
             Text(
               "Suggested Food",
               style: Theme.of(context).textTheme.headline3,
             ),
             const SizedBox(height: 10),
-            ...drug.foods!.map((value) {
+            ...veg.stores!.map((value) {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

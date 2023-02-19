@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Tomato",
+    "photo": "assets/veggies/tomato.jpg",
+    "description": "Tomato is red.",
+    "precautions": [
+      "Remove the skin"
+    ],
+    "price": "35-80 pesos",
+    "stores": [
+      "Pandamart",
+      "Alfamart",
+      "Robinsons"
+    ],
+  },
+  {
+    "id": "2",
+    "name": "Banana",
+    "photo": "assets/veggies/banana.jpg",
+    "description": "Banana is yellow",
+    "precautions": [
+      "Overripe is better"
+    ],
+    "price": "40 to 120 pesos",
+    "stores": [
+      "Pandamart url",
+      "Alfamart url",
+      "Robinsons url"
+    ],
+  }
+]

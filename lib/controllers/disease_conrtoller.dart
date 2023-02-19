@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:suggestion_app/models/disease.dart';
 
+
+
 class DiseaseController extends GetxController {
   RxList<Disease> diseases = <Disease>[].obs;
   RxList<Disease> filteredDiseases = <Disease>[].obs;

@@ -23,6 +23,7 @@
     "preventions": [
       "Alzheimers can be prevented by lowering meat consumption."
     ],
+    "foods": [],
     "remedies": [
       "Soon to come"
     ]
@@ -55,6 +56,7 @@
       "Appendicitis can be prevented by resting after meals, or by not rushing the act of eating as to not stress the digestive system.",
       "Naturopathy: Decreasing meat consumption also helps"
     ],
+    "foods": [],    
     "remedies": [
       "Taking asafetida before meals",
       "Coconut meat with betel leaf",
@@ -83,6 +85,7 @@
     "preventions": [
       "Ayurveda: Asthma can be prevented by strengthening the heart chakra."
     ],    
+    "foods": [],    
     "remedies": [
       "Coming soon"
     ]
@@ -109,6 +112,7 @@
     "preventions": [
       "Naturopathy: Boils can be prevented by lowering meat consumption."
     ],
+    "foods": [],    
     "remedies": [
       "Coming soon"
     ]
@@ -118,6 +122,16 @@
     "name": "Cancer",
     "photo": "assets/diseases/cancer.jpg",
     "description": "Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. These contrast with benign tumors, which do not spread. Over 100 types of cancers affect humans.",
+    "foods": [
+      {"name": "Tomato",
+       "image: /assets/veggies/tomato.png", 
+       "url: /veggies/tomato"
+      },
+      {"name": "Banana",
+       "image: /assets/veggies/banana.png", 
+       "url: /veggies/banana"
+      },            
+    ],
     "symptoms": [
       "Possible signs and symptoms include a lump, abnormal bleeding",
       "prolonged cough, unexplained weight loss.",
@@ -137,6 +151,7 @@
     "preventions": [
       "Naturopathy: Cancer can be prevented by reducing the intake of chemicals and toxins."
     ],
+    "foods": [],    
     "remedies": [
       "The person should expose the affected area to sunlight in the early morning."
     ]
@@ -167,7 +182,8 @@
     "preventions": [
       "Naturopathy: Covid-19 can be prevented through an alkaline diet.",
       "Western Medicine: Covid-19 can be prevented by having a strong immune system."
-    ],    
+    ],
+    "foods": [],    
     "remedies": [
       "Generally, food that have an alkaline effect on the blood is recomended.",
       "France recomends nicotine patches.",
@@ -194,6 +210,7 @@
     "preventions": [
       "Western Medicine: Dengue can be prevented by removing the breeding grounds of mosquitoes ."
     ],    
+    "foods": [],    
     "remedies": [
       "Coming soon"
     ]
@@ -221,221 +238,10 @@
     "preventions": [
       "Western Medicine: Diabetes can be prevented by exercise and healthy diet."
     ],
+    "foods": [],    
     "remedies": [
       "Guava leaves crushed in water",
       "Myrobalan"
     ]
-  },
-  {
-    "id": "9",
-    "name": "Infertility, Female",
-    "photo": "assets/diseases/sperm.jpg",
-    "description": "Female infertility prevents females from having babies.",
-    "symptoms": [
-      "Coming soon"
-    ],
-    "causes": [
-      "Coming soon."
-    ],
-    "dos": [
-      "Coming soon"
-    ],
-    "donts": [
-      "Coming soon"
-    ],
-    "preventions": [
-      "Western Medicine: Infertility can be prevented by non-indulgence in sexual activities, and having safe sex."
-    ],
-    "remedies": [
-      "Coming soon"
-    ]
-  },
-  {
-    "id": "10",
-    "name": "Infertility, Male",
-    "photo": "assets/diseases/sperm.jpg",
-    "description": "Male infertility prevents females from having babies.",
-    "symptoms": [
-      "Quick discharge of semen",
-      "Lack of pleasure in the nerves during sex",
-      "Stillborn or short-lived children"
-    ],
-    "causes": [
-      "Genital impotency is caused by the weakness of the nerves in the penis and genitals due to excessive sexual activity",
-      "Seminal impotency is caused by excessive semen loss from masturbation or sex during the youth"
-    ],
-    "dos": [
-      "Males should avoid females",
-      "Sunbathing"
-    ],
-    "donts": [
-      "Males should not have sex until the disease is cured"
-    ],
-    "preventions": [
-      "Western Medicine: Infertility can be prevented by non-indulgence in sexual activities."
-    ],
-    "remedies": [
-      "Basil root eaten with betel"
-    ]
-  },
-  {
-    "id": "11",
-    "name": "Kidney Stones",
-    "photo": "assets/diseases/kidney.jpg",
-    "description": "Kidney stone disease, also known as nephrolithiasis or urolithiasis, is when a solid piece of material (kidney stone) develops in the urinary tract.",
-    "symptoms": [
-      "Kidney stones typically form in the kidney and leave the body in the urine stream. A small stone may pass without causing symptoms.",
-      "If a stone grows to more than 5 millimeters (0.2 in), it can cause blockage of the ureter, resulting in severe pain in the lower back or abdomen. A stone may also result in blood in the urine, vomiting, or painful urination.",
-      "About half of people who have had a kidney stone will have another within ten years."
-    ],
-    "causes": [
-      "Kidney stones are caused by salt-rich diets."
-    ],
-    "dos": [
-      "Coming soon"
-    ],
-    "donts": [
-      "Coming soon"
-    ],
-    "preventions": [
-      "Western Medicine: Stones can be prevented by avoiding salty diets."
-    ],
-    "remedies": [
-      "Coming soon"
-    ]
-  },
-  {
-    "id": "12",
-    "name": "Leprosy",
-    "photo": "assets/diseases/leprosy.jpg",
-    "description": "Leprosy is an infectious disease that causes severe, disfiguring skin sores and nerve damage in the arms, legs, and skin areas around the body. It is generally a disease of the poor.",
-    "symptoms": [
-      "The disease has been around since ancient times.",
-      "It is often surrounded by terrifying, negative stigmas and tales of leprosy patients being shunned as outcasts.",
-      "Leper colonies are another common sign of leprosy."
-    ],
-    "causes": [
-      "Leprosy is caused by bacteria from uncooked food."
-    ],
-    "dos": [
-      "The patient should eat ghee, butter, or olive oil and drink a lot of water",
-      "Sunbathing is important ",
-      "Unless the poor are fed with nutritious food, the spread of the disease among the poor cannot be totally checked."
-    ],
-    "donts": [
-      "The patient must strictly avoid non-vegetarian food."
-    ],
-    "preventions": [
-      "Natropahty: Leprosy can be prevented by eating nutritious and clean food."
-    ],    
-    "remedies": [
-      "Myrobalan powder",
-      "Drinking neem bark extract and covering the diseased area with neem",
-      "Gulainca extracts"
-    ]
-  },
-  {
-    "id": "11",
-    "name": "Obesity",
-    "photo": "assets/diseases/obesity.jpg",
-    "description": "Excessive body fat that creates bad health effects. People are obese when their body mass index [BMI], a measurement obtained by dividing a person's weight by the square of the person's height, is over 30 kg m2. The range 25–30 kg m2 is defined as overweight.",
-    "symptoms": [
-      "Some East Asian countries use lower values.",
-      "Obesity increases the likelihood of various diseases and conditions, particularly cardiovascular diseases, type 2 diabetes, obstructive sleep apnea, certain types of cancer, osteoarthritis, and depression.",
-      "Being fat and having excessive weight."
-    ],
-    "causes": [
-      "Too much junk food, and overeating."
-    ],
-    "dos": [
-      "Coming soon"
-    ],
-    "donts": [
-      "Coming soon"
-    ],
-    "preventions": [
-      "Western Medicine: Obesity can be prevented by exercise and a healthy diet."
-    ],
-    "remedies": [
-      "Coming soon"
-    ]
-  },
-  {
-    "id": "12",
-    "name": "Rheumatism",
-    "photo": "assets/diseases/rheuma.jpg",
-    "description": "Rheumatism Rheumatism or rheumatic disorders are conditions causing chronic, often intermittent pain affecting the joints or connective tissue.",
-    "symptoms": [
-      "There is a close overlap between the term soft tissue disorder and rheumatism.",
-      "Rheumatism does not designate any specific disorder, but covers at least 200 different conditions including arthritis and 'non-articular rheumatism', also known as 'regional pain syndrome' or 'soft tissue rheumatism'",
-      "Pain in the joints."
-    ],
-    "causes": [
-      "Rheumatism is caused by acidic blood."
-    ],
-    "dos": [
-      "The painful area should be exposed to the sun, 15-20 minutes at a time"
-    ],
-    "donts": [
-      "Constipation"
-    ],
-    "preventions": [
-      "Naturopathy: This can be prevented by an alkaline diet."
-    ],    
-    "remedies": [
-      "Apply castor oil with salt, or pounded garlic and ginger on the painful area",
-      "Drink boiled triphala"
-    ]
-  },
-  {
-    "id": "13",
-    "name": "Tuberculosis",
-    "photo": "assets/diseases/tb.jpg",
-    "description": "Tuberculosis is caused by germs in the lungs",
-    "symptoms": [
-      "Rattle of the throat in morning and evening",
-      "Phlegm with blood",
-      "Sweating at night"
-    ],
-    "causes": [
-      "Coming soon"
-    ],
-    "dos": [
-      "A diet of easily-digestible and nutritious foods such as milk, peanut milk, and coconut milk"
-    ],
-    "donts": [
-      "Staying awake at night and doing mental and physical exertions",
-      "Too much talking and sex"
-    ],
-    "preventions": [
-      "Western Medicine: This can be prevented by living in a clean environment and having a strong immune system."
-    ],    
-    "remedies": [
-      "Goat's milk"
-    ]
-  },
-  {
-    "id": "14",
-    "name": "Ulcer, Gastic and Duodenal",
-    "photo": "assets/diseases/ulcer.jpg",
-    "description": "Ulcers attack young and middle-aged people",
-    "symptoms": [
-      "Stomach pain after eating"
-    ],
-    "causes": [
-      "Ulcers are caused by gastric juices"
-    ],
-    "dos": [
-      "Drinking sweet and sour fruit juices or well-boiled mashed potatoes with milk "
-    ],
-    "donts": [
-      "Doing physical or mental work without resting after meals"
-    ],
-    "preventions": [
-      "Naturopathy: This can be prevented by relaxing after eating and by not rushing eating."
-    ],
-    "remedies": [
-      "Coming soon"
-    ]
-  }  
+  }
 ]

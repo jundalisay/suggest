@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:suggestion_app/bindings/disease_binder.dart';
 import 'package:suggestion_app/presentations/diseases.dart';
+import 'package:suggestion_app/bindings/veg_binder.dart';
+import 'package:suggestion_app/presentations/vegs.dart';
 import 'package:suggestion_app/presentations/index.dart';
+
 
 import 'intro_screen.dart';
 
@@ -14,7 +17,7 @@ class SuggestApp extends StatelessWidget {
     return GetMaterialApp(
       home: const IntroScreen(),
       debugShowCheckedModeBanner: false,
-      title: 'Pantry',
+      title: 'Suggest',
       theme: ThemeData(
         primaryColor: Colors.lightBlue[600],
         accentColor: Colors.white,
@@ -47,7 +50,13 @@ class SuggestApp extends StatelessWidget {
         GetPage(
             name: '/diseases',
             page: () => const Diseases(),
-            binding: DiseaseBinding()),
+            binding: DiseaseBinding()
+        ),
+        GetPage(
+            name: '/vegs',
+            page: () => const Vegs(),
+            binding: VegBinding()
+        ),        
       ],
     );
   }

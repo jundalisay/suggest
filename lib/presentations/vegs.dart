@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/controllers/disease_conrtoller.dart';
-import 'package:suggestion_app/models/disease.dart';
-import 'package:suggestion_app/presentations/disease_screen.dart';
+import 'package:suggestion_app/controllers/veg_controller.dart';
+import 'package:suggestion_app/models/veg.dart';
+import 'package:suggestion_app/presentations/veg_screen.dart';
 
 
 
-class Diseases extends StatefulWidget {
-  const Diseases({super.key});
+class Vegs extends StatefulWidget {
+  const Vegs({super.key});
 
   @override
-  State<Diseases> createState() => _DiseasesState();
+  State<Vegs> createState() => _VegsState();
 }
 
-class _DiseasesState extends State<Diseases> {
+class _VegsState extends State<Vegs> {
   final TextEditingController _textEditingController = TextEditingController();
 
   @override
@@ -24,10 +24,10 @@ class _DiseasesState extends State<Diseases> {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<DiseaseController>();
+    final controller = Get.find<VegController>();
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Diseases"),
+        title: const Text("Vegs"),
         centerTitle: true,
       ),
       // drawer: AppDrawer(),
@@ -58,11 +58,11 @@ class _DiseasesState extends State<Diseases> {
               ),
             ),
             Obx(
-              () => controller.filteredDiseases.isEmpty
+              () => controller.filteredVegs.isEmpty
                   ? const Text("No data")
                   : Column(
                       children: [
-                        ...controller.filteredDiseases
+                        ...controller.filteredVegs
                             .map((element) => _information(context, element))
                             .toList(),
                       ],
@@ -74,14 +74,15 @@ class _DiseasesState extends State<Diseases> {
     );
   }
 
-  Widget _information(BuildContext context, Disease disease) {
+
+  Widget _information(BuildContext context, Veg veg) {
     return Card(
       child: InkWell(
         onTap: () {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => DiseaseScreen(disease),
+              builder: (context) => VegScreen(veg),
             ),
           );
         },
@@ -89,13 +90,13 @@ class _DiseasesState extends State<Diseases> {
           leading: ClipRRect(
               borderRadius: BorderRadius.circular(5),
               child: Image.asset(
-                disease.photo,
+                veg.photo,
                 fit: BoxFit.cover,
                 width: 100.0,
               )),
-          title: Text(disease.name),
+          title: Text(veg.name),
           subtitle: Text(
-            disease.description,
+            veg.description,
             overflow: TextOverflow.ellipsis,
             maxLines: 3,
           ),
