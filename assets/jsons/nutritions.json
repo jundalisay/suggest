@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "name": "Vitamin A",
+    "photo": "assets/nutritions/vita600.jpg",
+    "description": "A group of unsaturated nutritional organic compounds that includes retinol, retinal, retinoic acid, and several provitamin A carotenoids (most notably beta-carotene).[1][2] Vitamin A has multiple functions: it is important for growth and development, for the maintenance of the immune system, and for good vision.[3][4] Vitamin A is needed by the retina of the eye in the form of retinal, which combines with protein opsin to form rhodopsin, the light-absorbing molecule[5] necessary for both low-light (scotopic vision) and color vision.[6] Vitamin A also functions in a very different role as retinoic acid (an irreversibly oxidized form of retinol), which is an important hormone-like growth factor for epithelial and other cells.",
+    "sources": [
+      "Vitamin A is present in fruits, vegetables, and animal food",
+      "Cod liver oil and livers has the highest amount of Vitamin A.",
+      "It is also present in carrots, kale, butter, broccoli, and squash."
+    ],
+    "functions": [
+      "Improves Vision and immune function",
+      "Improves Embryonic development and reproduction", 
+      "Necessary for Bone metabolism, Haematopoiesis, Skin and cellular health, teeth, and Mucous membrane"
+    ],
+    "deficiency": [
+      "Blindness is a common problem with Vitamin A deficiency."
+    ],
+    "toxicity": "Vitamin A is not toxic"
+  },
+  {
+    "id": "2",
+    "name": "Vitamin C",
+    "photo": "assets/nutritions/vitc600.jpg",
+    "description": "Also known as ascorbic acid and ascorbate, is a vitamin found in various foods and sold as a dietary supplement.[3] It is used to prevent and treat scurvy.[3] Vitamin C is an essential nutrient involved in the repair of tissue and the enzymatic production of certain neurotransmitters.[3][4] It is required for the functioning of several enzymes and is important for immune system function. It also functions as an antioxidant.",
+    "sources": [
+      "Fruits and vegetables are common sources of Vitamin C",
+      "Kakadu plum, Camu camu, guava, and blackcurrant have the most Vitamin C",
+      "Cabbages and potatoes have a small amount."
+    ],
+    "functions": [
+      "Vitamin C prevents infection, cancer, and cardiovascular diseases.",
+      "It also helps Brain function."
+    ],
+    "deficiency": [
+      "Lack of Vitamin C causes Scurvy."
+    ],
+    "toxicity": "Excessive vitamin A consumption can lead to nausea, irritability, anorexia (reduced appetite), vomiting, blurry vision, headaches, hair loss, muscle and abdominal pain and weakness, drowsiness, and altered mental status."
+  }
+]

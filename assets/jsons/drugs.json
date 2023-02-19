@@ -1,0 +1,63 @@
+[
+  {
+    "id": "1",
+    "name": "Amoxicillin",
+    "photo": "assets/drugs/amoxicillin.jpg",
+    "description": "Amoxicillin is an antibiotic used to treat a number of bacterial infections. These include middle ear infection, strep throat, pneumonia, skin infections, and urinary tract infections among others. It is taken by mouth, or less commonly by injection. Common adverse effects include nausea and rash.",
+    "uses": [
+      "Amoxicillin is used in the treatment of a number of infections, including acute otitis media, streptococcal pharyngitis, pneumonia, skin infections, urinary tract infections, Salmonella infections, Lyme disease, and chlamydia infections."
+    ],
+    "precautions": [
+      "Adverse effects are similar to those for other β-lactam antibiotics, including nausea, vomiting, rashes, and antibiotic-associated colitis. Loose bowel movements (diarrhea) may also occur. Rarer adverse effects include mental changes, lightheadedness, insomnia, confusion, anxiety, sensitivity to lights and sounds, and unclear thinking. Immediate medical care is required upon the first signs of these adverse effects."
+    ],
+    "how": "Coming soon.",
+    "brands": [
+      "Amoxil",
+      "Moxatag",
+      "Larotid"
+    ],
+    "details": [
+      "None"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Lianhua Qingwen",
+    "photo": "assets/drugs/lianhua_qingwen.png",
+    "description": "Coming soon.",
+    "uses": [
+      "Coming soon."
+    ],
+    "precautions": [
+      "Coming soon"
+    ],
+    "how": "Lianhua Qingwen has herbs that help the Qi fight the virus.",
+    "brands": [
+      "Lianhua Qingwen"
+    ],
+    "details": [
+      "Coming soon"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Lostartan",
+    "photo": "assets/drugs/losartan.jpg",
+    "description": "Losartan, sold under the trade name Cozaar among others, is a medication mainly used to treat high blood pressure.[2] It is also used for diabetic kidney disease, heart failure, and left ventricular enlargement.[2] It is taken by mouth.[2] It may be used alone or in addition to other blood pressure medication.[2] Up to six weeks may be required for the full effects to occur.",
+    "uses": [
+      "Losartan is used for hypertension, including in people with left ventricular hypertrophy (enlarged heart muscle), and kidney dysfunction among type II diabetics.[11] It may also delay progression of diabetic nephropathy. It is a suitable pharmacological agent for the reduction of renal disease progression in patients with type 2 diabetes, hypertension, and microalbuminuria (>30 mg/24 hours) or proteinuria (>900 mg/24 hours)."
+    ],
+    "precautions": [
+      "The most common adverse effects for losartan in adults are upper respiratory infections, dizziness, and back pain.[11] People with type 2 diabetes and kidney disease may experience diarrhea, fatigue, low blood pressure, low blood glucose, elevated potassium, chest pain, or allergic reaction.[11] Losartan should not be taken by people who are diabetic and taking aliskiren.[11] Anemia may occur, due to inhibition of the renin–angiotensin system.[15] As with other angiotensin receptor blockers, losartan may injure the liver, although this effect appears to be rare.[16] Electrolyte imbalances may occur in people taking losartan with kidney problems.[11] Adverse outcomes do not differ by sex, age or race."
+    ],
+    "how": "Coming soon.",
+    "brands": [
+      "Cozaar"
+    ],
+    "details": [
+      "Coming soon"
+    ]
+  }
+]
+
+

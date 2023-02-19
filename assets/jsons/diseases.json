@@ -1,0 +1,441 @@
+[
+  {
+    "id": "1",
+    "name": "Alzheimer",
+    "photo": "assets/diseases/alzh.jpg",
+    "description": "Alzheimers is a chronic neurodegenerative disease that usually starts slowly and gradually worsens over time. It is the cause of 60–70% of cases of dementia. The most common early symptom is difficulty in remembering recent events.",
+    "symptoms": [
+      "The first symptoms are often mistakenly attributed to ageing or stress. ",
+      "Detailed neuropsychological testing can reveal mild cognitive difficulties up to eight years before a person fulfills the clinical criteria for diagnosis of AD. These early symptoms can affect the most complex activities of daily living. The most noticeable deficit is short term memory loss, which shows up as difficulty in remembering recently learned facts and inability to acquire new information. Subtle problems with the executive functions of attentiveness, planning, flexibility, and abstract thinking, or impairments in semantic memory (memory of meanings, and concept relationships) can also be symptomatic of the early stages of AD. Apathy can be observed at this stage, and remains the most persistent neuropsychiatric symptom throughout the course of the disease. Depressive symptoms, irritability and reduced awareness of subtle memory difficulties are also common. The preclinical stage of the disease has also been termed mild cognitive impairment (MCI). This is often found to be a transitional stage between normal ageing and dementia.",
+      " MCI can present with a variety of symptoms, and when memory loss is the predominant symptom, it is termed amnestic MCI and is frequently seen as a prodromal stage of Alzheimers disease."
+    ],
+    "causes": [
+      "Alzheimer's is caused by the degraded state of the nerves."
+    ],
+    "dos": [
+      "People who engage in intellectual activities such as reading, playing board games, completing crossword puzzles, playing musical instruments, or regular social interaction show a reduced risk for Alzheimer's disease.[144] This is compatible with the cognitive reserve theory, which states that some life experiences result in more efficient neural functioning providing the individual a cognitive reserve that delays the onset of dementia manifestations.[144] Education delays the onset of AD syndrome without changing the duration of the disease.[145] Learning a second language even later in life seems to delay the onset of Alzheimer's disease.[146] Physical activity is also associated with a reduced risk of AD.",
+      "Physical exercise is associated with decreased rate of dementia.",
+      "Physical exercise is also effective in reducing symptom severity in those with Alzheimer's disease.."
+    ],
+    "donts": [
+      "Coming soon"
+    ],
+    "preventions": [
+      "Alzheimers can be prevented by lowering meat consumption."
+    ],
+    "remedies": [
+      "Soon to come"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Appendicitis",
+    "photo": "assets/diseases/appendix.jpg",
+    "description": "Appendicitis is an inflammation of the appendix, a finger-shaped pouch that projects from your colon on the lower right side of your abdomen. Appendicitis causes pain in your lower right abdomen. However, in most people, pain begins around the navel and then moves.",
+    "symptoms": [
+      "Abdominal pain, nausea, vomiting, and fever. As the appendix becomes more swollen and inflamed, it begins to irritate the adjoining abdominal wall.  This pain can be elicited through signs and can be severe. Symptoms include localized findings in the right iliac fossa.",
+      "This leads to the localization of the pain to the right lower quadrant. This classic migration of pain may not be seen in children under three years.",
+      "The abdominal wall becomes very sensitive to gentle pressure (palpation). There is severe pain in the sudden release of deep tension in the lower abdomen (rebound tenderness). If the appendix is retrocecal (localized behind the cecum), even deep pressure in the right lower quadrant may fail to elicit tenderness (silent appendix). This is because the cecum, distended with gas, protects the inflamed appendix from pressure. Similarly, if the appendix lies entirely within the pelvis, there is typically a complete absence of abdominal rigidity. In such cases, a digital rectal examination elicits tenderness in the rectovesical pouch."
+    ],
+    "causes": [
+      "Bad eating habits"
+    ],
+    "dos": [
+      "Take a walk in fresh air",
+      "Eating the last meal before 8pm"
+    ],
+    "donts": [
+      "Unbalanced food habits",
+      "Fibrous food, white rice, meat and eggs",
+      "Aversion to physical labor and sports",
+      "Not resting after meals",
+      "Overeating"
+    ],
+    "preventions": [
+      "Appendicitis can be prevented by resting after meals, or by not rushing the act of eating as to not stress the digestive system.",
+      "Naturopathy: Decreasing meat consumption also helps"
+    ],
+    "remedies": [
+      "Taking asafetida before meals",
+      "Coconut meat with betel leaf",
+      "Myrobalan powder from seeds that sink, taken with aniseed powder"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Asthma",
+    "photo": "assets/diseases/asthma.jpg",
+    "description": "Asthma is difficulty in breathing that attacks towards the end of the night.",
+    "symptoms": [
+      "It is characterized by variable and recurring symptoms, reversible airflow obstruction, and easily triggered bronchospasms.",
+      "Symptoms include episodes of wheezing, coughing, chest tightness, and shortness of breath. These may occur a few times a day or a few times per week.",
+      "Depending on the person, asthma symptoms may become worse at night or with exercise."
+    ],
+    "causes": [
+      "In Ayurveda, this is rooted partly in the kapha and vayu due to the weakness of the Heart Chakra."
+    ],
+    "dos": [
+      "In Ayurveda, this is rooted partly in the kapha and vayu due to the weakness of the Heart Chakra."
+    ],
+    "donts": [
+      "Coming soon"
+    ],
+    "preventions": [
+      "Ayurveda: Asthma can be prevented by strengthening the heart chakra."
+    ],    
+    "remedies": [
+      "Coming soon"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Boil (Furuncle)",
+    "photo": "assets/diseases/boil.jpg",
+    "description": "A skin abscess happens when pus collects in hair follicles, skin tissues, or under the skin. A furuncle, also known as a boil, is a painful infection that forms around a hair follicle and contains pus. A carbuncle is collection of boils that develop under the skin",
+    "symptoms": [
+      "Furuncles develop rapidly as pink or red bumps. They are often painful. The surrounding skin is typically red, inflamed and tender. The lesions often appear on the neck, breast, face, buttocks, or thighs. They occur in places prone to hair, sweat, and friction, and they tend to start in a hair follicle.",
+      "They are common among teenagers and young adults, and they affect males more than females. Overcrowded and unhygienic living conditions increase the risk. The bump fills with pus within a few days, and it grows. The bigger it gets, the more painful it becomes.",
+      "Furuncles may go away without any intervention. Sometimes they burst and heal without a scar within 2 days to 3 weeks."
+    ],
+    "causes": [
+      "Boils are caused by bacteria."
+    ],
+    "dos": [
+      "Coming soon"
+    ],
+    "donts": [
+      "Coming soon"
+    ],
+    "preventions": [
+      "Naturopathy: Boils can be prevented by lowering meat consumption."
+    ],
+    "remedies": [
+      "Coming soon"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Cancer",
+    "photo": "assets/diseases/cancer.jpg",
+    "description": "Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. These contrast with benign tumors, which do not spread. Over 100 types of cancers affect humans.",
+    "symptoms": [
+      "Possible signs and symptoms include a lump, abnormal bleeding",
+      "prolonged cough, unexplained weight loss.",
+      "change in bowel movements"
+    ],
+    "causes": [
+      "Cancer is caused by toxins called carcinogens, bad diet, lack of exercise, heredity, and radiation."
+    ],
+    "dos": [
+      "Cancer patients must eat more fruits and vegetables",
+      "Get a lot of sleep and rest."
+    ],
+    "donts": [
+      "Cancer patients must not sleep late",
+      "Cancer patients must avoid toxins, junk food, sugar, and intoxicants."
+    ],
+    "preventions": [
+      "Naturopathy: Cancer can be prevented by reducing the intake of chemicals and toxins."
+    ],
+    "remedies": [
+      "The person should expose the affected area to sunlight in the early morning."
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Covid-19",
+    "photo": "assets/diseases/covid.jpg",
+    "description": "Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)",
+    "symptoms": [
+      "Fever is the most common symptom, although some older people and those with other health problems experience fever later in the disease.[5][36][unreliable medical source?] In one study, 44% of people had fever when they presented to the hospital, while 89% went on to develop fever at some point during their hospitalization.",
+      "Other common symptoms include cough, loss of appetite, fatigue, shortness of breath, sputum production, and muscle and joint pains. Symptoms such as nausea, vomiting, and diarrhoea have been observed in varying percentages. Less common symptoms include sneezing, runny nose, or sore throat. Some cases in China initially presented with only chest tightness and palpitations.",
+      "A decreased sense of smell or disturbances in taste may occur. Loss of smell was a presenting symptom in 30% of confirmed cases in South Korea."
+    ],
+    "causes": [
+      "The SARS-CoV-2 affects people that have weak, acidic blood. These include healthy people ranging from atheltes and bodybuilders, to children and middle-aged people. Senior citizens tend to have acidic blood and so are a common fatality under Covid-19."
+    ],
+    "dos": [
+      "Since the disease is primarily spread by an airborne virus, wearing a face mask is the first preventive measure.",
+      "Peeping a 2-meter distance between people, called 'Social distancing', as well as cleaning everyday objects that might contact the face, are very important.",
+      "Lastly, people should maintain an alkaline blood by eating fresh fruits and vegetables."
+    ],
+    "donts": [
+      "Acidic medicine like paracetamol and ibuprofen, as well as acidic food like intoxicants, such as beer and coffee, must be avoided. ",
+      "People should avoid direct physical contact with strangers who have not been tested.",
+      "Coughing openly and releasing particles in the air is discouraged."
+    ],
+    "preventions": [
+      "Naturopathy: Covid-19 can be prevented through an alkaline diet.",
+      "Western Medicine: Covid-19 can be prevented by having a strong immune system."
+    ],    
+    "remedies": [
+      "Generally, food that have an alkaline effect on the blood is recomended.",
+      "France recomends nicotine patches.",
+      "China recommends Jinhua Qinggan."
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Dengue",
+    "photo": "assets/diseases/dengue.jpg",
+    "description": "An alternative name for dengue, 'breakbone fever', comes from the associated muscle and joint pains. The course of infection is divided into three phases: febrile, critical, and recovery.",
+    "symptoms": [
+      "Sudden-onset fever, headache (typically located behind the eyes), muscle and joint pains, and a rash."
+    ],
+    "causes": [
+      "Coming soon"
+    ],
+    "dos": [
+      "Coming soon"
+    ],
+    "donts": [
+      "Coming soon"
+    ],
+    "preventions": [
+      "Western Medicine: Dengue can be prevented by removing the breeding grounds of mosquitoes ."
+    ],    
+    "remedies": [
+      "Coming soon"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Diabetes",
+    "photo": "assets/diseases/diabetes2.jpg",
+    "description": "Diabetes has various types",
+    "symptoms": [
+      "Frequent urination, increased thirst, and increased appetite. If left untreated, diabetes can cause many complications.",
+      "Acute complications can include diabetic ketoacidosis, hyperosmolar hyperglycemic state, or death.",
+      "Serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, damage to the nerves, damage to the eyes and cognitive impairment."
+    ],
+    "causes": [
+      "According to Ayurveda, diabetes is caused by a weakness in the liver from the weakness of the Navel chakra."
+    ],
+    "dos": [
+      "A diet of fruits, especially very ripe bananas",
+      "Fasting can reduce the sugar content of the urine"
+    ],
+    "donts": [
+      "Diabetes is a disease of intellectuals, greedy people, and those averse to physical labor who eat sweet food."
+    ],
+    "preventions": [
+      "Western Medicine: Diabetes can be prevented by exercise and healthy diet."
+    ],
+    "remedies": [
+      "Guava leaves crushed in water",
+      "Myrobalan"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Infertility, Female",
+    "photo": "assets/diseases/sperm.jpg",
+    "description": "Female infertility prevents females from having babies.",
+    "symptoms": [
+      "Coming soon"
+    ],
+    "causes": [
+      "Coming soon."
+    ],
+    "dos": [
+      "Coming soon"
+    ],
+    "donts": [
+      "Coming soon"
+    ],
+    "preventions": [
+      "Western Medicine: Infertility can be prevented by non-indulgence in sexual activities, and having safe sex."
+    ],
+    "remedies": [
+      "Coming soon"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Infertility, Male",
+    "photo": "assets/diseases/sperm.jpg",
+    "description": "Male infertility prevents females from having babies.",
+    "symptoms": [
+      "Quick discharge of semen",
+      "Lack of pleasure in the nerves during sex",
+      "Stillborn or short-lived children"
+    ],
+    "causes": [
+      "Genital impotency is caused by the weakness of the nerves in the penis and genitals due to excessive sexual activity",
+      "Seminal impotency is caused by excessive semen loss from masturbation or sex during the youth"
+    ],
+    "dos": [
+      "Males should avoid females",
+      "Sunbathing"
+    ],
+    "donts": [
+      "Males should not have sex until the disease is cured"
+    ],
+    "preventions": [
+      "Western Medicine: Infertility can be prevented by non-indulgence in sexual activities."
+    ],
+    "remedies": [
+      "Basil root eaten with betel"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Kidney Stones",
+    "photo": "assets/diseases/kidney.jpg",
+    "description": "Kidney stone disease, also known as nephrolithiasis or urolithiasis, is when a solid piece of material (kidney stone) develops in the urinary tract.",
+    "symptoms": [
+      "Kidney stones typically form in the kidney and leave the body in the urine stream. A small stone may pass without causing symptoms.",
+      "If a stone grows to more than 5 millimeters (0.2 in), it can cause blockage of the ureter, resulting in severe pain in the lower back or abdomen. A stone may also result in blood in the urine, vomiting, or painful urination.",
+      "About half of people who have had a kidney stone will have another within ten years."
+    ],
+    "causes": [
+      "Kidney stones are caused by salt-rich diets."
+    ],
+    "dos": [
+      "Coming soon"
+    ],
+    "donts": [
+      "Coming soon"
+    ],
+    "preventions": [
+      "Western Medicine: Stones can be prevented by avoiding salty diets."
+    ],
+    "remedies": [
+      "Coming soon"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Leprosy",
+    "photo": "assets/diseases/leprosy.jpg",
+    "description": "Leprosy is an infectious disease that causes severe, disfiguring skin sores and nerve damage in the arms, legs, and skin areas around the body. It is generally a disease of the poor.",
+    "symptoms": [
+      "The disease has been around since ancient times.",
+      "It is often surrounded by terrifying, negative stigmas and tales of leprosy patients being shunned as outcasts.",
+      "Leper colonies are another common sign of leprosy."
+    ],
+    "causes": [
+      "Leprosy is caused by bacteria from uncooked food."
+    ],
+    "dos": [
+      "The patient should eat ghee, butter, or olive oil and drink a lot of water",
+      "Sunbathing is important ",
+      "Unless the poor are fed with nutritious food, the spread of the disease among the poor cannot be totally checked."
+    ],
+    "donts": [
+      "The patient must strictly avoid non-vegetarian food."
+    ],
+    "preventions": [
+      "Natropahty: Leprosy can be prevented by eating nutritious and clean food."
+    ],    
+    "remedies": [
+      "Myrobalan powder",
+      "Drinking neem bark extract and covering the diseased area with neem",
+      "Gulainca extracts"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Obesity",
+    "photo": "assets/diseases/obesity.jpg",
+    "description": "Excessive body fat that creates bad health effects. People are obese when their body mass index [BMI], a measurement obtained by dividing a person's weight by the square of the person's height, is over 30 kg m2. The range 25–30 kg m2 is defined as overweight.",
+    "symptoms": [
+      "Some East Asian countries use lower values.",
+      "Obesity increases the likelihood of various diseases and conditions, particularly cardiovascular diseases, type 2 diabetes, obstructive sleep apnea, certain types of cancer, osteoarthritis, and depression.",
+      "Being fat and having excessive weight."
+    ],
+    "causes": [
+      "Too much junk food, and overeating."
+    ],
+    "dos": [
+      "Coming soon"
+    ],
+    "donts": [
+      "Coming soon"
+    ],
+    "preventions": [
+      "Western Medicine: Obesity can be prevented by exercise and a healthy diet."
+    ],
+    "remedies": [
+      "Coming soon"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Rheumatism",
+    "photo": "assets/diseases/rheuma.jpg",
+    "description": "Rheumatism Rheumatism or rheumatic disorders are conditions causing chronic, often intermittent pain affecting the joints or connective tissue.",
+    "symptoms": [
+      "There is a close overlap between the term soft tissue disorder and rheumatism.",
+      "Rheumatism does not designate any specific disorder, but covers at least 200 different conditions including arthritis and 'non-articular rheumatism', also known as 'regional pain syndrome' or 'soft tissue rheumatism'",
+      "Pain in the joints."
+    ],
+    "causes": [
+      "Rheumatism is caused by acidic blood."
+    ],
+    "dos": [
+      "The painful area should be exposed to the sun, 15-20 minutes at a time"
+    ],
+    "donts": [
+      "Constipation"
+    ],
+    "preventions": [
+      "Naturopathy: This can be prevented by an alkaline diet."
+    ],    
+    "remedies": [
+      "Apply castor oil with salt, or pounded garlic and ginger on the painful area",
+      "Drink boiled triphala"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Tuberculosis",
+    "photo": "assets/diseases/tb.jpg",
+    "description": "Tuberculosis is caused by germs in the lungs",
+    "symptoms": [
+      "Rattle of the throat in morning and evening",
+      "Phlegm with blood",
+      "Sweating at night"
+    ],
+    "causes": [
+      "Coming soon"
+    ],
+    "dos": [
+      "A diet of easily-digestible and nutritious foods such as milk, peanut milk, and coconut milk"
+    ],
+    "donts": [
+      "Staying awake at night and doing mental and physical exertions",
+      "Too much talking and sex"
+    ],
+    "preventions": [
+      "Western Medicine: This can be prevented by living in a clean environment and having a strong immune system."
+    ],    
+    "remedies": [
+      "Goat's milk"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Ulcer, Gastic and Duodenal",
+    "photo": "assets/diseases/ulcer.jpg",
+    "description": "Ulcers attack young and middle-aged people",
+    "symptoms": [
+      "Stomach pain after eating"
+    ],
+    "causes": [
+      "Ulcers are caused by gastric juices"
+    ],
+    "dos": [
+      "Drinking sweet and sour fruit juices or well-boiled mashed potatoes with milk "
+    ],
+    "donts": [
+      "Doing physical or mental work without resting after meals"
+    ],
+    "preventions": [
+      "Naturopathy: This can be prevented by relaxing after eating and by not rushing eating."
+    ],
+    "remedies": [
+      "Coming soon"
+    ]
+  }  
+]
