@@ -12,6 +12,11 @@
       "Pandamart",
       "Alfamart",
       "Robinsons"
+    ],
+    "diseases": [
+      "Cancer",
+      "Heart Disease",
+      "Eyestrain" 
     ]
   },
   {
@@ -27,6 +32,29 @@
       "Pandamart url",
       "Alfamart url",
       "Robinsons url"
+    ],
+    "diseases": [
+      "Cancer",
+      "Heart Disease",
+      "Diabetes"      
     ]
-  }
+  },
+  {
+    "id": "3",
+    "name": "Ampalaya",
+    "photo": "assets/vegs/ampalaya.jpg",
+    "description": "Ampalaya is green",
+    "precautions": [
+      "Do not fry"
+    ],
+    "price": "100 to 140 pesos",
+    "stores": [
+      "Pandamart url",
+      "Alfamart url",
+      "Robinsons url"
+    ],
+    "diseases": [
+      "Diabetes"
+    ]
+  }  
 ]

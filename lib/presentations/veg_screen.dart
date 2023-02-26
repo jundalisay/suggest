@@ -26,7 +26,7 @@ class VegScreen extends StatelessWidget {
             Text(veg.description),
             const SizedBox(height: 20.0),
             Text(
-              "Suggested Food",
+              "Suppliers",
               style: Theme.of(context).textTheme.headline3,
             ),
             const SizedBox(height: 10),
@@ -39,6 +39,21 @@ class VegScreen extends StatelessWidget {
                 ],
               );
             }),
+            const SizedBox(height: 20.0),
+            Text(
+              "Good Against",
+              style: Theme.of(context).textTheme.headline3,
+            ),
+            const SizedBox(height: 10),
+            ...veg.diseases!.map((value) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(value, textAlign: TextAlign.left),
+                  SizedBox(height: 10.0)
+                ],
+              );
+            }),            
           ],
         ),
       ),

@@ -78,6 +78,7 @@ flutter:
     - assets/jsons/
     - assets/treatments/
     - assets/nutritions/
+    - assets/vegs/    
     # - lang/
 #module:
 #  androidX: true

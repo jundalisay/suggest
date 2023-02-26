@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Alzheimer",
+    "name": "Alzheimers",
     "photo": "assets/diseases/alzh.jpg",
     "description": "Alzheimers is a chronic neurodegenerative disease that usually starts slowly and gradually worsens over time. It is the cause of 60–70% of cases of dementia. The most common early symptom is difficulty in remembering recent events.",
     "symptoms": [
@@ -122,16 +122,6 @@
     "name": "Cancer",
     "photo": "assets/diseases/cancer.jpg",
     "description": "Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. These contrast with benign tumors, which do not spread. Over 100 types of cancers affect humans.",
-    "foods": [
-      { "name": "Tomato",
-       "image" : "/assets/vegs/tomato.jpg",
-       "url" : "/veggies/tomato"
-      },
-      {"name": "Banana",
-       "image" : "/assets/veggs/banana.jpg", 
-       "url" : "/veggies/banana"
-      }          
-    ],
     "symptoms": [
       "Possible signs and symptoms include a lump, abnormal bleeding",
       "prolonged cough, unexplained weight loss.",
@@ -151,52 +141,64 @@
     "preventions": [
       "Naturopathy: Cancer can be prevented by reducing the intake of chemicals and toxins."
     ],
-    "foods": [],    
+    "foods": [
+      { "name": "Tomato",
+       "image" : "/assets/vegs/tomato.jpg",
+       "url" : "/vegs/tomato"
+      },
+      {"name": "Banana",
+       "image" : "/assets/vegs/banana.jpg", 
+       "url" : "/vegs/banana"
+      }      
+    ],    
     "remedies": [
       "The person should expose the affected area to sunlight in the early morning."
     ]
   },
   {
     "id": "6",
-    "name": "Covid-19",
-    "photo": "assets/diseases/covid.jpg",
-    "description": "Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)",
+    "name": "Eyestrain",
+    "photo": "assets/diseases/eyestrain.jpg",
+    "description": "Eyestrain affects many people",
     "symptoms": [
-      "Fever is the most common symptom, although some older people and those with other health problems experience fever later in the disease.[5][36][unreliable medical source?] In one study, 44% of people had fever when they presented to the hospital, while 89% went on to develop fever at some point during their hospitalization.",
-      "Other common symptoms include cough, loss of appetite, fatigue, shortness of breath, sputum production, and muscle and joint pains. Symptoms such as nausea, vomiting, and diarrhoea have been observed in varying percentages. Less common symptoms include sneezing, runny nose, or sore throat. Some cases in China initially presented with only chest tightness and palpitations.",
-      "A decreased sense of smell or disturbances in taste may occur. Loss of smell was a presenting symptom in 30% of confirmed cases in South Korea."
+      "Blurry vision",
+      "Dry eyes"
     ],
     "causes": [
-      "The SARS-CoV-2 affects people that have weak, acidic blood. These include healthy people ranging from atheltes and bodybuilders, to children and middle-aged people. Senior citizens tend to have acidic blood and so are a common fatality under Covid-19."
+      "Eyestrain is caused by stress"
     ],
     "dos": [
-      "Since the disease is primarily spread by an airborne virus, wearing a face mask is the first preventive measure.",
-      "Peeping a 2-meter distance between people, called 'Social distancing', as well as cleaning everyday objects that might contact the face, are very important.",
-      "Lastly, people should maintain an alkaline blood by eating fresh fruits and vegetables."
+      "Relax",
+      "Drink lots of water"
     ],
     "donts": [
-      "Acidic medicine like paracetamol and ibuprofen, as well as acidic food like intoxicants, such as beer and coffee, must be avoided. ",
-      "People should avoid direct physical contact with strangers who have not been tested.",
-      "Coughing openly and releasing particles in the air is discouraged."
+      "Watch TV too much"
     ],
     "preventions": [
-      "Naturopathy: Covid-19 can be prevented through an alkaline diet.",
-      "Western Medicine: Covid-19 can be prevented by having a strong immune system."
+      "Naturopathy: Green veg.",
+      "Western Medicine: Eyedrops."
     ],
-    "foods": [],    
+    "foods": [
+      { "name": "Tomato",
+       "image" : "/assets/vegs/tomato.jpg",
+       "url" : "/vegs/tomato"
+      },
+      {"name": "Banana",
+       "image" : "/assets/vegs/banana.jpg", 
+       "url" : "/vegs/banana"
+      }
+    ],    
     "remedies": [
-      "Generally, food that have an alkaline effect on the blood is recomended.",
-      "France recomends nicotine patches.",
-      "China recommends Jinhua Qinggan."
+      "Sleep"
     ]
   },
   {
     "id": "7",
-    "name": "Dengue",
-    "photo": "assets/diseases/dengue.jpg",
-    "description": "An alternative name for dengue, 'breakbone fever', comes from the associated muscle and joint pains. The course of infection is divided into three phases: febrile, critical, and recovery.",
+    "name": "Heart Disease",
+    "photo": "assets/diseases/obesity.jpg",
+    "description": "Heart Disease is pain in the heart.",
     "symptoms": [
-      "Sudden-onset fever, headache (typically located behind the eyes), muscle and joint pains, and a rash."
+      "Pain in the heart."
     ],
     "causes": [
       "Coming soon"
@@ -210,7 +212,16 @@
     "preventions": [
       "Western Medicine: Dengue can be prevented by removing the breeding grounds of mosquitoes ."
     ],    
-    "foods": [],    
+    "foods": [
+      { "name": "Tomato",
+       "image" : "/assets/vegs/tomato.jpg",
+       "url" : "/vegs/tomato"
+      },
+      {"name": "Banana",
+       "image" : "/assets/vegs/banana.jpg", 
+       "url" : "/vegs/banana"
+      }      
+    ],    
     "remedies": [
       "Coming soon"
     ]
@@ -238,7 +249,16 @@
     "preventions": [
       "Western Medicine: Diabetes can be prevented by exercise and healthy diet."
     ],
-    "foods": [],    
+    "foods": [
+      {"name": "Banana",
+       "image" : "/assets/vegs/banana.jpg", 
+       "url" : "/vegs/banana"
+      },
+      {"name": "Ampalaya",
+       "image" : "/assets/vegs/ampalaya.jpg", 
+       "url" : "/vegs/ampalaya"
+      }      
+    ],  
     "remedies": [
       "Guava leaves crushed in water",
       "Myrobalan"
