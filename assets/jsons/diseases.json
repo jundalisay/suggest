@@ -56,7 +56,7 @@
       "Appendicitis can be prevented by resting after meals, or by not rushing the act of eating as to not stress the digestive system.",
       "Naturopathy: Decreasing meat consumption also helps"
     ],
-    "foods": [],    
+    "foods": [],
     "remedies": [
       "Taking asafetida before meals",
       "Coconut meat with betel leaf",
@@ -84,8 +84,8 @@
     ],
     "preventions": [
       "Ayurveda: Asthma can be prevented by strengthening the heart chakra."
-    ],    
-    "foods": [],    
+    ],
+    "foods": [],
     "remedies": [
       "Coming soon"
     ]
@@ -112,7 +112,7 @@
     "preventions": [
       "Naturopathy: Boils can be prevented by lowering meat consumption."
     ],
-    "foods": [],    
+    "foods": [],
     "remedies": [
       "Coming soon"
     ]
@@ -142,15 +142,9 @@
       "Naturopathy: Cancer can be prevented by reducing the intake of chemicals and toxins."
     ],
     "foods": [
-      { "name": "Tomato",
-       "image" : "/assets/vegs/tomato.jpg",
-       "url" : "/vegs/tomato"
-      },
-      {"name": "Banana",
-       "image" : "/assets/vegs/banana.jpg", 
-       "url" : "/vegs/banana"
-      }      
-    ],    
+      "Tomato",
+      "Banana"
+    ],
     "remedies": [
       "The person should expose the affected area to sunlight in the early morning."
     ]
@@ -179,15 +173,9 @@
       "Western Medicine: Eyedrops."
     ],
     "foods": [
-      { "name": "Tomato",
-       "image" : "/assets/vegs/tomato.jpg",
-       "url" : "/vegs/tomato"
-      },
-      {"name": "Banana",
-       "image" : "/assets/vegs/banana.jpg", 
-       "url" : "/vegs/banana"
-      }
-    ],    
+      "Tomato",
+      "Banana"
+    ],
     "remedies": [
       "Sleep"
     ]
@@ -211,17 +199,11 @@
     ],
     "preventions": [
       "Western Medicine: Dengue can be prevented by removing the breeding grounds of mosquitoes ."
-    ],    
+    ],
     "foods": [
-      { "name": "Tomato",
-       "image" : "/assets/vegs/tomato.jpg",
-       "url" : "/vegs/tomato"
-      },
-      {"name": "Banana",
-       "image" : "/assets/vegs/banana.jpg", 
-       "url" : "/vegs/banana"
-      }      
-    ],    
+      "Tomato",
+      "Banana"
+    ],
     "remedies": [
       "Coming soon"
     ]
@@ -250,15 +232,9 @@
       "Western Medicine: Diabetes can be prevented by exercise and healthy diet."
     ],
     "foods": [
-      {"name": "Banana",
-       "image" : "/assets/vegs/banana.jpg", 
-       "url" : "/vegs/banana"
-      },
-      {"name": "Ampalaya",
-       "image" : "/assets/vegs/ampalaya.jpg", 
-       "url" : "/vegs/ampalaya"
-      }      
-    ],  
+      "Banana",
+      "Ampalaya"
+    ],
     "remedies": [
       "Guava leaves crushed in water",
       "Myrobalan"
