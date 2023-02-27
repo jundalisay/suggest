@@ -51,7 +51,7 @@ class DiseaseScreen extends GetView<DiseaseController> {
     final currentRoute = Get.routing.current;
     debugPrint("DiseaseScreen._foodWidget: currentRoute: $currentRoute");
 
-    final bool isDiseaseRoot = currentRoute.startsWith("/disease");
+    final bool isDiseaseRoot = currentRoute.startsWith("/diseases");
     final Color? textColor = isDiseaseRoot ? Colors.blue : null;
 
     if (veg != null) {

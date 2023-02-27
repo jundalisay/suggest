@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:suggestion_app/bindings/disease_binder.dart';
 import 'package:suggestion_app/controllers/veg_controller.dart';
+import 'package:suggestion_app/models/disease.dart';
 import 'package:suggestion_app/models/veg.dart';
+import 'package:suggestion_app/presentations/disease_screen.dart';
 
 class VegScreen extends GetView<VegController> {
   @override
@@ -48,13 +51,7 @@ class VegScreen extends GetView<VegController> {
             const SizedBox(height: 10),
             if (controller.veg != null)
               ...controller.veg!.diseases!.map((value) {
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(value, textAlign: TextAlign.left),
-                    SizedBox(height: 10.0)
-                  ],
-                );
+                return _diseaseWidget(context, diseaseName: value);
               }),
           ],
         ),
@@ -62,7 +59,27 @@ class VegScreen extends GetView<VegController> {
     );
   }
 
-  _listItems(items) {
-    return items.forEach((item) => Text(item));
+  Widget _diseaseWidget(BuildContext context, {required String diseaseName}) {
+    final Disease? disease = controller.getDisease(diseaseName: diseaseName);
+
+    final currentRoute = Get.routing.current;
+    debugPrint("VegScreen._foodWidget: currentRoute: $currentRoute");
+
+    final bool isDiseaseRoot = currentRoute.startsWith("/vegs");
+    final Color? textColor = isDiseaseRoot ? Colors.blue : null;
+
+    if (disease != null) {
+      return InkWell(
+        onTap: () {
+          Get.to(() => DiseaseScreen(),
+              arguments: disease, binding: DiseaseBinding());
+        },
+        child: Text(
+          disease.name,
+          style: TextStyle(color: textColor),
+        ),
+      );
+    }
+    return SizedBox();
   }
 }
