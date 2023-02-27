@@ -65,14 +65,16 @@ class VegScreen extends GetView<VegController> {
     final currentRoute = Get.routing.current;
     debugPrint("VegScreen._foodWidget: currentRoute: $currentRoute");
 
-    final bool isDiseaseRoot = currentRoute.startsWith("/vegs");
-    final Color? textColor = isDiseaseRoot ? Colors.blue : null;
+    final bool isVegRoot = currentRoute.startsWith("/vegs");
+    final Color? textColor = isVegRoot ? Colors.blue : null;
 
     if (disease != null) {
       return InkWell(
         onTap: () {
-          Get.to(() => DiseaseScreen(),
-              arguments: disease, binding: DiseaseBinding());
+          if(isVegRoot) {
+            Get.to(() => DiseaseScreen(),
+                arguments: disease, binding: DiseaseBinding());
+          }
         },
         child: Text(
           disease.name,
