@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/controllers/disease_conrtoller.dart';
+import 'package:suggestion_app/controllers/disease_list_conrtoller.dart';
 import 'package:suggestion_app/models/disease.dart';
 import 'package:suggestion_app/presentations/disease_screen.dart';
 
@@ -24,7 +24,7 @@ class _DiseasesState extends State<Diseases> {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<DiseaseController>();
+    final controller = Get.find<DiseaseListController>();
     return Scaffold(
       appBar: AppBar(
         title: const Text("Diseases"),
@@ -78,12 +78,7 @@ class _DiseasesState extends State<Diseases> {
     return Card(
       child: InkWell(
         onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => DiseaseScreen(disease),
-            ),
-          );
+          Get.toNamed("/diseases/disease", arguments: disease);
         },
         child: ListTile(
           leading: ClipRRect(
