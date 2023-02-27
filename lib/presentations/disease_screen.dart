@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:suggestion_app/bindings/veg_binder.dart';
 import 'package:suggestion_app/controllers/disease_conrtoller.dart';
+import 'package:suggestion_app/models/veg.dart';
+import 'package:suggestion_app/presentations/veg_screen.dart';
 
 class DiseaseScreen extends GetView<DiseaseController> {
   @override
@@ -34,13 +37,7 @@ class DiseaseScreen extends GetView<DiseaseController> {
               ...controller.disease!.foods!.map((value) {
                 // how to show a card that has a the details of the veg which will open to the Veg Screen of that veg?  link that
 
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(value, textAlign: TextAlign.left),
-                    SizedBox(height: 10.0)
-                  ],
-                );
+                return _foodWidget(context, vegName: value);
               }),
           ],
         ),
@@ -48,7 +45,26 @@ class DiseaseScreen extends GetView<DiseaseController> {
     );
   }
 
-  _listItems(items) {
-    return items.forEach((item) => Text(item));
+  Widget _foodWidget(BuildContext context, {required String vegName}) {
+    final Veg? veg = controller.getVeg(vegName: vegName);
+
+    final currentRoute = Get.routing.current;
+    debugPrint("DiseaseScreen._foodWidget: currentRoute: $currentRoute");
+
+    final bool isDiseaseRoot = currentRoute.startsWith("/disease");
+    final Color? textColor = isDiseaseRoot ? Colors.blue : null;
+
+    if (veg != null) {
+      return InkWell(
+        onTap: () {
+          Get.to(() => VegScreen(), arguments: veg, binding: VegBinding());
+        },
+        child: Text(
+          veg.name,
+          style: TextStyle(color: textColor),
+        ),
+      );
+    }
+    return SizedBox();
   }
 }

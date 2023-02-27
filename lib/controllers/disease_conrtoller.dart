@@ -4,10 +4,10 @@ import 'package:flutter/foundation.dart';
 
 import 'package:get/get.dart';
 import 'package:suggestion_app/models/disease.dart';
-
+import 'package:suggestion_app/models/veg.dart';
+import 'package:suggestion_app/services/veg_service.dart';
 
 class DiseaseController extends GetxController {
-
   Disease? disease;
 
   @override
@@ -25,5 +25,15 @@ class DiseaseController extends GetxController {
     } catch (e) {
       debugPrint("DiseaseController._initialize: $e");
     }
+  }
+
+  Veg? getVeg({required String vegName}) {
+    final vegs = VegService.to.vegs;
+    final index = vegs.indexWhere(
+        (element) => element.name.toLowerCase() == vegName.toLowerCase());
+    if (index >= 0) {
+      return vegs.elementAt(index);
+    }
+    return null;
   }
 }
