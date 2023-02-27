@@ -1,59 +1,61 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:suggestion_app/controllers/veg_controller.dart';
 import 'package:suggestion_app/models/veg.dart';
 
-
-class VegScreen extends StatelessWidget {
-  final Veg veg;
-  const VegScreen(this.veg, {super.key});
-
+class VegScreen extends GetView<VegController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(veg.name),
+        title: Text(controller.veg?.name ?? ""),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            Image.asset(veg.photo),
-            const SizedBox(height: 20,),
+            if (controller.veg != null) Image.asset(controller.veg!.photo),
+            const SizedBox(
+              height: 20,
+            ),
             Text(
-              veg.name,
+              controller.veg?.name ?? "",
               style: Theme.of(context).textTheme.headline1,
             ),
             const SizedBox(height: 10),
-            Text(veg.description),
+            Text(controller.veg?.description ?? ""),
             const SizedBox(height: 20.0),
             Text(
               "Suppliers",
               style: Theme.of(context).textTheme.headline3,
             ),
             const SizedBox(height: 10),
-            ...veg.stores!.map((value) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(value, textAlign: TextAlign.left),
-                  SizedBox(height: 10.0)
-                ],
-              );
-            }),
+            if (controller.veg != null)
+              ...controller.veg!.stores!.map((value) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(value, textAlign: TextAlign.left),
+                    SizedBox(height: 10.0)
+                  ],
+                );
+              }),
             const SizedBox(height: 20.0),
             Text(
               "Good Against",
               style: Theme.of(context).textTheme.headline3,
             ),
             const SizedBox(height: 10),
-            ...veg.diseases!.map((value) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(value, textAlign: TextAlign.left),
-                  SizedBox(height: 10.0)
-                ],
-              );
-            }),            
+            if (controller.veg != null)
+              ...controller.veg!.diseases!.map((value) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(value, textAlign: TextAlign.left),
+                    SizedBox(height: 10.0)
+                  ],
+                );
+              }),
           ],
         ),
       ),

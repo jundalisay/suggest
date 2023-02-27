@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:suggestion_app/bindings/disease_binder.dart';
 import 'package:suggestion_app/bindings/disease_list_binder.dart';
+import 'package:suggestion_app/bindings/veg_binder.dart';
 import 'package:suggestion_app/presentations/disease_screen.dart';
 import 'package:suggestion_app/presentations/diseases.dart';
-import 'package:suggestion_app/bindings/veg_binder.dart';
+import 'package:suggestion_app/bindings/veg_list_binder.dart';
+import 'package:suggestion_app/presentations/veg_screen.dart';
 import 'package:suggestion_app/presentations/vegs.dart';
 import 'package:suggestion_app/presentations/index.dart';
 
@@ -37,19 +39,24 @@ class SuggestApp extends StatelessWidget {
                   binding: DiseaseBinding()),
               GetPage(
                   name: '/vegs',
-                  page: () => const Vegs(),
-                  binding: VegBinding()),
+                  page: () => VegScreen(),
+                  binding: VegListBinding()),
             ]),
         GetPage(
             name: '/vegs',
             page: () => const Vegs(),
-            binding: VegBinding(),
+            binding: VegListBinding(),
             children: [
               GetPage(
-                name: '/diseases',
-                page: () => const Diseases(),
-                binding: DiseaseListBinding(),
-              )
+                name: '/disease',
+                page: () => DiseaseScreen(),
+                binding: DiseaseBinding(),
+              ),
+              GetPage(
+                name: '/veg',
+                page: () => VegScreen(),
+                binding: VegBinding(),
+              ),
             ]),
       ],
     );
