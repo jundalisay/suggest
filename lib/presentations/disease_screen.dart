@@ -57,7 +57,9 @@ class DiseaseScreen extends GetView<DiseaseController> {
     if (veg != null) {
       return InkWell(
         onTap: () {
-          Get.to(() => VegScreen(), arguments: veg, binding: VegBinding());
+          if(isDiseaseRoot) {
+            Get.to(() => VegScreen(), arguments: veg, binding: VegBinding());
+          }
         },
         child: Text(
           veg.name,
