@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/controllers/veg_controller.dart';
+import 'package:suggestion_app/controllers/veg_list_controller.dart';
 import 'package:suggestion_app/models/veg.dart';
 import 'package:suggestion_app/presentations/veg_screen.dart';
-
-
 
 class Vegs extends StatefulWidget {
   const Vegs({super.key});
@@ -24,7 +22,7 @@ class _VegsState extends State<Vegs> {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<VegController>();
+    final controller = Get.find<VegListController>();
     return Scaffold(
       appBar: AppBar(
         title: const Text("Vegs"),
@@ -74,17 +72,11 @@ class _VegsState extends State<Vegs> {
     );
   }
 
-
   Widget _information(BuildContext context, Veg veg) {
     return Card(
       child: InkWell(
         onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => VegScreen(veg),
-            ),
-          );
+          Get.toNamed("/vegs/veg", arguments: veg);
         },
         child: ListTile(
           leading: ClipRRect(
