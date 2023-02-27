@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:suggestion_app/models/veg.dart';
+import 'package:suggestion_app/services/veg_service.dart';
 
 
 
@@ -18,13 +19,9 @@ class VegListController extends GetxController {
   }
 
   Future<void> _initialize() async {
-    String jsonString =
-        await rootBundle.loadString("assets/jsons/vegs.json");
-
-    final jsonResponse = jsonDecode(jsonString) as List;
     try {
       vegs.value =
-          jsonResponse.map((data) => Veg.fromJson(data)).toList();
+          VegService.to.vegs;
       filteredVegs.value = vegs;
     } catch (e) {
       debugPrint("VegController._initialize: $e");

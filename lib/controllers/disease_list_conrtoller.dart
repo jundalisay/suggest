@@ -1,11 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:suggestion_app/models/disease.dart';
-
-
+import 'package:suggestion_app/services/disease_service.dart';
 
 class DiseaseListController extends GetxController {
   RxList<Disease> diseases = <Disease>[].obs;
@@ -18,13 +14,8 @@ class DiseaseListController extends GetxController {
   }
 
   Future<void> _initialize() async {
-    String jsonString =
-        await rootBundle.loadString("assets/jsons/diseases.json");
-
-    final jsonResponse = jsonDecode(jsonString) as List;
     try {
-      diseases.value =
-          jsonResponse.map((data) => Disease.fromJson(data)).toList();
+      diseases.value = DiseaseService.to.diseases;
       filteredDiseases.value = diseases;
     } catch (e) {
       debugPrint("DiseaseController._initialize: $e");
