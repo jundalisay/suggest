@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Tomato",
     "photo": "assets/vegs/tomato.jpg",
-    "description": "Tomato is red.",
+    "description": "Tomatoes are packed with essential nutrients, such as vitamins C and K, potassium, folate, and antioxidants. They are also low in calories and high in fiber, making them an excellent food choice for weight management. Tomatoes contain lycopene, a powerful antioxidant that helps to reduce the risk of heart disease by lowering LDL (bad) cholesterol levels and reducing inflammation. Studies have shown that regular consumption of tomatoes may help to prevent certain types of cancer, such as prostate, breast, and lung cancer. This is due to the presence of lycopene and other antioxidants in tomatoes. The high content of vitamin C and other antioxidants in tomatoes make them beneficial for maintaining healthy skin. They can help to protect the skin from sun damage, prevent wrinkles, and promote collagen production. Tomatoes are a rich source of lutein and zeaxanthin, two nutrients that are essential for maintaining good vision and preventing age-related macular degeneration. Tomatoes are an excellent source of fiber, which is essential for maintaining a healthy digestive system. They can help to prevent constipation, reduce the risk of colon cancer, and promote regular bowel movements.",
     "precautions": [
       "Remove the skin"
     ],

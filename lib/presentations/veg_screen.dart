@@ -6,54 +6,92 @@ import 'package:suggestion_app/models/disease.dart';
 import 'package:suggestion_app/models/veg.dart';
 import 'package:suggestion_app/presentations/disease_screen.dart';
 
+import 'package:flutter/services.dart';
+
+
+
+
 class VegScreen extends GetView<VegController> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarBrightness: Brightness.dark,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
+
+
+    return Scaffold( 
+      backgroundColor: Colors.cyan[100],  
       appBar: AppBar(
-        title: Text(controller.veg?.name ?? ""),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).pop(),
+        ),         
+        title: Text(controller.veg?.name ?? "",
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.transparent,
+        elevation: 0
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: ListView(
-          children: [
-            if (controller.veg != null) Image.asset(controller.veg!.photo),
-            const SizedBox(
-              height: 20,
-            ),
-            Text(
-              controller.veg?.name ?? "",
-              style: Theme.of(context).textTheme.headline1,
-            ),
-            const SizedBox(height: 10),
-            Text(controller.veg?.description ?? ""),
-            const SizedBox(height: 20.0),
-            Text(
-              "Suppliers",
-              style: Theme.of(context).textTheme.headline3,
-            ),
-            const SizedBox(height: 10),
-            if (controller.veg != null)
-              ...controller.veg!.stores!.map((value) {
-                return Column(
+        padding: const EdgeInsets.all(8.0),
+        child: Card(
+          // margin: EdgeInsets.symmetric(horizontal: 8.0, vertical: 2.0),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),          
+          elevation: 4,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                  ),
+                  child: Image.asset(
+                    controller.veg!.photo,
+                    fit: BoxFit.cover,
+                  ),
+                )
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(value, textAlign: TextAlign.left),
-                    SizedBox(height: 10.0)
+                    Text(
+                      controller.veg!.name,
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      controller.veg!.description,
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                    SizedBox(height: 16),
+                    Text(
+                      'sdf',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
-                );
-              }),
-            const SizedBox(height: 20.0),
-            Text(
-              "Good Against",
-              style: Theme.of(context).textTheme.headline3,
-            ),
-            const SizedBox(height: 10),
-            if (controller.veg != null)
-              ...controller.veg!.diseases!.map((value) {
-                return _diseaseWidget(context, diseaseName: value);
-              }),
-          ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:introduction_slider/introduction_slider.dart';
 import 'package:suggestion_app/presentations/index.dart';
 
+
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
 
@@ -10,7 +11,16 @@ class IntroScreen extends StatelessWidget {
     return IntroductionSlider(
       items: [
         const IntroductionSliderItem(
-          title: Text("Introduction"),
+          title: Text(
+            'SCENAC Suggest',
+            textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              color: Colors.black,              
+              fontWeight: FontWeight.bold,
+              fontSize: 16,              
+            ),
+          ),
           subtitle: Text("Introduction Slider Subtitle"),
           backgroundImageDecoration: BackgroundImageDecoration(
             image: AssetImage("assets/health.jpg"),

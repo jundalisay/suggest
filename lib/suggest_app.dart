@@ -32,6 +32,10 @@ class SuggestApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Suggest',
       theme: _themeData(),
+
+
+
+
       // defaultTransition: Transition.upToDown,
       // translations: PantryTranslations(),
       // locale: Locale('en', 'US'),
@@ -107,7 +111,7 @@ class SuggestApp extends StatelessWidget {
     return ThemeData(
       primaryColor: Colors.lightBlue[600],
       accentColor: Colors.white,
-      fontFamily: 'Cabin',
+      fontFamily: 'Quicksand',
       textTheme: TextTheme(
         headline1: TextStyle(fontSize: 24.0, color: Colors.lightBlue[600]),
         // h1

@@ -39,11 +39,11 @@ class Index extends StatelessWidget {
         ),
         Card(
           child: ListTile(
-            title: Text('Demo',
+            title: Text('Nutris',
                 style: Theme.of(context).textTheme.displayLarge),
             contentPadding: const EdgeInsets.all(6.0),
             trailing: const Icon(Icons.keyboard_arrow_right),
-            onTap: () {Get.toNamed("/demo");},
+            onTap: () {Get.toNamed("/nutris");},
           ),
         ),        
       ]),

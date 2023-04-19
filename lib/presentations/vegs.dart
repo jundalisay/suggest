@@ -26,6 +26,7 @@ class _VegsState extends State<Vegs> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Vegs"),
+        backgroundColor: Colors.transparent,
         centerTitle: true,
       ),
       // drawer: AppDrawer(),
@@ -74,26 +75,61 @@ class _VegsState extends State<Vegs> {
 
   Widget _information(BuildContext context, Veg veg) {
     return Card(
+      margin: EdgeInsets.symmetric(horizontal: 8.0, vertical: 2.0),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      elevation: 16,
+      shadowColor: Colors.grey,
       child: InkWell(
         onTap: () {
           Get.toNamed("/vegs/veg", arguments: veg);
         },
-        child: ListTile(
-          leading: ClipRRect(
-              borderRadius: BorderRadius.circular(5),
-              child: Image.asset(
-                veg.photo,
-                fit: BoxFit.cover,
-                width: 100.0,
-              )),
-          title: Text(veg.name),
-          subtitle: Text(
-            veg.description,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 3,
-          ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              flex: 2,
+              child: ClipRRect(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  bottomLeft: Radius.circular(10),
+                ),
+                child: Image.asset(
+                  veg.photo,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      veg.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      veg.description,
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
+
