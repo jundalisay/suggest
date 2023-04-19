@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:suggestion_app/models/disease.dart';
 import 'package:suggestion_app/services/disease_service.dart';
 
+
 class DiseaseListController extends GetxController {
   RxList<Disease> diseases = <Disease>[].obs;
   RxList<Disease> filteredDiseases = <Disease>[].obs;

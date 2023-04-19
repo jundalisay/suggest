@@ -3,12 +3,13 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
 import 'package:get/get.dart';
-import 'package:suggestion_app/models/disease.dart';
+import 'package:suggestion_app/models/nutri.dart';
 import 'package:suggestion_app/models/veg.dart';
 import 'package:suggestion_app/services/veg_service.dart';
 
-class DiseaseController extends GetxController {
-  Disease? disease;
+
+class NutriController extends GetxController {
+  Nutri? disease;
 
   @override
   void onInit() {
@@ -20,10 +21,10 @@ class DiseaseController extends GetxController {
     try {
       final arguments = Get.arguments;
       if (arguments != null) {
-        disease = Get.arguments as Disease;
+        disease = Get.arguments as Nutri;
       }
     } catch (e) {
-      debugPrint("DiseaseController._initialize: $e");
+      debugPrint("NutriController._initialize: $e");
     }
   }
 

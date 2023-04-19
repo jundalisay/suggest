@@ -37,6 +37,15 @@ class Index extends StatelessWidget {
             color: Colors.grey,
           ),
         ),
+        Card(
+          child: ListTile(
+            title: Text('Demo',
+                style: Theme.of(context).textTheme.displayLarge),
+            contentPadding: const EdgeInsets.all(6.0),
+            trailing: const Icon(Icons.keyboard_arrow_right),
+            onTap: () {Get.toNamed("/demo");},
+          ),
+        ),        
       ]),
     );
   }

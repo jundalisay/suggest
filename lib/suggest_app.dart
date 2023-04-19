@@ -1,16 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import 'package:suggestion_app/bindings/disease_binder.dart';
 import 'package:suggestion_app/bindings/disease_list_binder.dart';
-import 'package:suggestion_app/bindings/veg_binder.dart';
+
 import 'package:suggestion_app/presentations/disease_screen.dart';
 import 'package:suggestion_app/presentations/diseases.dart';
+
+import 'package:suggestion_app/bindings/veg_binder.dart';
 import 'package:suggestion_app/bindings/veg_list_binder.dart';
+
 import 'package:suggestion_app/presentations/veg_screen.dart';
 import 'package:suggestion_app/presentations/vegs.dart';
+
+import 'package:suggestion_app/presentations/nutri_screen.dart';
+import 'package:suggestion_app/presentations/nutris.dart';
+
+import 'package:suggestion_app/bindings/nutri_list_binder.dart';
 import 'package:suggestion_app/presentations/index.dart';
 
 import 'presentations/intro_screen.dart';
+
 
 class SuggestApp extends StatelessWidget {
   const SuggestApp({super.key});
@@ -29,35 +39,66 @@ class SuggestApp extends StatelessWidget {
         // GetPage(name: '/about',     page: () => About()),
         GetPage(name: '/index', page: () => const Index()),
         GetPage(
-            name: '/diseases',
-            page: () => const Diseases(),
-            binding: DiseaseListBinding(),
-            children: [
-              GetPage(
-                  name: '/disease',
-                  page: () => DiseaseScreen(),
-                  binding: DiseaseBinding()),
-              GetPage(
-                  name: '/vegs',
-                  page: () => VegScreen(),
-                  binding: VegListBinding()),
-            ]),
-        GetPage(
-            name: '/vegs',
-            page: () => const Vegs(),
-            binding: VegListBinding(),
-            children: [
-              GetPage(
+          name: '/diseases',
+          page: () => const Diseases(),
+          binding: DiseaseListBinding(),
+          children: [
+            GetPage(
                 name: '/disease',
                 page: () => DiseaseScreen(),
-                binding: DiseaseBinding(),
-              ),
-              GetPage(
-                name: '/veg',
+                binding: DiseaseBinding()
+            ),
+            GetPage(
+                name: '/vegs',
                 page: () => VegScreen(),
-                binding: VegBinding(),
-              ),
-            ]),
+                binding: VegListBinding()
+            ),
+            GetPage(
+                name: '/nutris',
+                page: () => NutriScreen(),
+                binding: NutriListBinding()
+            ),
+          ]           
+        ),
+        GetPage(
+          name: '/vegs',
+          page: () => const Vegs(),
+          binding: VegListBinding(),
+          children: [
+            GetPage(
+              name: '/disease',
+              page: () => DiseaseScreen(),
+              binding: DiseaseBinding(),
+            ),
+            GetPage(
+              name: '/veg',
+              page: () => VegScreen(),
+              binding: VegBinding(),
+            ),
+            GetPage(
+              name: '/nutri',
+              page: () => NutriScreen(),
+              binding: NutriListBinding()
+            ),
+          ]
+        ),
+        GetPage(
+          name: '/nutris',
+          page: () => const Nutris(),
+          binding: NutriListBinding(),
+          children: [
+            GetPage(
+              name: '/disease',
+              page: () => DiseaseScreen(),
+              binding: DiseaseBinding(),
+            ),
+            GetPage(
+              name: '/veg',
+              page: () => VegScreen(),
+              binding: VegBinding(),
+            ),
+          ]
+        ),        
       ],
     );
   }

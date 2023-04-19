@@ -8,3 +8,6 @@ Future<void> main() async {
   await Get.putAsync(() => ConfigDependencies().init());
   runApp(const SuggestApp());
 }
+
+
+// suggest_app + service --> 

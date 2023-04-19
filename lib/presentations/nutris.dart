@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/controllers/disease_list_controller.dart';
-import 'package:suggestion_app/models/disease.dart';
-import 'package:suggestion_app/presentations/disease_screen.dart';
+import 'package:suggestion_app/controllers/nutri_list_controller.dart';
+import 'package:suggestion_app/models/nutri.dart';
+import 'package:suggestion_app/presentations/nutri_screen.dart';
 
 
-
-class Diseases extends StatefulWidget {
-  const Diseases({super.key});
+class Nutris extends StatefulWidget {
+  const Nutris({super.key});
 
   @override
-  State<Diseases> createState() => _DiseasesState();
+  State<Nutris> createState() => _NutrisState();
 }
 
-class _DiseasesState extends State<Diseases> {
+class _NutrisState extends State<Nutris> {
   final TextEditingController _textEditingController = TextEditingController();
 
   @override
@@ -24,10 +23,10 @@ class _DiseasesState extends State<Diseases> {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<DiseaseListController>();
+    final controller = Get.find<NutriListController>();
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Diseases"),
+        title: const Text("Nutris"),
         centerTitle: true,
       ),
       // drawer: AppDrawer(),
@@ -58,11 +57,11 @@ class _DiseasesState extends State<Diseases> {
               ),
             ),
             Obx(
-              () => controller.filteredDiseases.isEmpty
+              () => controller.filteredNutris.isEmpty
                   ? const Text("No data")
                   : Column(
                       children: [
-                        ...controller.filteredDiseases
+                        ...controller.filteredNutris
                             .map((element) => _information(context, element))
                             .toList(),
                       ],
@@ -74,23 +73,23 @@ class _DiseasesState extends State<Diseases> {
     );
   }
 
-  Widget _information(BuildContext context, Disease disease) {
+  Widget _information(BuildContext context, Nutri veg) {
     return Card(
       child: InkWell(
         onTap: () {
-          Get.toNamed("/diseases/disease", arguments: disease);
+          Get.toNamed("/vegs/veg", arguments: veg);
         },
         child: ListTile(
           leading: ClipRRect(
               borderRadius: BorderRadius.circular(5),
               child: Image.asset(
-                disease.photo,
+                veg.photo,
                 fit: BoxFit.cover,
                 width: 100.0,
               )),
-          title: Text(disease.name),
+          title: Text(veg.name),
           subtitle: Text(
-            disease.description,
+            veg.description,
             overflow: TextOverflow.ellipsis,
             maxLines: 3,
           ),
