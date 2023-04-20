@@ -9,7 +9,7 @@ import 'package:suggestion_app/services/veg_service.dart';
 
 
 class NutriController extends GetxController {
-  Nutri? disease;
+  Nutri? nutri;
 
   @override
   void onInit() {
@@ -21,7 +21,7 @@ class NutriController extends GetxController {
     try {
       final arguments = Get.arguments;
       if (arguments != null) {
-        disease = Get.arguments as Nutri;
+        nutri = Get.arguments as Nutri;
       }
     } catch (e) {
       debugPrint("NutriController._initialize: $e");

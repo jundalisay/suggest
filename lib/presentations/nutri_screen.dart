@@ -6,37 +6,38 @@ import 'package:suggestion_app/controllers/nutri_controller.dart';
 import 'package:suggestion_app/models/veg.dart';
 import 'package:suggestion_app/presentations/veg_screen.dart';
 
+
 class NutriScreen extends GetView<NutriController> {
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(controller.disease?.name ?? ""),
+        title: Text(controller.nutri?.name ?? ""),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            if (controller.disease != null)
-              Image.asset(controller.disease!.photo),
+            if (controller.nutri != null)
+              Image.asset(controller.nutri!.photo),
             const SizedBox(
               height: 20,
             ),
             Text(
-              controller.disease?.name ?? "",
+              controller.nutri?.name ?? "",
               style: Theme.of(context).textTheme.headline1,
             ),
             const SizedBox(height: 10),
-            Text(controller.disease?.description ?? ""),
+            Text(controller.nutri?.description ?? ""),
             const SizedBox(height: 20.0),
             Text(
               "Nutrients",
               style: Theme.of(context).textTheme.headline3,
             ),
             const SizedBox(height: 10),
-            // if (controller.disease != null)
-            //   ...controller.disease!.foods!.map((value) {
+            // if (controller.nutri != null)
+            //   ...controller.nutri!.foods!.map((value) {
             //     // how to show a card that has a the details of the veg which will open to the Nutri Screen of that veg?  link that
 
             //     return _foodWidget(context, vegName: value);

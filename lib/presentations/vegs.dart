@@ -122,6 +122,15 @@ class _VegsState extends State<Vegs> {
                         fontSize: 12,
                       ),
                     ),
+                    SizedBox(height: 8),
+                    Row(
+                      children: [
+                        Icon(Icons.star),
+                        Text('Rating: 4.5'),
+                        Icon(Icons.star),
+                        Text('Rating: 5'),                        
+                      ],
+                    ),                                        
                   ],
                 ),
               ),
