@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/config_dependencies.dart';
-import 'package:suggestion_app/suggest_app.dart';
+import 'package:suggest/config_dependencies.dart';
+import 'package:suggest/suggest_app.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -8,6 +8,13 @@
       "Remove the skin"
     ],
     "price": "35-80 pesos",
+    "calories": "100",
+    "water": "100",    
+    "protein": "100",    
+    "carbs": "100",    
+    "sugar": "100",    
+    "fiber": "100",    
+    "fat": "100", 
     "stores": [
       "Pandamart",
       "Alfamart",
@@ -17,17 +24,29 @@
       "Cancer",
       "Heart Disease",
       "Eyestrain" 
-    ]
+    ],
+    "subpics": [
+      "/assets/diseases/cancer.jpg",
+      "/assets/diseases/heart.jpg",
+      "/assets/diseases/eyestrain.jpg"
+    ] 
   },
   {
     "id": "2",
     "name": "Banana",
     "photo": "assets/vegs/banana.jpg",
-    "description": "Banana is yellow",
+    "description": "Skip to content ↓ The University of Texas at Austin APRIL 29, 2023 UT NewsNavigationSearchClose NavigationUT News News Opinions Series UT Stories: COVID-19 What Starts Here Campaign Stories UT Research Science & Technology Health & Wellness Arts & Humanities Education & Leadership Business & Economy Campus & Community Policy & Law For Journalists Press Releases Media Contacts Experts Guide Pitch Form Archive UT Austin on Twitter UT Austin on Instagram UT Austin on Facebook UT Austin on LinkedIn Search for content on UT News Search Search Button SCIENCE & TECHNOLOGY Apr 13, 2023 James Webb Space Telescope Images Challenge Theories of How Universe Evolved Two color orange horizontal divider Six images of galaxy candidates Images of six massive galaxy candidates, seen 500-800 million years after the Big Bang. Image credit: NASA/ESA/CSA/I. Labbe. AUSTIN, Texas — The James Webb Space Telescope (JWST) appears to be finding multiple galaxies that grew too massive too soon after the Big Bang, if the standard model of cosmology is to be believed. In a study published in Nature Astronomy, researchers at The University of Texas at Austin find that six of the earliest and most massive galaxy candidates observed by JWST stand to contradict the prevailing thinking in cosmology. That’s because other researchers estimate that each galaxy is seen from between 500 million and 700 million years after the Big Bang, yet measures more than 10 billion times as massive as our sun. One of the galaxies even appears to be more massive than the Milky Way, despite the fact that our own galaxy had billions of more years to form and grow. “If the masses are right, then we are in uncharted territory,” said Mike Boylan-Kolchin, associate professor of astronomy who led the study. “We’ll require something very new about galaxy formation or a modification to cosmology. One of the most extreme possibilities is that the universe was expanding faster shortly after the Big Bang than we predict, which might require new forces and particles.” For galaxies to form so fast at such a size, they also would need to be converting nearly 100% of their available gas into stars. “We typically see a maximum of 10% of gas converted into stars,” Boylan-Kolchin said. “So while 100% conversion of gas into stars is technically right at the edge of what is theoretically possible, it’s really the case that this would require something to be very different from what we expect.” Graph indicating properties of candidate galaxies Based on the standard model of cosmology, astronomers predict what fraction of the atoms in the universe (vertical axis) is contained in galaxies with a certain mass of stars or higher (horizontal axis). In this study, three galaxy candidates (indicated by a single point spread) appear to be using up a much larger fraction of available atoms for stars than expected. Instead of about 10% as is usual (blue arc), the data suggest these galaxy candidates have converted 100% of available atoms into stars. Credit: Mike Boylan-Kolchin. Despite all of the breathless excitement it evokes, JWST has presented astronomers with an unsettling problem. If the masses and time since the Big Bang are confirmed for these galaxies, fundamental changes to the reigning model of cosmology — what’s called the dark energy plus cold dark matter paradigm — could be needed. If there are other, faster ways to form galaxies than the current model allows, or if more matter actually was available for forming stars and galaxies in the early universe than was previously understood, astronomers would need to shift their prevailing thinking. The six galaxies’ ages and masses are initial estimates and will need follow-up confirmation with spectroscopy, a method that splits the light into a spectrum and analyzes the brightness of different colors. Such analysis might suggest that central supermassive black holes, which could heat up the surrounding gas, may be making the galaxies brighter so that they look more massive than they really are. Or perhaps the galaxies are actually seen at a time much later than originally estimated due to dust that causes the color of the light from the galaxy to shift redder, giving the illusion of being more light-years away and, thus, further back in time. The galaxy data comes from the Cosmic Evolution Early Release Science Survey, a multi-institution JWST initiative led by UT Austin astronomer Steven Finkelstein. The initial discovery and estimates of the six galaxy candidates’ masses and redshifts were published in Nature in February by a team led by Swinburne University of Technology in Australia. The research is supported by the National Science Foundation and NASA. Copy link Email Share Link Twitter Share Link Facebook Share Link LinkedIn Share Link Tags: College of Natural Sciences, Research, Science, Technology Copy link Email Share Link Twitter Share Link Facebook Share Link LinkedIn Share Link MEDIA CONTACT Marc Airhart College of Natural Sciences p: 512-232-1066 e: mairhart@austin.utexas.edu The University of Texas at Austin What Starts Here Starts With You campaign slogan graphic Explore Latest Articles Apr 28, 2023 4 Longhorn Alums Awarded Presidential Citation for Service to UT READ MORE 4 LONGHORN ALUMS AWARDED PRESIDENTIAL CITATION FOR SERVICE TO UT Apr 28, 2023 Landmarks Raises $7 Million for Endowment READ MORE LANDMARKS RAISES $7 MILLION FOR ENDOWMENT TEXAS ADVANCED COMPUTING CENTER Apr 27, 2023 ECEP Alliance Adds Seven New States to Broaden Participation in K–16 Computing READ MORE ECEP ALLIANCE ADDS SEVEN NEW STATES TO BROADEN PARTICIPATION IN K–16 COMPUTING The University of Texas at Austin Formal Logo Subscribe to the TEXAS Newsletter UT Austin on Twitter UT Austin on Instagram UT Austin on Facebook UT Austin on LinkedIn UT NEWS HOME FOR JOURNALISTS PRESS RELEASES MEDIA CONTACTS EXPERTS GUIDE NEWS ARCHIVE PITCH FORM UT Austin Home Site Policies Web Privacy Policy Emergency Information Web Accessibility Policy Disability Resources © The University of Texas at Austin 2023",
     "precautions": [
       "Overripe is better"
     ],
     "price": "40 to 120 pesos",
+    "calories": "100",
+    "water": "100",    
+    "protein": "100",    
+    "carbs": "100",    
+    "sugar": "100",    
+    "fiber": "100",    
+    "fat": "100",    
     "stores": [
       "Pandamart url",
       "Alfamart url",
@@ -37,7 +56,12 @@
       "Cancer",
       "Heart Disease",
       "Diabetes"      
-    ]
+    ],
+    "subpics": [
+      "/assets/diseases/cancer.jpg",
+      "/assets/diseases/heart.jpg",
+      "/assets/diseases/diabetes.jpg"
+    ]        
   },
   {
     "id": "3",
@@ -48,6 +72,13 @@
       "Do not fry"
     ],
     "price": "100 to 140 pesos",
+    "calories": "100",
+    "water": "100",    
+    "protein": "100",    
+    "carbs": "100",    
+    "sugar": "100",    
+    "fiber": "100",    
+    "fat": "100",    
     "stores": [
       "Pandamart url",
       "Alfamart url",
@@ -55,6 +86,9 @@
     ],
     "diseases": [
       "Diabetes"
+    ],
+    "subpics": [
+      "/assets/diseases/diabetes.jpg"
     ]
   }  
 ]

@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/models/nutri.dart';
+import 'package:suggest/models/nutri.dart';
 
 
 class NutriService extends GetxService {

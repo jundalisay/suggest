@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
 import 'package:get/get.dart';
-import 'package:suggestion_app/models/disease.dart';
-import 'package:suggestion_app/models/veg.dart';
-import 'package:suggestion_app/services/veg_service.dart';
+import 'package:suggest/models/disease.dart';
+import 'package:suggest/models/veg.dart';
+import 'package:suggest/services/veg_service.dart';
 
 
 class DiseaseController extends GetxController {

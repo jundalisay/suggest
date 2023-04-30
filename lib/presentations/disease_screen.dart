@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/bindings/veg_binder.dart';
-import 'package:suggestion_app/controllers/disease_controller.dart';
-import 'package:suggestion_app/models/veg.dart';
-import 'package:suggestion_app/presentations/veg_screen.dart';
+import 'package:suggest/bindings/veg_binder.dart';
+import 'package:suggest/controllers/disease_controller.dart';
+import 'package:suggest/models/veg.dart';
+import 'package:suggest/presentations/veg_screen.dart';
 
 
 class DiseaseScreen extends GetView<DiseaseController> {

@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/models/disease.dart';
-import 'package:suggestion_app/services/disease_service.dart';
+import 'package:suggest/models/disease.dart';
+import 'package:suggest/services/disease_service.dart';
 
 
 class DiseaseListController extends GetxController {

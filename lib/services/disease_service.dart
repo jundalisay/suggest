@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/models/disease.dart';
+import 'package:suggest/models/disease.dart';
 
 class DiseaseService extends GetxService {
   static DiseaseService get to => Get.find();

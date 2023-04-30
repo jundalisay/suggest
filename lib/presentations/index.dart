@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:suggest/navs/menu.dart';
 
 
 class Index extends StatelessWidget {
@@ -8,12 +9,44 @@ class Index extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[50],
-      body: ListView(padding: const EdgeInsets.all(8), children: <Widget>[
+      backgroundColor: Colors.indigo[50],
+
+      appBar: AppBar(
+        leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              icon: const Icon(
+                Icons.dehaze,
+              ),
+              color: Colors.indigo,
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+            );
+          },
+        ),
+        // leading: IconButton(
+        //   icon: Icon(Icons.arrow_back, color: Colors.black),
+        //   onPressed: () => Navigator.of(context).pop(),
+        // ),         
+        title: Text("Suggest",
+          style: TextStyle(
+            color: Colors.indigo[900],
+            fontSize: 24,
+            fontWeight: FontWeight.bold
+          ),
+        ),
+        backgroundColor: Colors.transparent,
+        elevation: 0
+      ),
+      drawer: Menu(),
+      body: ListView(padding: EdgeInsets.all(8), children: <Widget>[
         Card(
           child: ListTile(
             title: Text('I have..',
-                style: Theme.of(context).textTheme.displayLarge),
+              style: Theme.of(context).textTheme.headline1
+            ),
             contentPadding: const EdgeInsets.all(6.0),
             trailing: const Icon(Icons.keyboard_arrow_right),
             onTap: () {
@@ -23,8 +56,10 @@ class Index extends StatelessWidget {
         ),
         Card(
           child: ListTile(
-            title: Text('I need..',
-                style: Theme.of(context).textTheme.displayLarge),
+            title: Text(
+              'I need..',
+              style: Theme.of(context).textTheme.headline1
+            ),
             contentPadding: const EdgeInsets.all(6.0),
             trailing: const Icon(Icons.keyboard_arrow_right),
             onTap: () {Get.toNamed("/vegs");},
@@ -48,5 +83,7 @@ class Index extends StatelessWidget {
         ),        
       ]),
     );
-  }
+
+  }  
 }
+

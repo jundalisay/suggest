@@ -11,6 +11,8 @@ class Disease {
   List<String>? preventions;
   List<String>? remedies;
 
+
+
   Disease(this.id, this.name, this.photo, this.description, this.symptoms, this.causes, this.dos, this.donts, this.preventions, this.foods, this.remedies);
 
   factory Disease.fromJson(Map<dynamic, dynamic> json) => Disease(

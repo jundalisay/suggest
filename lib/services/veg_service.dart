@@ -3,8 +3,11 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/models/disease.dart';
-import 'package:suggestion_app/models/veg.dart';
+
+import 'package:suggest/models/disease.dart';
+import 'package:suggest/models/veg.dart';
+
+
 
 class VegService extends GetxService {
   static VegService get to => Get.find();

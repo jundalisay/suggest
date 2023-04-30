@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:suggestion_app/bindings/veg_binder.dart';
-import 'package:suggestion_app/controllers/nutri_controller.dart';
-import 'package:suggestion_app/models/veg.dart';
-import 'package:suggestion_app/presentations/veg_screen.dart';
+import 'package:suggest/bindings/veg_binder.dart';
+import 'package:suggest/controllers/nutri_controller.dart';
+import 'package:suggest/models/veg.dart';
+import 'package:suggest/presentations/veg_screen.dart';
 
 
 class NutriScreen extends GetView<NutriController> {

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:suggestion_app/controllers/nutri_controller.dart';
-import 'package:suggestion_app/controllers/nutri_list_controller.dart';
+import 'package:suggest/controllers/nutri_controller.dart';
+import 'package:suggest/controllers/nutri_list_controller.dart';
 
 
 class NutriBinding extends Bindings {

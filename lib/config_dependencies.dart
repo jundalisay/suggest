@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
-import 'package:suggestion_app/services/disease_service.dart';
-import 'package:suggestion_app/services/veg_service.dart';
+import 'package:suggest/services/disease_service.dart';
+import 'package:suggest/services/veg_service.dart';
+
 
 class ConfigDependencies extends GetxService {
   static ConfigDependencies get to => Get.find();

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/controllers/veg_list_controller.dart';
-import 'package:suggestion_app/models/veg.dart';
-import 'package:suggestion_app/presentations/veg_screen.dart';
+import 'package:suggest/controllers/veg_list_controller.dart';
+import 'package:suggest/models/veg.dart';
+import 'package:suggest/presentations/veg_screen.dart';
 
 class Vegs extends StatefulWidget {
   const Vegs({super.key});
@@ -25,7 +25,7 @@ class _VegsState extends State<Vegs> {
     final controller = Get.find<VegListController>();
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Vegs"),
+        title: Text("Vegetables"),
         backgroundColor: Colors.transparent,
         centerTitle: true,
       ),
@@ -34,7 +34,7 @@ class _VegsState extends State<Vegs> {
         child: Column(
           children: [
             Container(
-              margin: const EdgeInsets.symmetric(vertical: 10.0),
+              margin: EdgeInsets.symmetric(vertical: 10.0),
               child: Row(
                 children: [
                   Expanded(

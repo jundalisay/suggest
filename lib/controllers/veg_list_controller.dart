@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:suggestion_app/models/veg.dart';
-import 'package:suggestion_app/services/veg_service.dart';
+import 'package:suggest/models/veg.dart';
+import 'package:suggest/services/veg_service.dart';
 
 
 
