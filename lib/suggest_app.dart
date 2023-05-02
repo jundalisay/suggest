@@ -66,7 +66,7 @@ class SuggestApp extends StatelessWidget {
         ),
         GetPage(
           name: '/vegs',
-          page: () => const Vegs(),
+          page: () => Vegs(),
           binding: VegListBinding(),
           children: [
             GetPage(
@@ -121,7 +121,7 @@ class SuggestApp extends StatelessWidget {
         // h2 a
         headline4: TextStyle(fontSize: 18.0, color: Colors.lightBlue[600]),
         // button white text
-        headline5: const TextStyle(fontSize: 18.0, color: Colors.white),
+        headline5: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.green),
         // search gray
         headline6: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: Colors.red),        
         bodyText1: TextStyle(fontSize: 14.0, color: Colors.black.withOpacity(0.8)),

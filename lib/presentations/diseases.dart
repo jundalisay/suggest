@@ -28,7 +28,7 @@ class _DiseasesState extends State<Diseases> {
     final controller = Get.find<DiseaseListController>();
     
     return Scaffold(
-      backgroundColor: Colors.indigo[50],      
+      backgroundColor: Colors.indigo[50],
       appBar: AppBar(
         title: Text('Diseases',
           style: Theme.of(context).textTheme.headline6
