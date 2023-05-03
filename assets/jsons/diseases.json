@@ -23,7 +23,7 @@
     "preventions": [
       "Alzheimers can be prevented by lowering meat consumption."
     ],
-    "foods": [],
+    "foods": ["Tomato"],
     "remedies": [
       "Soon to come"
     ]
@@ -56,7 +56,7 @@
       "Appendicitis can be prevented by resting after meals, or by not rushing the act of eating as to not stress the digestive system.",
       "Naturopathy: Decreasing meat consumption also helps"
     ],
-    "foods": [],
+    "foods": ["Tomato"],
     "remedies": [
       "Taking asafetida before meals",
       "Coconut meat with betel leaf",
@@ -85,7 +85,7 @@
     "preventions": [
       "Ayurveda: Asthma can be prevented by strengthening the heart chakra."
     ],
-    "foods": [],
+    "foods": ["Tomato"],
     "remedies": [
       "Coming soon"
     ]
@@ -112,7 +112,7 @@
     "preventions": [
       "Naturopathy: Boils can be prevented by lowering meat consumption."
     ],
-    "foods": [],
+    "foods": ["Tomato"],
     "remedies": [
       "Coming soon"
     ]

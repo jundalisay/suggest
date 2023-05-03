@@ -84,14 +84,56 @@ class _DiseasesState extends State<Diseases> {
                   ],
                 ),
               ),
-              Obx(
-                () => controller.filteredDiseases.isEmpty
-                ? const Text("No data"): Column(
-                  children: [
-                    ...controller.filteredDiseases
-                      .map((element) => _information(context, element))
-                      .toList(),
-                  ],
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: LayoutBuilder(
+                  builder: (BuildContext context, BoxConstraints constraints) {
+                    double itemWidth = (constraints.maxWidth - 16 ) / 3.0;
+                    return Obx(
+                      () => Wrap(
+                        spacing: 8.0,
+                        runSpacing: 8.0,
+                        children: controller.filteredDiseases.map((item) {
+                          return SizedBox(
+                            width: itemWidth,
+                            child: Card(
+                              elevation: 4,
+                              // shadowColor: Colors.black,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0),
+                              ), 
+                              child: InkWell(
+                                onTap: () {
+                                  Get.toNamed("/diseases/disease", arguments: item);
+                                },
+                                child: Column(
+                                  children: [
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(8),
+                                      ),
+                                      child: Image.asset(
+                                        item.photo,
+                                        fit: BoxFit.cover,
+                                        // height: 150.0,
+                                      ),
+                                    ),                                    
+                                    SizedBox(height: 8.0),
+                                    Text(
+                                      item.name,
+                                      style: TextStyle(fontSize: 18.0),
+                                    ),
+                                    SizedBox(height: 8.0),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          );
+                        }).toList(),
+                      ),
+                    );
+                  }
                 ),
               ),
             ],
@@ -100,30 +142,49 @@ class _DiseasesState extends State<Diseases> {
       ),
     );
   }
-
-  Widget _information(BuildContext context, Disease disease) {
-    return Card(
-      child: InkWell(
-        onTap: () {
-          Get.toNamed("/diseases/disease", arguments: disease);
-        },
-        child: ListTile(
-          leading: ClipRRect(
-            borderRadius: BorderRadius.circular(5),
-            child: Image.asset(
-              disease.photo,
-              fit: BoxFit.cover,
-              width: 100.0,
-            )
-          ),
-          title: Text(disease.name),
-          subtitle: Text(
-            disease.description,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 3,
-          ),
-        ),
-      ),
-    );
-  }
 }
+
+
+//               Obx(
+//                 () => controller.filteredDiseases.isEmpty
+//                 ? const Text("No data"): Column(
+//                   children: [
+//                     ...controller.filteredDiseases
+//                       .map((element) => _information(context, element))
+//                       .toList(),
+//                   ],
+//                 ),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+
+//   Widget _information(BuildContext context, Disease disease) {
+//     return Card(
+//       child: InkWell(
+//         onTap: () {
+//           Get.toNamed("/diseases/disease", arguments: disease);
+//         },
+//         child: ListTile(
+//           leading: ClipRRect(
+//             borderRadius: BorderRadius.circular(5),
+//             child: Image.asset(
+//               disease.photo,
+//               fit: BoxFit.cover,
+//               width: 100.0,
+//             )
+//           ),
+//           title: Text(disease.name),
+//           subtitle: Text(
+//             disease.description,
+//             overflow: TextOverflow.ellipsis,
+//             maxLines: 3,
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }

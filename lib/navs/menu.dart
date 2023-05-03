@@ -13,7 +13,7 @@ class Menu extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.indigo,
             ),            
-            accountName: Text('SCENAC Suggest is an app for viewing diseases and food'),
+            accountName: Text('View diseases and the proper food'),
             accountEmail: Text('For support please email juan@scenac.org'),
             currentAccountPicture: CircleAvatar(
               backgroundColor: Colors.indigo,
@@ -25,35 +25,36 @@ class Menu extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Home'),
-            onTap: () {
-              // Navigate to home screen.
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () {
-              // Navigate to settings screen.
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.help),
-            title: Text('Help & Feedback'),
-            onTap: () {
-              // Navigate to help screen.
-            },
-          ),
-          Divider(),
-          ListTile(
-            leading: Icon(Icons.exit_to_app),
-            title: Text('Sign Out'),
-            onTap: () {
-              // Sign out user.
-            },
-          ),
+          Text("Localization Menu will be here")
+          // ListTile(
+          //   leading: Icon(Icons.home),
+          //   title: Text('Home'),
+          //   onTap: () {
+          //     // Navigate to home screen.
+          //   },
+          // ),
+          // ListTile(
+          //   leading: Icon(Icons.settings),
+          //   title: Text('Settings'),
+          //   onTap: () {
+          //     // Navigate to settings screen.
+          //   },
+          // ),
+          // ListTile(
+          //   leading: Icon(Icons.help),
+          //   title: Text('Help & Feedback'),
+          //   onTap: () {
+          //     // Navigate to help screen.
+          //   },
+          // ),
+          // Divider(),
+          // ListTile(
+          //   leading: Icon(Icons.exit_to_app),
+          //   title: Text('Sign Out'),
+          //   onTap: () {
+          //     // Sign out user.
+          //   },
+          // ),
         ],
       ),
     );
