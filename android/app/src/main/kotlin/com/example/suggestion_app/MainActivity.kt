@@ -1,4 +1,4 @@
-package com.pantrypoints.suggest
+package org.scenac.suggest
 
 import io.flutter.embedding.android.FlutterActivity
 

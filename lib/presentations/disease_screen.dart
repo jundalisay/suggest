@@ -14,7 +14,7 @@ class DiseaseScreen extends GetView<DiseaseController> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.green),
+          icon: Icon(Icons.arrow_back, color: Colors.red),
           onPressed: () => Navigator.of(context).pop(),
         ),         
         title: Text(controller.disease?.name ?? "",
@@ -23,6 +23,7 @@ class DiseaseScreen extends GetView<DiseaseController> {
         backgroundColor: Colors.transparent,
         elevation: 0
       ),
+      backgroundColor: Colors.indigo[50],      
       body: SafeArea(
         child: SingleChildScrollView( 
           child: Column(
@@ -115,17 +116,37 @@ class DiseaseScreen extends GetView<DiseaseController> {
                 ),
               ),
               Card(
-                margin: EdgeInsets.all(8),
+                margin: EdgeInsets.all(10),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(8),                
+                  padding: EdgeInsets.all(10),                
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: controller.disease!.symptoms?.map((symptom) => Text('- $symptom'))
-                      .toList() ??
-                      [], // Displaying the symptoms of the first disease in the list
+                    children: [
+                      Text(
+                        "Symptoms",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold, 
+                        ),
+                      ),
+                      SizedBox(height: 8),                      
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: controller.disease!.symptoms?.map((symptom) => 
+                          Text(
+                            '- $symptom',
+                            style: TextStyle(
+                              fontSize: 18                   
+                            ),
+                          )
+                        )
+                        .toList() ??
+                        [], // Displaying the symptoms of the first disease in the list
+                      )
+                    ]
                   ),
                 ),
               ),
@@ -143,8 +164,8 @@ class DiseaseScreen extends GetView<DiseaseController> {
                       child: Text(
                         controller.disease!.description,
                         style: TextStyle(
-                          fontSize: 16,
-                        ),                            
+                          fontSize: 18,
+                        ),                       
                       ),
                     ),
                   ),

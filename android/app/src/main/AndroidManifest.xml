@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pantrypoints.suggest">
+    package="org.scenac.suggest">
    <application
         android:label="Suggest"
         android:name="${applicationName}"
