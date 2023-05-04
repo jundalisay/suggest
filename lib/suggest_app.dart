@@ -1,25 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'package:suggest/bindings/carbon_binder.dart';
+import 'package:suggest/bindings/carbon_list_binder.dart';
+import 'package:suggest/presentations/carbon_screen.dart';
+import 'package:suggest/presentations/carbons.dart';
+
 import 'package:suggest/bindings/disease_binder.dart';
 import 'package:suggest/bindings/disease_list_binder.dart';
-
 import 'package:suggest/presentations/disease_screen.dart';
 import 'package:suggest/presentations/diseases.dart';
 
 import 'package:suggest/bindings/veg_binder.dart';
 import 'package:suggest/bindings/veg_list_binder.dart';
-
 import 'package:suggest/presentations/veg_screen.dart';
 import 'package:suggest/presentations/vegs.dart';
 
 import 'package:suggest/presentations/nutri_screen.dart';
 import 'package:suggest/presentations/nutris.dart';
-
+import 'package:suggest/bindings/nutri_binder.dart';
 import 'package:suggest/bindings/nutri_list_binder.dart';
+
 import 'package:suggest/presentations/index.dart';
 
-import 'presentations/index.dart';
 
 
 class SuggestApp extends StatelessWidget {
@@ -32,10 +35,6 @@ class SuggestApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Suggest',
       theme: _themeData(),
-
-
-
-
       // defaultTransition: Transition.upToDown,
       // translations: PantryTranslations(),
       // locale: Locale('en', 'US'),
@@ -48,9 +47,9 @@ class SuggestApp extends StatelessWidget {
           binding: DiseaseListBinding(),
           children: [
             GetPage(
-                name: '/disease',
-                page: () => DiseaseScreen(),
-                binding: DiseaseBinding()
+              name: '/disease',
+              page: () => DiseaseScreen(),
+              binding: DiseaseBinding()
             ),
             GetPage(
                 name: '/vegs',
@@ -89,7 +88,7 @@ class SuggestApp extends StatelessWidget {
         GetPage(
           name: '/nutris',
           page: () => Nutris(),
-          // binding: NutriListBinding(),
+          binding: NutriListBinding(),
           children: [
             GetPage(
               name: '/disease',
@@ -103,6 +102,11 @@ class SuggestApp extends StatelessWidget {
             ),
           ]
         ),        
+        GetPage(
+          name: '/carbons',
+          page: () => Carbons(),
+          binding: CarbonListBinding()
+        ),                
       ],
     );
   }
@@ -117,7 +121,7 @@ class SuggestApp extends StatelessWidget {
         // h1
         headline2: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
         // h2
-        headline3: const TextStyle(fontSize: 20.0),
+        headline3: TextStyle(fontSize: 20.0),
         // h2 a
         headline4: TextStyle(fontSize: 18.0, color: Colors.lightBlue[600]),
         // button white text

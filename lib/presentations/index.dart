@@ -12,10 +12,10 @@ class Index extends StatelessWidget {
     const {'name': 'Diseases', 'photo': 'assets/diseases/cancer.jpg', 'route': '/diseases/'},
     const {'name': 'Food-Cures', 'photo': 'assets/vegs/tomato.jpg', 'route': '/vegs/'},
     const {'name': 'Nutrition', 'photo': 'assets/vegs/ampalaya.jpg', 'route': '/nutris/'},    
-    const {'name': 'Sellers', 'photo': 'assets/seller.jpg', 'route': '/vegs/'},
-    const {'name': 'Practices', 'photo': 'assets/yoga.jpg', 'route': '/vegs/'},
-    const {'name': 'Carbon Reference', 'photo': 'assets/bicycle.jpg', 'route': '/vegs/'},    
-    const {'name': 'Planetary Health Diet', 'photo': 'assets/phd.png', 'route': '/vegs/'},        
+    const {'name': 'Sellers', 'photo': 'assets/seller.jpg', 'route': '/sellers/'},
+    const {'name': 'Practices', 'photo': 'assets/yoga.jpg', 'route': '/practices/'},
+    const {'name': 'Carbon Reference', 'photo': 'assets/bicycle.jpg', 'route': '/carbons/'},    
+    const {'name': 'Planetary Health Diet', 'photo': 'assets/phd.png', 'route': '/phds/'},        
   ];
 
   // final List<Item> items = [

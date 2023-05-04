@@ -1,7 +1,11 @@
+import 'dart:convert';
+
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:suggest/models/nutri.dart';
 import 'package:suggest/services/nutri_service.dart';
+
 
 
 class NutriListController extends GetxController {

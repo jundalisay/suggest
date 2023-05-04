@@ -20,8 +20,7 @@ class VegListController extends GetxController {
 
   Future<void> _initialize() async {
     try {
-      vegs.value =
-          VegService.to.vegs;
+      vegs.value = VegService.to.vegs;
       filteredVegs.value = vegs;
     } catch (e) {
       debugPrint("VegController._initialize: $e");

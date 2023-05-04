@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:suggest/models/disease.dart';
 
+
 class DiseaseService extends GetxService {
   static DiseaseService get to => Get.find();
 

@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggest/controllers/veg_list_controller.dart';
-import 'package:suggest/models/veg.dart';
-import 'package:suggest/presentations/veg_screen.dart';
+import 'package:suggest/controllers/carbon_list_controller.dart';
+import 'package:suggest/models/carbon.dart';
+import 'package:suggest/presentations/carbon_screen.dart';
 
 
 
-class Vegs extends StatelessWidget {
-  Vegs({Key? key}) : super(key: key);
+class Carbons extends StatelessWidget {
+  Carbons({Key? key}) : super(key: key);
 
   final TextEditingController _textEditingController = TextEditingController();
-  final controller = Get.find<VegListController>();
+  final controller = Get.find<CarbonListController>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Vegetables',
+        title: Text('Carbon Reference',
           style: Theme.of(context).textTheme.headline5
         ),
         centerTitle: true,    
@@ -67,7 +67,7 @@ class Vegs extends StatelessWidget {
                       () => Wrap(
                         spacing: 8.0,
                         runSpacing: 8.0,
-                        children: controller.filteredVegs.map((item) {
+                        children: controller.filteredCarbons.map((item) {
                           return SizedBox(
                             width: itemWidth,
                             child: Card(
@@ -78,7 +78,7 @@ class Vegs extends StatelessWidget {
                               ), 
                               child: InkWell(
                                 onTap: () {
-                                  Get.toNamed("/vegs/veg", arguments: item);
+                                  Get.toNamed("/carbons/carbon", arguments: item);
                                 },
                                 child: Column(
                                   children: [
@@ -127,14 +127,14 @@ class Vegs extends StatelessWidget {
 
 //   Column(
 //                       children: [
-//                         ...controller.filteredVegs
+//                         ...controller.filteredCarbons
 //                             .map((element) => _information(context, element))
 //                             .toList(),
 //                       ],
 //                     ),
 //             ),
 
-// Obx(() => controller.filteredVegs.isEmpty? const Text("No data"): 
+// Obx(() => controller.filteredCarbons.isEmpty? const Text("No data"): 
 //                       children: items.map((item) {
 //                         return SizedBox(
 //                           width: itemWidth,
@@ -162,14 +162,14 @@ class Vegs extends StatelessWidget {
 
 
 
-// class Vegs extends StatefulWidget {
-//   const Vegs({super.key});
+// class Carbons extends StatefulWidget {
+//   const Carbons({super.key});
 
 //   @override
-//   State<Vegs> createState() => _VegsState();
+//   State<Carbons> createState() => _CarbonsState();
 // }
 
-// class _VegsState extends State<Vegs> {
+// class _CarbonsState extends State<Carbons> {
 //   final TextEditingController _textEditingController = TextEditingController();
 
 //   @override
@@ -180,7 +180,7 @@ class Vegs extends StatelessWidget {
 
 //   @override
 //   Widget build(BuildContext context) {
-//     final controller = Get.find<VegListController>();
+//     final controller = Get.find<CarbonListController>();
 //     return Scaffold(
 
 //       body: SingleChildScrollView(
@@ -210,11 +210,11 @@ class Vegs extends StatelessWidget {
 //               ),
 //             ),
 //             Obx(
-//               () => controller.filteredVegs.isEmpty
+//               () => controller.filteredCarbons.isEmpty
 //                   ? const Text("No data")
 //                   : Column(
 //                       children: [
-//                         ...controller.filteredVegs
+//                         ...controller.filteredCarbons
 //                             .map((element) => _information(context, element))
 //                             .toList(),
 //                       ],
@@ -226,7 +226,7 @@ class Vegs extends StatelessWidget {
 //     );
 //   }
 
-//   Widget _information(BuildContext context, Veg veg) {
+//   Widget _information(BuildContext context, Carbon carbon) {
 //     return Card(
 //       margin: EdgeInsets.symmetric(horizontal: 8.0, vertical: 2.0),
 //       shape: RoundedRectangleBorder(
@@ -236,7 +236,7 @@ class Vegs extends StatelessWidget {
 //       shadowColor: Colors.grey,
 //       child: InkWell(
 //         onTap: () {
-//           Get.toNamed("/vegs/veg", arguments: veg);
+//           Get.toNamed("/carbons/carbon", arguments: carbon);
 //         },
 //         child: Row(
 //           crossAxisAlignment: CrossAxisAlignment.start,
@@ -249,7 +249,7 @@ class Vegs extends StatelessWidget {
 //                   bottomLeft: Radius.circular(10),
 //                 ),
 //                 child: Image.asset(
-//                   veg.photo,
+//                   carbon.photo,
 //                   fit: BoxFit.cover,
 //                 ),
 //               ),
@@ -262,7 +262,7 @@ class Vegs extends StatelessWidget {
 //                   crossAxisAlignment: CrossAxisAlignment.start,
 //                   children: [
 //                     Text(
-//                       veg.name,
+//                       carbon.name,
 //                       style: TextStyle(
 //                         fontWeight: FontWeight.bold,
 //                         fontSize: 16,
@@ -270,7 +270,7 @@ class Vegs extends StatelessWidget {
 //                     ),
 //                     SizedBox(height: 8),
 //                     Text(
-//                       veg.description,
+//                       carbon.description,
 //                       style: TextStyle(
 //                         fontSize: 12,
 //                       ),

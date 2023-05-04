@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Pork",
+    "photo": "assets/junks/lechon.jpg",
+    "description": "Pork is packed with fats", 
+    "footprint": "2.4kg",     
+    "diseases": [
+      "Cancer",
+      "Heart Disease",
+      "Eyestrain" 
+    ],
+    "alternatives": [
+      "Tofu",
+      "Tempeh",
+      "Jackfruit",
+      "Beans" 
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Beef",
+    "photo": "assets/junks/lechon.jpg",
+    "description": "Beef is packed with fats", 
+    "footprint": "15.5kg",         
+    "diseases": [
+      "Cancer",
+      "Heart Disease",
+      "Eyestrain" 
+    ],
+    "alternatives": [
+      "Tofu",
+      "Tempeh",
+      "Jackfruit",
+      "Beans" 
+    ]
+  },  
+  {
+    "id": "3",
+    "name": "Chicken",
+    "photo": "assets/junks/chicken.jpg",
+    "description": "Chicken is packed with fats", 
+    "footprint": "1.82kg",         
+    "diseases": [
+      "Cancer",
+      "Heart Disease",
+      "Eyestrain" 
+    ],
+    "alternatives": [
+      "Tofu",
+      "Tempeh",
+      "Jackfruit",
+      "Beans" 
+    ]
+  }
+]
