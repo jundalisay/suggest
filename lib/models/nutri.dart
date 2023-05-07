@@ -3,19 +3,21 @@ class Nutri {
   String name;
   String photo;
   String description;
-  String price;  
-  List<String>? diseases;
-  List<String>? stores;
+  List<String>? sources;
+  List<String>? functions;
+  List<String>? deficiencies;
 
-  Nutri(this.id, this.name, this.photo, this.description, this.price, this.diseases, this.stores);
+  Nutri(this.id, this.name, this.photo, this.description, 
+    this.sources, this.functions, this.deficiencies
+  );
 
   factory Nutri.fromJson(Map<dynamic, dynamic> json) => Nutri(
-      json["id"],
-      json["name"],
-      json["photo"],
-      json["description"],
-     json["price"],      
-      (json["diseases"] as List).map((e) => e.toString()).toList(),
-      (json["stores"] as List).map((e) => e.toString()).toList()
+    json["id"],
+    json["name"],
+    json["photo"],
+    json["description"],
+    (json["sources"] as List).map((e) => e.toString()).toList(),
+    (json["functions"] as List).map((e) => e.toString()).toList(),
+    (json["deficiencies"] as List).map((e) => e.toString()).toList()      
   );
 }

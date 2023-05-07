@@ -13,7 +13,7 @@ class NutriService extends GetxService {
 
   Future<NutriService> init() async {
     String jsonString =
-        await rootBundle.loadString("assets/jsons/nutris.json");
+        await rootBundle.loadString("assets/jsons/nutrients.json");
 
     final jsonResponse = jsonDecode(jsonString) as List;
     try {

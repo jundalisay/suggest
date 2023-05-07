@@ -151,9 +151,9 @@
   },
   {
     "id": "6",
-    "name": "Eyestrain",
+    "name": "Poor Eyesight",
     "photo": "assets/diseases/eyestrain.jpg",
-    "description": "Eyestrain affects many people",
+    "description": "Poor Eyesight affects many people",
     "symptoms": [
       "Blurry vision",
       "Dry eyes"

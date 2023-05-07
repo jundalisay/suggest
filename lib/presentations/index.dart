@@ -10,7 +10,7 @@ class Index extends StatelessWidget {
 
   final List<Map<String, dynamic>> items = const[
     const {'name': 'Diseases', 'photo': 'assets/diseases/cancer.jpg', 'route': '/diseases/'},
-    const {'name': 'Food-Cures', 'photo': 'assets/vegs/tomato.jpg', 'route': '/vegs/'},
+    const {'name': 'Healing Food', 'photo': 'assets/vegs/tomato.jpg', 'route': '/vegs/'},
     const {'name': 'Nutrition', 'photo': 'assets/vegs/ampalaya.jpg', 'route': '/nutris/'},    
     const {'name': 'Sellers', 'photo': 'assets/seller.jpg', 'route': '/sellers/'},
     const {'name': 'Practices', 'photo': 'assets/yoga.jpg', 'route': '/practices/'},

@@ -91,6 +91,11 @@ class SuggestApp extends StatelessWidget {
           binding: NutriListBinding(),
           children: [
             GetPage(
+              name: '/nutri',
+              page: () => NutriScreen(),
+              binding: NutriBinding()
+            ),          
+            GetPage(
               name: '/disease',
               page: () => DiseaseScreen(),
               binding: DiseaseBinding(),
@@ -105,7 +110,14 @@ class SuggestApp extends StatelessWidget {
         GetPage(
           name: '/carbons',
           page: () => Carbons(),
-          binding: CarbonListBinding()
+          binding: CarbonListBinding(),
+          children: [
+            GetPage(
+              name: '/carbon',
+              page: () => CarbonScreen(),
+              binding: CarbonBinding()
+            ),
+          ],
         ),                
       ],
     );
