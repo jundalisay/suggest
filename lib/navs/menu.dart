@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:suggest/locale/locale.dart';
 
 
 class Menu extends StatelessWidget {
+
+  final List locale = [
+    {'name': 'ENGLISH', 'locale': const Locale('en', 'US')},
+    {'name': 'हिंदी', 'locale': const Locale('hi', 'IN')},
+    {'name': 'Arabic', 'locale': const Locale('ar', 'SA')},
+  ];
+
+  updateLanguage(Locale locale) {
+    Get.back();
+    Get.updateLocale(locale);
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +39,28 @@ class Menu extends StatelessWidget {
               ),
             ),
           ),
+          // ExpansionTile(
+          //   leading: Icon(Icons.home),        
+          //   title: Text("Language"),
+          //   children: [
+          //     ListTile(
+          //       leading: Icon(Icons.home),
+          //       title: Text("English"),
+          //       onTap: () {
+          //         Navigator.pop(context);
+          //         Get.updateLocale(Locale('en', 'EN'));
+          //       },                  
+          //     ),           
+          //     ListTile(
+          //       leading: Icon(Icons.home),
+          //       title: Text("Tagalog"),
+          //       onTap: () {
+          //         Navigator.pop(context);                  
+          //         Get.updateLocale(Locale('tl', 'TL'));
+          //       },                  
+          //     ),
+          //   ],
+          // ),                                                                 
           Text("Localization Menu will be here")
           // ListTile(
           //   leading: Icon(Icons.home),

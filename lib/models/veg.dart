@@ -3,7 +3,9 @@ class Veg {
   String name;
   String photo;
   String description;
-  String price;  
+  String price;
+
+  double? footprint;
 
   String calories;
   String water;
@@ -18,6 +20,7 @@ class Veg {
   List<String>? subpics;  
 
   Veg(this.id, this.name, this.photo, this.description, this.price, 
+    this.footprint,
     this.calories, this.water, this.protein, this.carbs, this.sugar,
     this.fiber, this.fat,
     this.diseases, this.stores, this.subpics
@@ -28,8 +31,8 @@ class Veg {
       json["name"],
       json["photo"],
       json["description"],
-      json["price"],      
-
+      json["price"],  
+      json["footprint"],
       json["calories"],      
       json["water"],      
       json["protein"],      

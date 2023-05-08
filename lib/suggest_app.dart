@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'package:suggest/locale/locale.dart';
+// import 'locale/locale.dart';
+
 import 'package:suggest/bindings/carbon_binder.dart';
 import 'package:suggest/bindings/carbon_list_binder.dart';
 import 'package:suggest/presentations/carbon_screen.dart';
@@ -35,6 +38,8 @@ class SuggestApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Suggest',
       theme: _themeData(),
+      translations: LocaleString(),
+      locale: const Locale('en'),
       // defaultTransition: Transition.upToDown,
       // translations: PantryTranslations(),
       // locale: Locale('en', 'US'),
