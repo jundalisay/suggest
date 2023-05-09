@@ -1,7 +1,4 @@
-# suggestion
-
-Sources:
-https://ourworldindata.org/grapher/food-emissions-supply-chain
+# Suggest App
 
 
 SCENAC Suggest is a food and disease reference that shows the foods that work well against diseases.
@@ -20,4 +17,7 @@ Tell Flutter that a datatype is nullable by adding `?`
 ```
 String? name;
 ```
+
+Data Sources:
+https://ourworldindata.org/grapher/food-emissions-supply-chain
 
