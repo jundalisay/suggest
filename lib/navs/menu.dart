@@ -7,8 +7,8 @@ class Menu extends StatelessWidget {
 
   final List locale = [
     {'name': 'ENGLISH', 'locale': const Locale('en', 'US')},
-    {'name': 'हिंदी', 'locale': const Locale('hi', 'IN')},
-    {'name': 'Arabic', 'locale': const Locale('ar', 'SA')},
+    {'name': 'हिंदी', 'locale': const Locale('tl', 'TL')},
+    {'name': 'Arabic', 'locale': const Locale('cb', 'CB')},
   ];
 
   updateLanguage(Locale locale) {
@@ -39,28 +39,28 @@ class Menu extends StatelessWidget {
               ),
             ),
           ),
-          // ExpansionTile(
-          //   leading: Icon(Icons.home),        
-          //   title: Text("Language"),
-          //   children: [
-          //     ListTile(
-          //       leading: Icon(Icons.home),
-          //       title: Text("English"),
-          //       onTap: () {
-          //         Navigator.pop(context);
-          //         Get.updateLocale(Locale('en', 'EN'));
-          //       },                  
-          //     ),           
-          //     ListTile(
-          //       leading: Icon(Icons.home),
-          //       title: Text("Tagalog"),
-          //       onTap: () {
-          //         Navigator.pop(context);                  
-          //         Get.updateLocale(Locale('tl', 'TL'));
-          //       },                  
-          //     ),
-          //   ],
-          // ),                                                                 
+          ExpansionTile(
+            leading: Icon(Icons.home),        
+            title: Text("Language"),
+            children: [
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text("English"),
+                onTap: () {
+                  Navigator.pop(context);
+                  Get.updateLocale(Locale('en', 'EN'));
+                },                  
+              ),           
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text("Tagalog"),
+                onTap: () {
+                  Navigator.pop(context);                  
+                  Get.updateLocale(Locale('tl', 'TL'));
+                },                  
+              ),
+            ],
+          ),                                                                 
           Text("Localization Menu will be here")
           // ListTile(
           //   leading: Icon(Icons.home),

@@ -8,21 +8,14 @@ import 'package:suggest/navs/menu.dart';
 class Index extends StatelessWidget {
   const Index({super.key});
 
-  final List<Map<String, dynamic>> items = const[
-    const {'name': 'Diseases', 'photo': 'assets/diseases/cancer.jpg', 'route': '/diseases/'},
-    const {'name': 'Healing Food', 'photo': 'assets/vegs/tomato.jpg', 'route': '/vegs/'},
-    const {'name': 'Nutrition', 'photo': 'assets/vegs/ampalaya.jpg', 'route': '/nutris/'},    
-    const {'name': 'Sellers', 'photo': 'assets/seller.jpg', 'route': '/sellers/'},
-    const {'name': 'Practices', 'photo': 'assets/yoga.jpg', 'route': '/practices/'},
-    const {'name': 'Carbon Reference', 'photo': 'assets/bicycle.jpg', 'route': '/carbons/'},    
-    const {'name': 'Planetary Health Diet', 'photo': 'assets/phd.png', 'route': '/phds/'},        
-  ];
-
-  // final List<Item> items = [
-  //   Item(name: '', photo: ''),
-  //   Item(name: 'Food Cures', photo: '/assets/vegs/tomato.jpg'),
-  //   Item(name: 'Nutrients', photo: '/assets/nutritions/vitc.jpg'),
-  //   Item(name: 'Sellers', photo: '/assets/woman.jpg')
+  // final List<Map<String, dynamic>> items = const[
+  //   const {'name': 'Diseases', 'photo': 'assets/diseases/cancer.jpg', 'route': '/diseases/'},
+  //   const {'name': 'Healing Food', 'photo': 'assets/vegs/tomato.jpg', 'route': '/vegs/'},
+  //   const {'name': 'Nutrition', 'photo': 'assets/vegs/ampalaya.jpg', 'route': '/nutris/'},    
+  //   const {'name': 'Sellers', 'photo': 'assets/seller.jpg', 'route': '/sellers/'},
+  //   const {'name': 'Practices', 'photo': 'assets/yoga.jpg', 'route': '/practices/'},
+  //   const {'name': 'Carbon Reference', 'photo': 'assets/bicycle.jpg', 'route': '/carbons/'},    
+  //   const {'name': 'Planetary Health Diet', 'photo': 'assets/phd.png', 'route': '/phds/'},        
   // ];
 
   @override
@@ -60,39 +53,188 @@ class Index extends StatelessWidget {
         elevation: 0
       ),
       drawer: Menu(),
-      body: GridView.builder(
-        itemCount: items.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          childAspectRatio: 1,
-        ),
-        itemBuilder: (BuildContext context, int index) {
-          return Card(
+      body: GridView.count(
+        crossAxisCount: 2, // 2 cards per row
+        children: [
+          Card(
             margin: EdgeInsets.all(8.0),
             child: InkWell(
               onTap: () {
-                Get.toNamed(items[index]['route']);
+                Get.toNamed('/diseases');
               },
               child: Column(
                 children: <Widget>[
-                  Image.asset(items[index]['photo']),
+                  Image.asset("assets/diseases/cancer.jpg"),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 12.0),
                     child: Text(
-                      items[index]['name'],
-                      style: TextStyle(
-                        color: Colors.indigo[900],
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold
-                      ),
+                      'Diseases'.tr,
+                      style: Theme.of(context).textTheme.headline6,
                     ),
                   ),
                 ],
               ),
             ),
-          );
-        },
+          ),
+          Card(
+            margin: EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
+                Get.toNamed('/vegs');
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/vegs/ampalaya.jpg"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Text('Healing Foods'.tr,
+                      style: Theme.of(context).textTheme.headline5,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Card(
+            margin: EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
+                Get.toNamed('/nutris');
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/vegs/tomato.jpg"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Text(
+                      'Nutrients'.tr,
+                      style: Theme.of(context).textTheme.headline5,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),          
+          Card(
+            margin: EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
+                Get.toNamed('/diseases');
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/yoga.jpg"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Text(
+                      'Healthy Practices'.tr,
+                      style: Theme.of(context).textTheme.headline2,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),          
+          Card(
+            margin: EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
+                Get.toNamed('/carbons');
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/phd.png"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Text(
+                      'Planetary Health Diet',
+                      style: Theme.of(context).textTheme.headline2,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Card(
+            margin: EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
+                Get.toNamed('/carbons');
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/unhealthy/lechon.jpg"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Text(
+                      'Unhealthy Foods'.tr,
+                      style: Theme.of(context).textTheme.headline6,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Card(
+            margin: EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
+                Get.toNamed('/carbons');
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/bicycle.jpg"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Text(
+                      'Carbon Reference'.tr,
+                      style: Theme.of(context).textTheme.headline4,
+                    ),
+                  ),
+                ],
+              ),
+            ),            
+          ),          
+        ],
       ),
+    );
+  }  
+}
+
+
+      // body: GridView.builder(
+      //   itemCount: items.length,
+      //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      //     crossAxisCount: 2,
+      //     childAspectRatio: 1,
+      //   ),
+      //   itemBuilder: (BuildContext context, int index) {
+      //     return Card(
+      //       margin: EdgeInsets.all(8.0),
+      //       child: InkWell(
+      //         onTap: () {
+      //           Get.toNamed(items[index]['route']);
+      //         },
+      //         child: Column(
+      //           children: <Widget>[
+      //             Image.asset(items[index]['photo']),
+      //             Padding(
+      //               padding: EdgeInsets.symmetric(horizontal: 12.0),
+      //               child: Text(
+      //                 items[index]['name'],
+      //                 style: TextStyle(
+      //                   color: Colors.indigo[900],
+      //                   fontSize: 24,
+      //                   fontWeight: FontWeight.bold
+      //                 ),
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //     );
+      //   },
+      // ),
       // ListView(padding: EdgeInsets.all(8), children: <Widget>[
       //   Card(
       //     child: ListTile(
@@ -151,8 +293,3 @@ class Index extends StatelessWidget {
       //     ),
       //   ),                
       // ]),
-    );
-
-  }  
-}
-

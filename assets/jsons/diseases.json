@@ -151,6 +151,34 @@
   },
   {
     "id": "6",
+    "name": "Constipation",
+    "photo": "assets/diseases/obesity.jpg",
+    "description": "Constipation is difficulty in bowel movements",
+    "symptoms": [
+      "difficulty in bowel movements"
+    ],
+    "causes": [
+      "Lack of Fiber"
+    ],
+    "dos": [
+      "Relax",
+      "Drink lots of water"
+    ],
+    "donts": [
+      ""
+    ],
+    "preventions": [
+      "Naturopathy: Green veg."
+    ],
+    "foods": [
+      "Apples"
+    ],
+    "remedies": [
+      "Fiber"
+    ]
+  },  
+  {
+    "id": "7",
     "name": "Poor Eyesight",
     "photo": "assets/diseases/eyestrain.jpg",
     "description": "Poor Eyesight affects many people",
@@ -181,7 +209,7 @@
     ]
   },
   {
-    "id": "7",
+    "id": "8",
     "name": "Heart Disease",
     "photo": "assets/diseases/obesity.jpg",
     "description": "Heart Disease is pain in the heart.",
@@ -209,7 +237,7 @@
     ]
   },
   {
-    "id": "8",
+    "id": "9",
     "name": "Diabetes",
     "photo": "assets/diseases/diabetes.jpg",
     "description": "Diabetes has various types",

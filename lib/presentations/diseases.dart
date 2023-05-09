@@ -30,7 +30,7 @@ class _DiseasesState extends State<Diseases> {
     return Scaffold(
       backgroundColor: Colors.indigo[50],
       appBar: AppBar(
-        title: Text('Diseases',
+        title: Text('Diseases'.tr,
           style: Theme.of(context).textTheme.headline6
         ),
         centerTitle: true,    

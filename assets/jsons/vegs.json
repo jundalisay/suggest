@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Apples",
-    "photo": "assets/vegs/tomato.jpg",
+    "photo": "assets/vegs/apples.jpg",
     "description": "Good for digestion: Apples are a rich source of dietary fiber, which helps to promote healthy digestion and prevent constipation. The fiber in apples can also help to lower cholesterol levels and reduce the risk of heart disease. Boost immunity: Apples contain antioxidants, such as flavonoids and vitamin C, which can help to boost the immune system and protect the body against infections and diseases. Promote heart health: The fiber, antioxidants, and other nutrients in apples can help to lower blood pressure, reduce the risk of heart disease, and promote overall cardiovascular health. Aid weight loss: Apples are low in calories and high in fiber, which can help to promote weight loss by making you feel full and reducing your overall calorie intake. Reduce the risk of cancer: The antioxidants in apples can help to protect against cellular damage and reduce the risk of certain types of cancer, such as lung, colon, and breast cancer. Improve brain function: Apples contain nutrients that can help to improve brain function and reduce the risk of age-related cognitive decline, such as Alzheimer's disease. Improve lung function: Studies have shown that eating apples can help to improve lung function and reduce the risk of respiratory diseases, such as asthma. ",
     "precautions": [
       "Remove the skin"
@@ -22,9 +22,7 @@
       "Robinsons"
     ],
     "diseases": [
-      "Cancer",
-      "Heart Disease",
-      "Eyestrain" 
+      "Constipation",
     ],
     "subpics": [
       "/assets/diseases/cancer.jpg",
@@ -95,7 +93,7 @@
     ]
   },
   {
-    "id": "100",
+    "id": "4",
     "name": "Tomato",
     "photo": "assets/vegs/tomato.jpg",
     "description": "Tomatoes are packed with essential nutrients, such as vitamins C and K, potassium, folate, and antioxidants. They are also low in calories and high in fiber, making them an excellent food choice for weight management. Tomatoes contain lycopene, a powerful antioxidant that helps to reduce the risk of heart disease by lowering LDL (bad) cholesterol levels and reducing inflammation. Studies have shown that regular consumption of tomatoes may help to prevent certain types of cancer, such as prostate, breast, and lung cancer. This is due to the presence of lycopene and other antioxidants in tomatoes. The high content of vitamin C and other antioxidants in tomatoes make them beneficial for maintaining healthy skin. They can help to protect the skin from sun damage, prevent wrinkles, and promote collagen production. Tomatoes are a rich source of lutein and zeaxanthin, two nutrients that are essential for maintaining good vision and preventing age-related macular degeneration. Tomatoes are an excellent source of fiber, which is essential for maintaining a healthy digestive system. They can help to prevent constipation, reduce the risk of colon cancer, and promote regular bowel movements.",
@@ -126,5 +124,5 @@
       "/assets/diseases/heart.jpg",
       "/assets/diseases/eyestrain.jpg"
     ] 
-  },  
+  }
 ]

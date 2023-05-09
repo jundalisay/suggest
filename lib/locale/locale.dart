@@ -5,22 +5,28 @@ class LocaleString extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'en': {
-          'hello': 'Hello',
-          'hint_text': 'You have pushed the button this many times',
-          'change_language': 'Choose Your Language',
-          'increment': 'Increment'
+          'Carbon Reference': 'Carbon Reference',
+          'Diseases': 'Diseases',
+          'Healing Foods': 'Healing Foods',
+          'Healthy Pracctices': 'Healthy Pracctices',          
+          'Nutrients': 'Nutrients',
+          'Unhealthy Foods': 'Unhealthy Foods'
         },
         'tl': {
-          'hello': 'Kumusta?',
-          'hint_text': 'आपने कई बार यह बटन दबाया है',
-          'change_language': 'अपनी भाषा चुनिए',
-          'increment': 'वृद्धि'
+          'Carbon Reference': 'Mga Aktibidad na May Paglabas ng Carbon',
+          'Diseases': 'Mga Sakit',
+          'Healing Foods': 'Pagkaing Nagpapagaling',
+          'Healthy Pracctices': 'Gawaing Pangkalusugan',          
+          'Nutrients': 'Nutrisyon',
+          'Unhealthy Foods': 'Mga Hindi Masustansyang Pagkain'
         },
         'cb': {
-          'hello': 'Maayo',
-          'hint_text': 'لقد ضغطت على الزر عدة مرات',
-          'change_language': 'اختر لغتك',
-          'increment': 'زيادة راتب'
+          'Carbon Reference': 'Mga Aktibidad na May Paglabas ng Carbon',
+          'Diseases': 'Mga Pagkaon sa Pag-ayo',
+          'Healing Foods': 'Pagkaing Nagpapagaling',
+          'Healthy Pracctices': 'Gawaing Pangkalusugan',          
+          'Nutrients': 'Nutrisyon',
+          'Unhealthy Foods': 'Dili Maayo na Pagkaon'
         }
       };
 }

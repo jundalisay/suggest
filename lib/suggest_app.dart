@@ -39,7 +39,7 @@ class SuggestApp extends StatelessWidget {
       title: 'Suggest',
       theme: _themeData(),
       translations: LocaleString(),
-      locale: const Locale('en'),
+      locale: const Locale('en', 'US'),
       // defaultTransition: Transition.upToDown,
       // translations: PantryTranslations(),
       // locale: Locale('en', 'US'),
@@ -134,16 +134,11 @@ class SuggestApp extends StatelessWidget {
       accentColor: Colors.white,
       fontFamily: 'Quicksand',
       textTheme: TextTheme(
-        headline1: TextStyle(fontSize: 24.0, color: Colors.indigo[900]),
-        // h1
-        headline2: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-        // h2
-        headline3: TextStyle(fontSize: 20.0),
-        // h2 a
-        headline4: TextStyle(fontSize: 18.0, color: Colors.lightBlue[600]),
-        // button white text
+        headline1: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: Colors.indigo[900]),
+        headline2: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.teal[800]),
+        headline3: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.pink),
+        headline4: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.blue),
         headline5: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.green),
-        // search gray
         headline6: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: Colors.red),        
         bodyText1: TextStyle(fontSize: 14.0, color: Colors.black.withOpacity(0.8)),
         bodyText2: TextStyle(fontSize: 12.0, color: Colors.black.withOpacity(0.8)),
