@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "Pagbibisikleta",
+    "photo": "assets/bicycle.jpg",
+    "description": "Ang Pagbibisikleta ay nagpapalabas ng kaunting CO2 sa hanging",
+    "impact": "100 grams",
+    "examples": [
+      "Mountain buke",
+      "BMX"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Yoga Class",
+    "photo": "assets/yoga.jpg",
+    "description": "Ang Yoga Class ay kaunti lang ang labas na CO2",
+    "impact": "100 grams",
+    "examples": [
+      "Hatha Yoga",
+      "Ashtanga Yoga"
+    ]
+  }  
+]

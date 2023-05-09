@@ -12,24 +12,13 @@
   },
   {
     "id": "2",
-    "name": "BCycling",
-    "photo": "assets/bicycle.jpg",
-    "description": "Riding bicycle",
+    "name": "Yoga Classes",
+    "photo": "assets/yoga.jpg",
+    "description": "Yoga Classes use little CO2",
     "impact": "100 grams",
     "examples": [
-      "Mouuntain buke",
-      "BMX"
-    ]
-  },
-  {
-    "id": "3",
-    "name": "CCycling",
-    "photo": "assets/bicycle.jpg",
-    "description": "Riding bicycle",
-    "impact": "100 grams",
-    "examples": [
-      "Mouuntain buke",
-      "BMX"
+      "Ashtanga Yoga",
+      "Hatha Yoga"
     ]
   }    
 ]

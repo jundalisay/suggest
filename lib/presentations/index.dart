@@ -80,6 +80,26 @@ class Index extends StatelessWidget {
             margin: EdgeInsets.all(8.0),
             child: InkWell(
               onTap: () {
+                Get.toNamed('/carbons');
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/unhealthy/lechon.jpg"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Text(
+                      'Unhealthy Foods'.tr,
+                      style: Theme.of(context).textTheme.headline6,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),          
+          Card(
+            margin: EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
                 Get.toNamed('/vegs');
               },
               child: Column(
@@ -149,26 +169,6 @@ class Index extends StatelessWidget {
                     child: Text(
                       'Planetary Health Diet',
                       style: Theme.of(context).textTheme.headline2,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Card(
-            margin: EdgeInsets.all(8.0),
-            child: InkWell(
-              onTap: () {
-                Get.toNamed('/carbons');
-              },
-              child: Column(
-                children: <Widget>[
-                  Image.asset("assets/unhealthy/lechon.jpg"),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 12.0),
-                    child: Text(
-                      'Unhealthy Foods'.tr,
-                      style: Theme.of(context).textTheme.headline6,
                     ),
                   ),
                 ],

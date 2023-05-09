@@ -39,29 +39,45 @@ class Menu extends StatelessWidget {
               ),
             ),
           ),
-          ExpansionTile(
-            leading: Icon(Icons.home),        
-            title: Text("Language"),
-            children: [
-              ListTile(
-                leading: Icon(Icons.home),
-                title: Text("English"),
-                onTap: () {
-                  Navigator.pop(context);
-                  Get.updateLocale(Locale('en', 'EN'));
-                },                  
-              ),           
-              ListTile(
-                leading: Icon(Icons.home),
-                title: Text("Tagalog"),
-                onTap: () {
-                  Navigator.pop(context);                  
-                  Get.updateLocale(Locale('tl', 'TL'));
-                },                  
-              ),
-            ],
-          ),                                                                 
-          Text("Localization Menu will be here")
+          ListTile(
+            leading: Image.asset(
+              "assets/us.png",
+              height: 30,
+              width: 40,
+              fit: BoxFit.fitWidth,              
+            ),
+            title: Text("English"),
+            onTap: () {
+              Navigator.pop(context);
+              Get.updateLocale(Locale('en', 'EN'));
+            },                  
+          ),           
+          ListTile(
+            leading: Image.asset(
+              "assets/ph.png",
+              height: 30,
+              width: 40,
+              fit: BoxFit.fitWidth,              
+            ),
+            title: Text("Tagalog"),
+            onTap: () {
+              Navigator.pop(context);
+              Get.updateLocale(Locale('tl', 'TL'));
+            },                  
+          ),
+          ListTile(
+            leading: Image.asset(
+              "assets/ph.png",
+              height: 30,
+              width: 40,
+              fit: BoxFit.fitWidth,              
+            ),
+            title: Text("Tagalog"),
+            onTap: () {
+              Navigator.pop(context);
+              Get.updateLocale(Locale('cb', 'CB'));
+            },                  
+          ),          
           // ListTile(
           //   leading: Icon(Icons.home),
           //   title: Text('Home'),
