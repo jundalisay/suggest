@@ -8,15 +8,15 @@ class LocaleString extends Translations {
           'Carbon Reference': 'Carbon Reference',
           'Diseases': 'Diseases',
           'Healing Foods': 'Healing Foods',
-          'Healthy Pracctices': 'Healthy Pracctices',          
+          'Healthy Practices': 'Healthy Practices',
           'Nutrients': 'Nutrients',
-          'Unhealthy Foods': 'Unhealthy Foods'
+          'Unhealthy Foods': 'Unhealthy Foods',
         },
         'tl': {
           'Carbon Reference': 'Mga Aktibidad na May Paglabas ng Carbon',
           'Diseases': 'Mga Sakit',
           'Healing Foods': 'Pagkaing Nagpapagaling',
-          'Healthy Pracctices': 'Gawaing Pangkalusugan',          
+          'Healthy Practices': 'Gawaing Pangkalusugan',
           'Nutrients': 'Nutrisyon',
           'Unhealthy Foods': 'Mga Hindi Masustansyang Pagkain'
         },
@@ -24,7 +24,7 @@ class LocaleString extends Translations {
           'Carbon Reference': 'Mga Aktibidad na May Paglabas ng Carbon',
           'Diseases': 'Mga Pagkaon sa Pag-ayo',
           'Healing Foods': 'Pagkaing Nagpapagaling',
-          'Healthy Pracctices': 'Gawaing Pangkalusugan',          
+          'Healthy Practices': 'Gawaing Pangkalusugan',
           'Nutrients': 'Nutrisyon',
           'Unhealthy Foods': 'Dili Maayo na Pagkaon'
         }

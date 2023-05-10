@@ -59,7 +59,7 @@ flutter:
     - assets/fonts/  
     - assets/jsons/
     - assets/nutritions/
-    - assets/sellers/
+#    - assets/sellers/
     - assets/unhealthy/    
     - assets/vegs/
   fonts:
