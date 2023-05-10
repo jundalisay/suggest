@@ -7,13 +7,13 @@ class Veg {
 
   double? footprint;
 
-  String calories;
-  String water;
-  String protein;
-  String carbs;
-  String sugar;
-  String fiber;
-  String fat;
+  double? calories;
+  double? water;
+  double? protein;
+  double? carbs;
+  double? sugar;
+  double? fiber;
+  double? fat;
 
   List<String>? diseases;
   List<String>? stores;

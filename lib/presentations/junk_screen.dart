@@ -31,11 +31,11 @@ class JunkScreenState extends State {
       backgroundColor: Colors.indigo[50],  
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.green),
+          icon: Icon(Icons.arrow_back, color: Colors.red),
           onPressed: () => Navigator.of(context).pop(),
         ),         
         title: Text(controller.junk?.name ?? "",
-          style: TextStyle(color: Colors.green),
+          style: Theme.of(context).textTheme.headline6
         ),
         backgroundColor: Colors.transparent,
         elevation: 0
@@ -389,9 +389,7 @@ class JunkScreenState extends State {
                           ),
                         ),
                       ),
-                    ),                    
-
-
+                    ),
                   ],
                 ),
               ),

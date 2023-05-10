@@ -24,14 +24,14 @@ class CarbonScreenState extends State {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: Colors.indigo[50],  
+      backgroundColor: Colors.indigo[50],
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.green),
+          icon: Icon(Icons.arrow_back, color: Colors.teal),
           onPressed: () => Navigator.of(context).pop(),
         ),         
         title: Text(controller.carbon?.name ?? "",
-          style: TextStyle(color: Colors.green),
+          style: Theme.of(context).textTheme.headline2
         ),
         backgroundColor: Colors.transparent,
         elevation: 0

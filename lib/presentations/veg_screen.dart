@@ -8,47 +8,7 @@ import 'package:suggest/models/disease.dart';
 import 'package:suggest/models/veg.dart';
 import 'package:suggest/presentations/disease_screen.dart';
 
-
 import 'package:fl_chart/fl_chart.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-
-class AppColors {
-  static const Color primary = contentColorCyan;
-  static const Color menuBackground = Color(0xFF090912);
-  static const Color itemsBackground = Color(0xFF1B2339);
-  static const Color pageBackground = Color(0xFF282E45);
-  static const Color mainTextColor1 = Colors.white;
-  static const Color mainTextColor2 = Colors.white70;
-  static const Color mainTextColor3 = Colors.white38;
-  static const Color mainGridLineColor = Colors.white10;
-  static const Color borderColor = Colors.white54;
-  static const Color gridLinesColor = Color(0x11FFFFFF);
-
-  static const Color contentColorBlack = Colors.black;
-  static const Color contentColorWhite = Colors.white;
-  static const Color contentColorBlue = Color(0xFF2196F3);
-  static const Color contentColorYellow = Color(0xFFFFC300);
-  static const Color contentColorOrange = Color(0xFFFF683B);
-  static const Color contentColorGreen = Color(0xFF3BFF49);
-  static const Color contentColorPurple = Color(0xFF6E1BFF);
-  static const Color contentColorPink = Color(0xFFFF3AF2);
-  static const Color contentColorRed = Color(0xFFE80054);
-  static const Color contentColorCyan = Color(0xFF50E4FF);
-}
-
-class AppDimens {
-  static const double menuMaxNeededWidth = 304;
-  static const double menuRowHeight = 74;
-  static const double menuIconSize = 36;
-  static const double menuTextSize = 24;
-
-  static const double chartBoxMinWidth = 350;
-
-  static const double defaultRadius = 8;
-  static const double chartSamplesSpace = 32.0;
-  static const double chartSamplesMinWidth = 350;
-}
 
 
 
@@ -101,7 +61,7 @@ class VegScreenState extends State {
                           fit: BoxFit.cover,
                         ),
                       )
-                    ),
+                    ),                    
                     AspectRatio(
                       aspectRatio: 1.3,
                       child: AspectRatio(
@@ -240,202 +200,58 @@ class VegScreenState extends State {
                     children: [
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.local_fire_department,
-                              color: Colors.pink,
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              'Calories',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.calories,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.local_fire_department, color: Colors.green)),
+                          TableCell(child: Text('Calories'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.calories.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.price_change,
-                              color: Colors.green,
-                            ),
-                          ),                                  
-                          TableCell(
-                            child: Text(
-                              'Price',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.price,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.ramen_dining, color: Colors.green)),
+                          TableCell(child: Text('Price'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.price.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.icecream,
-                              color: Colors.cyan,
-                            ),
-                          ),                                  
-                          TableCell(
-                            child: Text(
-                              'Sugar',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.sugar,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.icecream, color: Colors.green)),
+                          TableCell(child: Text('Sugar'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.sugar.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.set_meal,
-                              color: Colors.deepOrange[800],
-                            ),
-                          ),                                  
-                          TableCell(
-                            child: Text(
-                              'Protein',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.protein,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.set_meal, color: Colors.green)),
+                          TableCell(child: Text('Protein'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.protein.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.ramen_dining,
-                              color: Colors.orange,
-                            ),
-                          ),                                  
-                          TableCell(
-                            child: Text(
-                              'Carbs',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.carbs,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.ramen_dining, color: Colors.green)),
+                          TableCell(child: Text('Carbs'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.carbs.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.water_drop,
-                              color: Colors.blue,
-                            ),
-                          ),                                  
-                          TableCell(
-                            child: Text(
-                              'Water',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.water,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.water_drop, color: Colors.green)),
+                          TableCell(child: Text('Water'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.water.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),       
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.dinner_dining,
-                              color: Colors.green,
-                            ),
-                          ),                                  
-                          TableCell(
-                            child: Text(
-                              'Fiber',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.fiber,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.dinner_dining, color: Colors.green)),
+                          TableCell(child: Text('Fiber'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.fiber.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),  
                       TableRow(
                         children: [
-                          TableCell(
-                            child: Icon(
-                              Icons.lunch_dining,
-                              color: Colors.red,
-                            ),
-                          ),                                  
-                          TableCell(
-                            child: Text(
-                              'Fat',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          TableCell(
-                            child: Text(
-                              controller.veg!.fat,
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
+                          TableCell(child: Icon(Icons.lunch_dining, color: Colors.green)),
+                          TableCell(child: Text('Fat'.tr, style: Theme.of(context).textTheme.headline6)),
+                          TableCell(child: Text(controller.veg!.fat.toString(), style: Theme.of(context).textTheme.headline6))
                         ],
                       ),
                     ],
@@ -481,77 +297,59 @@ class VegScreenState extends State {
       switch (i) {
         case 0:
           return PieChartSectionData(
-            color: AppColors.contentColorBlue,
-            value: 40,
-            title: '40%',
+            color: Colors.blue,
+            value: controller.veg?.calories,
+            title: controller.veg?.calories.toString(),
             radius: radius,
-            titleStyle: TextStyle(
-              fontSize: fontSize,
-              fontWeight: FontWeight.bold,
-              color: const Color(0xffffffff),
-              shadows: shadows,
-            ),
             badgeWidget: _Badge(
-              'assets/icons/ophthalmology-svgrepo-com.svg',
+              'assets/protein.png',
               size: widgetSize,
-              borderColor: AppColors.contentColorBlack,
+              borderColor: Colors.indigo,
             ),
             badgePositionPercentageOffset: .98,
           );
         case 1:
           return PieChartSectionData(
-            color: AppColors.contentColorYellow,
-            value: 30,
-            title: '30%',
+            color: Colors.yellow,
+            value: controller.veg?.fat,
+            title: controller.veg?.fat.toString(),
             radius: radius,
-            titleStyle: TextStyle(
-              fontSize: fontSize,
-              fontWeight: FontWeight.bold,
-              color: const Color(0xffffffff),
-              shadows: shadows,
-            ),
             badgeWidget: _Badge(
-              'assets/icons/librarian-svgrepo-com.svg',
+              'assets/fat.png',
               size: widgetSize,
-              borderColor: AppColors.contentColorBlack,
+              borderColor: Colors.orange,
             ),
             badgePositionPercentageOffset: .98,
           );
         case 2:
           return PieChartSectionData(
-            color: AppColors.contentColorPurple,
-            value: 16,
-            title: '16%',
+            color: Colors.orange,
+            value: controller.veg?.fat,
+            title: controller.veg?.fat.toString(),
             radius: radius,
-            titleStyle: TextStyle(
-              fontSize: fontSize,
-              fontWeight: FontWeight.bold,
-              color: const Color(0xffffffff),
-              shadows: shadows,
-            ),
+            // titleStyle: TextStyle(
+            //   fontSize: fontSize,
+            //   fontWeight: FontWeight.bold,
+            //   color: Colors.purple,
+            //   shadows: shadows,
+            // ),
             badgeWidget: _Badge(
-              'assets/icons/fitness-svgrepo-com.svg',
+              'assets/cals.png',
               size: widgetSize,
-              borderColor: AppColors.contentColorBlack,
+              borderColor: Colors.red,
             ),
             badgePositionPercentageOffset: .98,
           );
         case 3:
           return PieChartSectionData(
-            color: AppColors.contentColorGreen,
-            value: 15,
-            title: '15%',
+            color: Colors.green,
+            value: controller.veg?.fiber,
+            title: controller.veg?.fiber.toString(),
             radius: radius,
-            titleStyle: TextStyle(
-              fontSize: fontSize,
-              fontWeight: FontWeight.bold,
-              color: const Color(0xffffffff),
-              shadows: shadows,
-            ),
             badgeWidget: _Badge(
-              'assets/icons/worker-svgrepo-com.svg',
+              'assets/carbs.png',
               size: widgetSize,
-              borderColor: AppColors.contentColorBlack,
+              borderColor: Colors.teal,
             ),
             badgePositionPercentageOffset: .98,
           );
@@ -595,15 +393,14 @@ class _Badge extends StatelessWidget {
       ),
       padding: EdgeInsets.all(size * .15),
       child: Center(
-        child: SvgPicture.asset(
+        child: Image.asset(
           svgAsset,
-        ),
+          fit: BoxFit.cover,
+        ),        
+        // child: SvgPicture.asset(
+        //   svgAsset,
+        // ),
       ),
     );
   }
 }
-
-
-
-
-

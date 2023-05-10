@@ -16,19 +16,19 @@ class Junks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.indigo[50],
       appBar: AppBar(
-        title: Text('Unhealthy Food',
-          style: Theme.of(context).textTheme.headline5
+        title: Text('Unhealthy Foods'.tr,
+          style: Theme.of(context).textTheme.headline6
         ),
         centerTitle: true,    
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.green),
+          icon: Icon(Icons.arrow_back, color: Colors.red),
           onPressed: () => Navigator.of(context).pop(),
         ),
-      ),  
-      backgroundColor: Colors.indigo[50],           
+      ),        
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(

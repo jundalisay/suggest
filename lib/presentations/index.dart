@@ -36,9 +36,7 @@ class _IndexState extends State<Index> {
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
-              icon: const Icon(
-                Icons.dehaze,
-              ),
+              icon: const Icon(Icons.dehaze),
               color: Colors.indigo,
               onPressed: () {
                 Scaffold.of(context).openDrawer();
@@ -47,17 +45,7 @@ class _IndexState extends State<Index> {
             );
           },
         ),
-        // leading: IconButton(
-        //   icon: Icon(Icons.arrow_back, color: Colors.black),
-        //   onPressed: () => Navigator.of(context).pop(),
-        // ),         
-        title: Text("Suggest",
-          style: TextStyle(
-            color: Colors.indigo[900],
-            fontSize: 24,
-            fontWeight: FontWeight.bold
-          ),
-        ),
+        title: Text("Suggest", style: Theme.of(context).textTheme.headline1),
         backgroundColor: Colors.transparent,
         elevation: 0
       ),
@@ -220,10 +208,7 @@ class _IndexState extends State<Index> {
                             Image.asset("assets/junks/lechon.jpg"),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text(
-                                'Unhealthy Foods'.tr,
-                                style: Theme.of(context).textTheme.headline6,
-                              ),
+                              child: Text('Unhealthy Foods'.tr, style: Theme.of(context).textTheme.headline6),
                             ),
                           ],
                         ),
@@ -240,9 +225,7 @@ class _IndexState extends State<Index> {
                             Image.asset("assets/vegs/ampalaya.jpg"),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text('Healing Foods'.tr,
-                                style: Theme.of(context).textTheme.headline5,
-                              ),
+                              child: Text('Healing Foods'.tr, style: Theme.of(context).textTheme.headline5),
                             ),
                           ],
                         ),
@@ -259,10 +242,7 @@ class _IndexState extends State<Index> {
                             Image.asset("assets/vegs/tomato.jpg"),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text(
-                                'Nutrients'.tr,
-                                style: Theme.of(context).textTheme.headline5,
-                              ),
+                              child: Text('Nutrients'.tr, style: Theme.of(context).textTheme.headline5),
                             ),
                           ],
                         ),
@@ -304,7 +284,7 @@ class _IndexState extends State<Index> {
                       margin: EdgeInsets.all(8.0),
                       child: InkWell(
                         onTap: () {
-                          Get.toNamed('/carbons');
+                          Get.toNamed('/quiz');
                         },
                         child: Column(
                           children: <Widget>[
@@ -312,7 +292,7 @@ class _IndexState extends State<Index> {
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 12.0),
                               child: Text(
-                                'Planetary Health Diet',
+                                'Planetary Health Diet Game',
                                 style: Theme.of(context).textTheme.headline4,
                               ),
                             ),
@@ -331,10 +311,7 @@ class _IndexState extends State<Index> {
                             Image.asset("assets/bicycle.jpg"),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text(
-                                'Carbon Reference'.tr,
-                                style: Theme.of(context).textTheme.headline4,
-                              ),
+                              child: Text('Carbon Reference'.tr, style: Theme.of(context).textTheme.headline4),
                             ),
                           ],
                         ),

@@ -3,14 +3,13 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:suggest/controllers/base_list_item_controller.dart';
 import 'package:suggest/models/veg.dart';
 import 'package:suggest/services/veg_service.dart';
 
 
 
-class VegListController extends GetxController {
-  RxList<Veg> vegs = <Veg>[].obs;
-  RxList<Veg> filteredVegs = <Veg>[].obs;
+class VegListController extends BaseListItemController {
 
   @override
   void onInit() {
@@ -20,36 +19,11 @@ class VegListController extends GetxController {
 
   Future<void> _initialize() async {
     try {
-      vegs.value = VegService.to.vegs;
-      filteredVegs.value = vegs;
+      items.value = VegService.to.vegs;
+      filteredItems.value = items;
     } catch (e) {
       debugPrint("VegController._initialize: $e");
     }
-  }
-
-  void onSearchChanged({String? value}) {
-    if (value == null || value.isEmpty) {
-      filteredVegs(vegs);
-      return;
-    }
-
-    filteredVegs.value = vegs
-        .where((Veg element) => _hasMatched(element, value))
-        .toList();
-  }
-
-  bool _hasMatched(Veg veg, String searchString) {
-    if (veg.name.toString().toLowerCase().contains(searchString)) {
-      return true;
-    }
-    bool hasMatched = false;
-    for (int i = 0; i < veg.description.length; ++i) {
-      if (veg.description[i].toLowerCase().contains(searchString)) {
-        hasMatched = true;
-        break;
-      }
-    }
-    return hasMatched;
   }
 }
 

@@ -12,18 +12,18 @@ class DiseaseScreen extends GetView<DiseaseController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.indigo[50],
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.red),
           onPressed: () => Navigator.of(context).pop(),
         ),         
         title: Text(controller.disease?.name ?? "",
-          style: TextStyle(color: Colors.red),
+          style: Theme.of(context).textTheme.headline6
         ),
         backgroundColor: Colors.transparent,
         elevation: 0
-      ),
-      backgroundColor: Colors.indigo[50],      
+      ), 
       body: SafeArea(
         child: SingleChildScrollView( 
           child: Column(

@@ -3,14 +3,13 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:suggest/controllers/base_list_item_controller.dart';
 import 'package:suggest/models/nutri.dart';
 import 'package:suggest/services/nutri_service.dart';
 
 
 
-class NutriListController extends GetxController {
-  RxList<Nutri> nutris = <Nutri>[].obs;
-  RxList<Nutri> filteredNutris = <Nutri>[].obs;
+class NutriListController extends BaseListItemController {
 
   @override
   void onInit() {
@@ -20,35 +19,10 @@ class NutriListController extends GetxController {
 
   Future<void> _initialize() async {
     try {
-      nutris.value = NutriService.to.nutris;
-      filteredNutris.value = nutris;
+      items.value = NutriService.to.nutris;
+      filteredItems.value = items;
     } catch (e) {
       debugPrint("NutriController._initialize: $e");
     }
-  }
-
-  void onSearchChanged({String? value}) {
-    if (value == null || value.isEmpty) {
-      filteredNutris(nutris);
-      return;
-    }
-
-    filteredNutris.value = nutris
-        .where((Nutri element) => _hasMatched(element, value))
-        .toList();
-  }
-
-  bool _hasMatched(Nutri nutri, String searchString) {
-    if (nutri.name.toString().toLowerCase().contains(searchString)) {
-      return true;
-    }
-    bool hasMatched = false;
-    for (int i = 0; i < nutri.description.length; ++i) {
-      if (nutri.description[i].toLowerCase().contains(searchString)) {
-        hasMatched = true;
-        break;
-      }
-    }
-    return hasMatched;
   }
 }
