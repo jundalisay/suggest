@@ -14,6 +14,11 @@ import 'package:suggest/bindings/disease_list_binder.dart';
 import 'package:suggest/presentations/disease_screen.dart';
 import 'package:suggest/presentations/diseases.dart';
 
+import 'package:suggest/bindings/junk_binder.dart';
+import 'package:suggest/bindings/junk_list_binder.dart';
+import 'package:suggest/presentations/junk_screen.dart';
+import 'package:suggest/presentations/junks.dart';
+
 import 'package:suggest/bindings/veg_binder.dart';
 import 'package:suggest/bindings/veg_list_binder.dart';
 import 'package:suggest/presentations/veg_screen.dart';
@@ -67,6 +72,18 @@ class SuggestApp extends StatelessWidget {
                 binding: NutriListBinding()
             ),
           ]           
+        ),
+        GetPage(
+          name: '/junks',
+          page: () => Junks(),
+          binding: JunkListBinding(),
+          children: [
+            GetPage(
+              name: '/junk',
+              page: () => JunkScreen(),
+              binding: JunkBinding()
+            ),
+          ]
         ),
         GetPage(
           name: '/vegs',
@@ -139,9 +156,9 @@ class SuggestApp extends StatelessWidget {
         headline3: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.pink),
         headline4: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.blue),
         headline5: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.green),
-        headline6: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: Colors.red),        
-        bodyText1: TextStyle(fontSize: 14.0, color: Colors.black.withOpacity(0.8)),
-        bodyText2: TextStyle(fontSize: 12.0, color: Colors.black.withOpacity(0.8)),
+        headline6: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.red),        
+        bodyText1: TextStyle(fontSize: 16.0, color: Colors.black.withOpacity(0.8)),
+        bodyText2: TextStyle(fontSize: 16.0, color: Colors.black.withOpacity(0.8)),
       ),
     );
   }

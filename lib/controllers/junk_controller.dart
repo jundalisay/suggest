@@ -4,15 +4,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
+import 'package:suggest/models/junk.dart';
+
 import 'package:suggest/models/disease.dart';
 import 'package:suggest/services/disease_service.dart';
 
-import 'package:suggest/models/veg.dart';
 
-
-
-class VegController extends GetxController {
-  Veg? veg;
+class JunkController extends GetxController {
+  Junk? junk;
 
   @override
   void onInit() {
@@ -24,12 +23,13 @@ class VegController extends GetxController {
     try {
       final arguments = Get.arguments;
       if (arguments != null) {
-        veg = Get.arguments as Veg;
+        junk = Get.arguments as Junk;
       }
     } catch (e) {
-      debugPrint("VegController._initialize: $e");
+      debugPrint("JunkController._initialize: $e");
     }
   }
+
 
   Disease? getDisease({required diseaseName}) {
     final diseases = DiseaseService.to.diseases;

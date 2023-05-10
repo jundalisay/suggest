@@ -1,14 +1,23 @@
 [
   {
     "id": "1",
-    "name": "Pork",
+    "name": "Lechon",
     "photo": "assets/junks/lechon.jpg",
-    "description": "Pork is packed with fats", 
-    "footprint": "2.4kg",     
+    "description": "High in saturated fat: Pork is high in saturated fat, which can increase cholesterol levels and increase the risk of heart disease. May contain harmful bacteria: Pork can be a source of harmful bacteria, such as Salmonella, E. coli, and Listeria, which can cause foodborne illness if not cooked properly. May contain parasites: Pork can also be a source of parasites, such as Trichinella and Taenia solium, which can cause serious health problems if ingested. May increase the risk of certain cancers: Some studies have suggested that eating a diet high in processed or cured meats, such as bacon or sausage, may increase the risk of certain cancers, such as colon cancer. May increase the risk of other health problems: Eating a diet high in pork and other meats may also increase the risk of other health problems, such as obesity, type 2 diabetes, and high blood pressure.", 
+    "calories": 100.0,
+    "water": 100.0,    
+    "protein": 100.0,    
+    "carbs": 100.0,    
+    "sugar": 100.0,    
+    "fiber": 100.0,    
+    "fat": 100.0,
+    "footprint": 0.43,     
     "diseases": [
       "Cancer",
-      "Heart Disease",
-      "Eyestrain" 
+      "Heart Disease"
+    ],
+    "examples": [
+      "Lechon de Leche"
     ],
     "alternatives": [
       "Tofu",
@@ -20,14 +29,24 @@
   {
     "id": "2",
     "name": "Beef",
-    "photo": "assets/junks/lechon.jpg",
-    "description": "Beef is packed with fats", 
-    "footprint": "15.5kg",         
+    "photo": "assets/junks/beef.jpg",
+    "description": " Beef is the worst food for the environment as it emits the most CO2. High in saturated fat: Beef is high in saturated fat, which can increase cholesterol levels and increase the risk of heart disease. May contain harmful bacteria: Beef can be a source of harmful bacteria, such as E. coli, Salmonella, and Campylobacter, which can cause foodborne illness if not cooked properly. May contain antibiotics and hormones: Some beef may contain antibiotics and hormones that are used to promote growth and prevent disease in cattle, which can be harmful to human health if consumed in large quantities. May increase the risk of certain cancers: Some studies have suggested that eating a diet high in red meat, such as beef, may increase the risk of certain cancers, such as colon cancer. May increase the risk of other health problems: Eating a diet high in beef and other meats may also increase the risk of other health problems, such as obesity, type 2 diabetes, and high blood pressure.", 
+    "calories": 60.0,
+    "water": 10.0,    
+    "protein": 10.0,    
+    "carbs": 10.0,    
+    "sugar": 10.0,    
+    "fiber": 10.0,    
+    "fat": 10.0,
+    "footprint": 0.43,     
     "diseases": [
       "Cancer",
-      "Heart Disease",
-      "Eyestrain" 
+      "Heart Disease"
     ],
+    "examples": [
+      "Beef Steak",
+      "Hamburgers"
+    ],    
     "alternatives": [
       "Tofu",
       "Tempeh",
@@ -37,14 +56,51 @@
   },  
   {
     "id": "3",
-    "name": "Chicken",
+    "name": "Fried Chicken",
     "photo": "assets/junks/chicken.jpg",
     "description": "Chicken is packed with fats", 
-    "footprint": "1.82kg",         
+    "calories": 100.0,
+    "water": 100.0,    
+    "protein": 100.0,    
+    "carbs": 100.0,    
+    "sugar": 100.0,    
+    "fiber": 100.0,    
+    "fat": 100.0,
+    "footprint": 0.43,             
     "diseases": [
       "Cancer",
-      "Heart Disease",
-      "Eyestrain" 
+      "Heart Disease"
+    ],
+    "examples": [
+      "Breaded Chicken"
+    ],
+    "alternatives": [
+      "Tofu",
+      "Tempeh",
+      "Jackfruit",
+      "Beans" 
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Cured Meat",
+    "photo": "assets/junks/tocino.jpg",
+    "description": "Cured Meat has chemicals that can cause cancer", 
+    "calories": 100.0,
+    "water": 100.0,    
+    "protein": 100.0,    
+    "carbs": 100.0,    
+    "sugar": 100.0,    
+    "fiber": 100.0,    
+    "fat": 100.0,
+    "footprint": 0.43,     
+    "diseases": [
+      "Cancer",
+      "Heart Disease"
+    ],
+    "examples": [
+      "Tocino",
+      "Beef Jerky"
     ],
     "alternatives": [
       "Tofu",

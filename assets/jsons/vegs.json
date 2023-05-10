@@ -1,6 +1,35 @@
 [
   {
     "id": "1",
+    "name": "Ampalaya",
+    "photo": "assets/vegs/ampalaya.jpg",
+    "description": "May help regulate blood sugar levels: Ampalaya contains compounds that may help improve insulin sensitivity and regulate blood sugar levels, making it a potential dietary supplement for people with diabetes. May have anti-cancer properties: Some studies have suggested that the compounds in ampalaya may have anti-cancer properties and could potentially help prevent or slow the growth of cancer cells. May improve digestion: Ampalaya is a good source of dietary fiber, which can help regulate bowel movements and promote digestive health. May boost immune function: Ampalaya contains several nutrients, including vitamin C, which can help boost immune function and protect against infections. May promote skin health: Some traditional medicine practitioners use ampalaya to treat skin conditions such as eczema, psoriasis, and acne, as it is believed to have anti-inflammatory and antibacterial properties. May help improve heart health: Ampalaya is a good source of dietary fiber and contains compounds that may help regulate blood pressure and cholesterol levels, which can help improve heart health.",
+    "precautions": [
+      "Do not fry"
+    ],
+    "price": "100 to 140 pesos",
+    "calories": "100",
+    "water": "100",    
+    "protein": "100",    
+    "carbs": "100",    
+    "sugar": "100",    
+    "fiber": "100",    
+    "fat": "100",
+    "footprint": 0.43,     
+    "stores": [
+      "Pandamart url",
+      "Alfamart url",
+      "Robinsons url"
+    ],
+    "diseases": [
+      "Diabetes"
+    ],
+    "subpics": [
+      "/assets/diseases/diabetes.jpg"
+    ]
+  },  
+  {
+    "id": "2",
     "name": "Apples",
     "photo": "assets/vegs/apples.jpg",
     "description": "Good for digestion: Apples are a rich source of dietary fiber, which helps to promote healthy digestion and prevent constipation. The fiber in apples can also help to lower cholesterol levels and reduce the risk of heart disease. Boost immunity: Apples contain antioxidants, such as flavonoids and vitamin C, which can help to boost the immune system and protect the body against infections and diseases. Promote heart health: The fiber, antioxidants, and other nutrients in apples can help to lower blood pressure, reduce the risk of heart disease, and promote overall cardiovascular health. Aid weight loss: Apples are low in calories and high in fiber, which can help to promote weight loss by making you feel full and reducing your overall calorie intake. Reduce the risk of cancer: The antioxidants in apples can help to protect against cellular damage and reduce the risk of certain types of cancer, such as lung, colon, and breast cancer. Improve brain function: Apples contain nutrients that can help to improve brain function and reduce the risk of age-related cognitive decline, such as Alzheimer's disease. Improve lung function: Studies have shown that eating apples can help to improve lung function and reduce the risk of respiratory diseases, such as asthma. ",
@@ -31,10 +60,10 @@
     ] 
   },
   {
-    "id": "2",
+    "id": "3",
     "name": "Banana",
     "photo": "assets/vegs/banana.jpg",
-    "description": "Skip to content ↓ The University of Texas at Austin APRIL 29, 2023 UT NewsNavigationSearchClose NavigationUT News News Opinions Series UT Stories: COVID-19 What Starts Here Campaign Stories UT Research Science & Technology Health & Wellness Arts & Humanities Education & Leadership Business & Economy Campus & Community Policy & Law For Journalists Press Releases Media Contacts Experts Guide Pitch Form Archive UT Austin on Twitter UT Austin on Instagram UT Austin on Facebook UT Austin on LinkedIn Search for content on UT News Search Search Button SCIENCE & TECHNOLOGY Apr 13, 2023 James Webb Space Telescope Images Challenge Theories of How Universe Evolved Two color orange horizontal divider Six images of galaxy candidates Images of six massive galaxy candidates, seen 500-800 million years after the Big Bang. Image credit: NASA/ESA/CSA/I. Labbe. AUSTIN, Texas — The James Webb Space Telescope (JWST) appears to be finding multiple galaxies that grew too massive too soon after the Big Bang, if the standard model of cosmology is to be believed. In a study published in Nature Astronomy, researchers at The University of Texas at Austin find that six of the earliest and most massive galaxy candidates observed by JWST stand to contradict the prevailing thinking in cosmology. That’s because other researchers estimate that each galaxy is seen from between 500 million and 700 million years after the Big Bang, yet measures more than 10 billion times as massive as our sun. One of the galaxies even appears to be more massive than the Milky Way, despite the fact that our own galaxy had billions of more years to form and grow. “If the masses are right, then we are in uncharted territory,” said Mike Boylan-Kolchin, associate professor of astronomy who led the study. “We’ll require something very new about galaxy formation or a modification to cosmology. One of the most extreme possibilities is that the universe was expanding faster shortly after the Big Bang than we predict, which might require new forces and particles.” For galaxies to form so fast at such a size, they also would need to be converting nearly 100% of their available gas into stars. “We typically see a maximum of 10% of gas converted into stars,” Boylan-Kolchin said. “So while 100% conversion of gas into stars is technically right at the edge of what is theoretically possible, it’s really the case that this would require something to be very different from what we expect.” Graph indicating properties of candidate galaxies Based on the standard model of cosmology, astronomers predict what fraction of the atoms in the universe (vertical axis) is contained in galaxies with a certain mass of stars or higher (horizontal axis). In this study, three galaxy candidates (indicated by a single point spread) appear to be using up a much larger fraction of available atoms for stars than expected. Instead of about 10% as is usual (blue arc), the data suggest these galaxy candidates have converted 100% of available atoms into stars. Credit: Mike Boylan-Kolchin. Despite all of the breathless excitement it evokes, JWST has presented astronomers with an unsettling problem. If the masses and time since the Big Bang are confirmed for these galaxies, fundamental changes to the reigning model of cosmology — what’s called the dark energy plus cold dark matter paradigm — could be needed. If there are other, faster ways to form galaxies than the current model allows, or if more matter actually was available for forming stars and galaxies in the early universe than was previously understood, astronomers would need to shift their prevailing thinking. The six galaxies’ ages and masses are initial estimates and will need follow-up confirmation with spectroscopy, a method that splits the light into a spectrum and analyzes the brightness of different colors. Such analysis might suggest that central supermassive black holes, which could heat up the surrounding gas, may be making the galaxies brighter so that they look more massive than they really are. Or perhaps the galaxies are actually seen at a time much later than originally estimated due to dust that causes the color of the light from the galaxy to shift redder, giving the illusion of being more light-years away and, thus, further back in time. The galaxy data comes from the Cosmic Evolution Early Release Science Survey, a multi-institution JWST initiative led by UT Austin astronomer Steven Finkelstein. The initial discovery and estimates of the six galaxy candidates’ masses and redshifts were published in Nature in February by a team led by Swinburne University of Technology in Australia. The research is supported by the National Science Foundation and NASA. Copy link Email Share Link Twitter Share Link Facebook Share Link LinkedIn Share Link Tags: College of Natural Sciences, Research, Science, Technology Copy link Email Share Link Twitter Share Link Facebook Share Link LinkedIn Share Link MEDIA CONTACT Marc Airhart College of Natural Sciences p: 512-232-1066 e: mairhart@austin.utexas.edu The University of Texas at Austin What Starts Here Starts With You campaign slogan graphic Explore Latest Articles Apr 28, 2023 4 Longhorn Alums Awarded Presidential Citation for Service to UT READ MORE 4 LONGHORN ALUMS AWARDED PRESIDENTIAL CITATION FOR SERVICE TO UT Apr 28, 2023 Landmarks Raises $7 Million for Endowment READ MORE LANDMARKS RAISES $7 MILLION FOR ENDOWMENT TEXAS ADVANCED COMPUTING CENTER Apr 27, 2023 ECEP Alliance Adds Seven New States to Broaden Participation in K–16 Computing READ MORE ECEP ALLIANCE ADDS SEVEN NEW STATES TO BROADEN PARTICIPATION IN K–16 COMPUTING The University of Texas at Austin Formal Logo Subscribe to the TEXAS Newsletter UT Austin on Twitter UT Austin on Instagram UT Austin on Facebook UT Austin on LinkedIn UT NEWS HOME FOR JOURNALISTS PRESS RELEASES MEDIA CONTACTS EXPERTS GUIDE NEWS ARCHIVE PITCH FORM UT Austin Home Site Policies Web Privacy Policy Emergency Information Web Accessibility Policy Disability Resources © The University of Texas at Austin 2023",
+    "description": "Rich in nutrients: Bananas are a good source of several essential nutrients, including potassium, vitamin C, vitamin B6, and dietary fiber. Good for heart health: Bananas are rich in potassium, which can help regulate blood pressure and reduce the risk of heart disease. May aid digestion: Bananas contain a type of dietary fiber called pectin, which may help regulate bowel movements and promote digestive health. May boost energy: Bananas are a good source of carbohydrates, which can provide a quick energy boost when needed. May improve mood: Bananas contain an amino acid called tryptophan, which can help boost serotonin levels in the brain and improve mood. May help regulate blood sugar: Bananas have a low glycemic index, which means they are less likely to cause a rapid spike in blood sugar levels. May support kidney health: Bananas are low in protein and high in water content, which can help support kidney health.",
     "precautions": [
       "Overripe is better"
     ],
@@ -62,35 +91,6 @@
       "/assets/diseases/heart.jpg",
       "/assets/diseases/diabetes.jpg"
     ]        
-  },
-  {
-    "id": "3",
-    "name": "Ampalaya",
-    "photo": "assets/vegs/ampalaya.jpg",
-    "description": "Ampalaya is green",
-    "precautions": [
-      "Do not fry"
-    ],
-    "price": "100 to 140 pesos",
-    "calories": "100",
-    "water": "100",    
-    "protein": "100",    
-    "carbs": "100",    
-    "sugar": "100",    
-    "fiber": "100",    
-    "fat": "100",
-    "footprint": 0.43,     
-    "stores": [
-      "Pandamart url",
-      "Alfamart url",
-      "Robinsons url"
-    ],
-    "diseases": [
-      "Diabetes"
-    ],
-    "subpics": [
-      "/assets/diseases/diabetes.jpg"
-    ]
   },
   {
     "id": "4",

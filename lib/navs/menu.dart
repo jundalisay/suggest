@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import 'package:suggest/locale/locale.dart';
+import 'package:suggest/controllers/host_controller.dart';
+
 
 
 class Menu extends StatelessWidget {
-
-  final List locale = [
-    {'name': 'ENGLISH', 'locale': const Locale('en', 'US')},
-    {'name': 'हिंदी', 'locale': const Locale('tl', 'TL')},
-    {'name': 'Arabic', 'locale': const Locale('cb', 'CB')},
-  ];
 
   updateLanguage(Locale locale) {
     Get.back();
     Get.updateLocale(locale);
   }
 
+  HostController controller = Get.put(HostController());
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +25,7 @@ class Menu extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.indigo,
             ),            
-            accountName: Text('View diseases and the proper food'),
+            accountName: Text(Get.find<HostController>().city),
             accountEmail: Text('For support please email juan@scenac.org'),
             currentAccountPicture: CircleAvatar(
               backgroundColor: Colors.indigo,
@@ -72,12 +70,35 @@ class Menu extends StatelessWidget {
               width: 40,
               fit: BoxFit.fitWidth,              
             ),
-            title: Text("Tagalog"),
+            title: Text("Cebuano"),
             onTap: () {
               Navigator.pop(context);
               Get.updateLocale(Locale('cb', 'CB'));
             },                  
-          ),          
+          ),
+          Divider(),
+          ExpansionTile(
+            // leading: Image.asset('assets/flags/jp.png', height: 50, width: 50,),              
+            title: Text("Metro Manila"),
+            children: [
+              ListTile(
+                // leading: Icon(FontAwesomeIcons.mapMarkerAlt), 
+                title: Text("Las Pinas"),
+                onTap: () {
+                  Navigator.pop(context);
+                  Get.find<HostController>().laspinas();                  
+                },                  
+              ),           
+              ListTile(
+                // leading: Icon(FontAwesomeIcons.mapMarkerAlt), 
+                title: Text("Makati"),
+                onTap: () {
+                  Navigator.pop(context);
+                  Get.find<HostController>().makati();                                    
+                },                  
+              ),
+            ],
+          ),   
           // ListTile(
           //   leading: Icon(Icons.home),
           //   title: Text('Home'),

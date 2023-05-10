@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: "1.0.5"
+  fl_chart: ^0.62.0  
+  flutter_svg: ^2.0.5
   flutter_localizations:
     sdk: flutter
   cached_network_image: "3.2.3"
@@ -58,9 +60,9 @@ flutter:
     - assets/diseases/
     - assets/fonts/  
     - assets/jsons/
+    - assets/junks/    
     - assets/nutritions/
     - assets/sellers/
-    - assets/unhealthy/    
     - assets/vegs/
   fonts:
     - family: Quicksand
