@@ -68,6 +68,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/carbons/  
     - assets/diseases/
     - assets/fonts/  
     - assets/jsons/

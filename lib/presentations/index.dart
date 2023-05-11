@@ -58,7 +58,7 @@ class _IndexState extends State<Index> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 340,
+                    // height: 340,
                     child: PageView(
                       children: [
                         Container(
@@ -86,7 +86,7 @@ class _IndexState extends State<Index> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(24),
                             child: Image.asset(
-                              'assets/yoga.jpg',
+                              'assets/suggest3.jpg',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -96,17 +96,7 @@ class _IndexState extends State<Index> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(24),
                             child: Image.asset(
-                              'assets/seller.jpg',
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.symmetric(horizontal: 8),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: Image.asset(
-                              'assets/bicycle.jpg',
+                              'assets/suggest4.jpg',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -180,14 +170,18 @@ class _IndexState extends State<Index> {
                   crossAxisCount: 2, // 2 cards per row
                   children: [
                     Card(
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                       margin: EdgeInsets.all(8.0),
                       child: InkWell(
                         onTap: () { Get.toNamed('/diseases'); },
                         child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/diseases/cancer.jpg"),
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.only(topRight: Radius.circular(12), topLeft: Radius.circular(12)),
+                              child: Image.asset('assets/diseases/cancer.jpg', fit: BoxFit.cover),
+                            ),
                             Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
+                              padding: EdgeInsets.all(8.0),
                               child: Text('Diseases'.tr, style: Theme.of(context).textTheme.headline6),
                             ),
                           ],
@@ -195,19 +189,18 @@ class _IndexState extends State<Index> {
                       ),
                     ),
                     Card(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),                      
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),       
                       margin: EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {
-                          Get.toNamed('/junks');
-                        },
+                        onTap: () { Get.toNamed('/junks');},
                         child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/junks/lechon.jpg"),
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.only(topRight: Radius.circular(12), topLeft: Radius.circular(12)),
+                              child: Image.asset('assets/junks/lechon.jpg', fit: BoxFit.cover),
+                            ),
                             Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
+                              padding: EdgeInsets.all(8.0),
                               child: Text('Unhealthy Foods'.tr, style: Theme.of(context).textTheme.headline6),
                             ),
                           ],
@@ -215,16 +208,18 @@ class _IndexState extends State<Index> {
                       ),
                     ),          
                     Card(
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),                      
                       margin: EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {
-                          Get.toNamed('/vegs');
-                        },
+                        onTap: () {Get.toNamed('/vegs');},
                         child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/vegs/ampalaya.jpg"),
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.only(topRight: Radius.circular(12), topLeft: Radius.circular(12)),
+                              child: Image.asset('assets/vegs/ampalaya.jpg', fit: BoxFit.cover),
+                            ),
                             Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
+                              padding: EdgeInsets.all(8.0),
                               child: Text('Healing Foods'.tr, style: Theme.of(context).textTheme.headline5),
                             ),
                           ],
@@ -233,6 +228,7 @@ class _IndexState extends State<Index> {
                     ),
                     Card(
                       margin: EdgeInsets.all(8.0),
+                      // margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                       child: InkWell(
                         onTap: () {
                           Get.toNamed('/nutris');

@@ -56,10 +56,7 @@ class VegScreenState extends State {
                         //   topLeft: Radius.circular(10),
                         //   topRight: Radius.circular(10),
                         // ),
-                        child: Image.asset(
-                          controller.veg!.photo,
-                          fit: BoxFit.cover,
-                        ),
+                        child: Image.asset(controller.veg!.photo, fit: BoxFit.cover),
                       )
                     ),                    
                     AspectRatio(
@@ -82,9 +79,7 @@ class VegScreenState extends State {
                                 });
                               },
                             ),
-                            borderData: FlBorderData(
-                              show: false,
-                            ),
+                            borderData: FlBorderData(show: false),
                             sectionsSpace: 0,
                             centerSpaceRadius: 0,
                             sections: showingSections(),
@@ -92,15 +87,7 @@ class VegScreenState extends State {
                         ),
                       ),
                     ),
-                    Text(
-                      "Suggested Ailments",
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(height: 8),
+                    Text('Suggested Ailments'.tr, style: Theme.of(context).textTheme.headline5),                    
                     SizedBox(
                       height: 60,
                       width: 359,
@@ -113,7 +100,6 @@ class VegScreenState extends State {
 
                           final List<String> diseases = controller.veg!.diseases!;
                           final Disease? disease = controller.getDisease(diseaseName: diseases[i]);
-                          // final Disease? disease = controller.getDisease(diseaseName: "Cancer");
 
                           final currentRoute = Get.routing.current;
                           // debugPrint("DiseaseScreen._foodWidget: currentRoute: $currentRoute");
@@ -124,8 +110,6 @@ class VegScreenState extends State {
 
                           if (disease != null) {
                             return InkWell(
-                              // onTap: isDiseaseRoot ? () {
-                              // } : null,
                               onTap: () {
                                 Get.to(() => DiseaseScreen(), 
                                 arguments: disease, binding: DiseaseBinding());
@@ -175,9 +159,7 @@ class VegScreenState extends State {
                           }
                         },
                         separatorBuilder: (BuildContext context, int index) {
-                          return SizedBox(
-                            width: 16,
-                          );
+                          return SizedBox(width: 16);
                         },
                       ),
                     ),
@@ -269,12 +251,7 @@ class VegScreenState extends State {
                     child: Container(
                       // height: MediaQuery.of(context).size.height - 20,
                       width: MediaQuery.of(context).size.width - 20,
-                      child: Text(
-                        controller.veg!.description,
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),                            
-                      ),
+                      child: Text(controller.veg!.description, style: TextStyle(fontSize: 16)),
                     ),
                   ),
                 ),
@@ -353,8 +330,7 @@ class VegScreenState extends State {
             ),
             badgePositionPercentageOffset: .98,
           );
-        default:
-          throw Exception('Oh no');
+        default: throw Exception('Oh no');
       }
     });
   }
@@ -379,10 +355,7 @@ class _Badge extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         shape: BoxShape.circle,
-        border: Border.all(
-          color: borderColor,
-          width: 2,
-        ),
+        border: Border.all(color: borderColor, width: 2),
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.black.withOpacity(.5),

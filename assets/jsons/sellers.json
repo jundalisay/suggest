@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "AF Organic",
+    "photo": "assets/bicycle.jpg",
+    "description": "Riding bicycle",
+    "impact": "100 grams",
+    "examples": [
+      "Mouuntain buke",
+      "BMX"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Yoga Classes",
+    "photo": "assets/yoga.jpg",
+    "description": "Yoga Classes use little CO2",
+    "impact": "100 grams",
+    "examples": [
+      "Ashtanga Yoga",
+      "Hatha Yoga"
+    ]
+  }    
+]

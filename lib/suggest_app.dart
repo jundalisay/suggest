@@ -50,38 +50,57 @@ class SuggestApp extends StatelessWidget {
         // GetPage(name: '/about',     page: () => About()),
         GetPage(name: '/index', page: () => const Index()),
         GetPage(
-            name: '/diseases',
-            page: () => ListItemPage(
-                title: "Diseases",
-                backIcon: const Icon(Icons.arrow_back),
-                itemRoute: "/diseases/disease"),
-            binding: DiseaseListBinding(),
-            children: [
-              GetPage(
-                  name: '/disease',
-                  page: () => DiseaseScreen(),
-                  binding: DiseaseBinding()),
-              // GetPage(
-              //     name: '/vegs',
-              //     page: () => VegScreen(),
-              //     binding: VegListBinding()),
-              // GetPage(
-              //     name: '/nutris',
-              //     page: () => NutriScreen(),
-              //     binding: NutriListBinding()),
-            ]),
-        GetPage(
-          name: '/junks',
-          page: () => Junks(),
-          binding: JunkListBinding(),
+          name: '/diseases',
+          page: () => ListItemPage(
+            title: "Diseases",
+            backIcon: const Icon(Icons.arrow_back),
+            itemRoute: "/diseases/disease"
+          ),
+          binding: DiseaseListBinding(),
           children: [
             GetPage(
-              name: '/junk',
-              page: () => JunkScreen(),
-              binding: JunkBinding()
+              name: '/disease',
+              page: () => DiseaseScreen(),
+              binding: DiseaseBinding()
             ),
+            // GetPage(
+            //     name: '/vegs',
+            //     page: () => VegScreen(),
+            //     binding: VegListBinding()),
+            // GetPage(
+            //     name: '/nutris',
+            //     page: () => NutriScreen(),
+            //     binding: NutriListBinding()),
           ]
         ),
+        // GetPage(
+        //   name: '/junks',
+        //   page: () => ListItemPage(
+        //     title: "Unhealthy Foods",
+        //     backIcon: const Icon(Icons.arrow_back),
+        //     itemRoute: "/junks/junk"
+        //   ),
+        //   binding: JunkListBinding(),
+        //   children: [
+        //     GetPage(
+        //       name: '/junkk',
+        //       page: () => JunkScreen(),
+        //       binding: JunkBinding()
+        //     ),
+        //   ]
+        // ),
+        // GetPage(
+        //   name: '/junks',
+        //   page: () => Junks(),
+        //   binding: JunkListBinding(),
+        //   children: [
+        //     GetPage(
+        //       name: '/junk',
+        //       page: () => JunkScreen(),
+        //       binding: JunkBinding()
+        //     ),
+        //   ]
+        // ),
         GetPage(
           name: '/vegs',
           page: () => ListItemPage(
