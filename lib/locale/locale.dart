@@ -24,7 +24,7 @@ class LocaleString extends Translations {
       'Nutrients': 'Nutrisyon',
       'Price': 'Presyo',   
       'Sellers': 'Tagabenta',                           
-      'Unhealthy Foods': 'Mga Hindi Masustansyang Pagkain'
+      'Unhealthy Foods': "'Di Masustansyang Pagkain"
     },
     'cb': {
       'Calories': 'Mga Calorie',          

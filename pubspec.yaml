@@ -73,7 +73,7 @@ flutter:
     - assets/fonts/  
     - assets/jsons/
     - assets/junks/    
-    - assets/nutritions/
+    - assets/nutrients/
     - assets/sellers/
     - assets/vegs/
   fonts:

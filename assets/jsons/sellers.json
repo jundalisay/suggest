@@ -2,23 +2,40 @@
   {
     "id": "1",
     "name": "AF Organic",
-    "photo": "assets/bicycle.jpg",
-    "description": "Riding bicycle",
-    "impact": "100 grams",
-    "examples": [
-      "Mouuntain buke",
-      "BMX"
+    "photo": "assets/sellers/af.jpg",
+    "description": "AF Organic is a vegetable dealer in BF Paranaque that sells organic crops grown in nearby Rizal",
+    "address": "BF Thai Paranaque City",    
+    "email": "af@pantrypoints.com",
+    "facebook": "https://facebook.com",
+    "instagram": "",                
+    "viber": "",    
+    "website": "https://facebook.com",    
+    "whatsapp": "",
+    "phones": [
+      "0"
+    ],
+    "foods": [
+      "Ampalaya",
+      "Tomato"
     ]
   },
   {
     "id": "2",
-    "name": "Yoga Classes",
-    "photo": "assets/yoga.jpg",
-    "description": "Yoga Classes use little CO2",
-    "impact": "100 grams",
-    "examples": [
-      "Ashtanga Yoga",
-      "Hatha Yoga"
+    "name": "Ayus",
+    "photo": "assets/sellers/ayus.jpg",
+    "description": "Ayus Shop is a herbal store that sells greens and beneficial fruits",
+    "address": "Pulang Lupa Las Pinas City",
+    "email": "af@pantrypoints.com",
+    "facebook": "https://facebook.com",
+    "instagram": "",                
+    "viber": "",    
+    "website": "https://facebook.com",    
+    "whatsapp": "",
+    "phones": [
+      "0"
+    ],
+    "foods": [
+      "Banana"
     ]
   }    
 ]

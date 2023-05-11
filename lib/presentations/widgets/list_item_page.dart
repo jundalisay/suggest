@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:suggest/controllers/base_list_item_controller.dart';
 
+import 'package:suggest/controllers/base_list_item_controller.dart';
 import 'package:suggest/controllers/carbon_list_controller.dart';
 import 'package:suggest/models/carbon.dart';
 import 'package:suggest/presentations/carbon_screen.dart';
 
+
 class ListItemPage extends GetView<BaseListItemController> {
 
-  ListItemPage(
-    {Key? key,
-    required this.title,
-    required this.backIcon, required this.itemRoute}
-  ) : super(key: key);
+  ListItemPage({Key? key, required this.title, required this.backIcon, required this.itemRoute}) : super(key: key);
 
   final String title;
   final Icon backIcon;

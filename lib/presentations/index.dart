@@ -46,6 +46,7 @@ class _IndexState extends State<Index> {
           },
         ),
         title: Text("Suggest", style: Theme.of(context).textTheme.headline1),
+        centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0
       ),
@@ -58,47 +59,102 @@ class _IndexState extends State<Index> {
               child: Column(
                 children: [
                   SizedBox(
-                    // height: 340,
+                    height: 260,
                     child: PageView(
                       children: [
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 8),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: Image.asset(
-                              'assets/suggest1.jpg',
-                              fit: BoxFit.cover,
-                            ),
+                          // decoration: BoxDecoration(
+                          //   color: Colors.white.withOpacity(0.1), // set child widget's background color with transparency
+                          // ),                          
+                          child: Stack(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(24),
+                                child: Image.asset('assets/suggest1.jpg',
+                                  width: double.infinity,
+                                  height: double.infinity,                                  
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Positioned(
+                                left: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_left, color: Colors.white,)
+                              ),
+                              Positioned(
+                                right: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_right, color: Colors.white,)
+                              )
+                            ],
                           ),
                         ),
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 8),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: Image.asset(
-                              'assets/suggest2.jpg',
-                              fit: BoxFit.cover,
-                            ),
+                          child: Stack(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(24),
+                                child: Image.asset('assets/suggest2.jpg',
+                                  width: double.infinity,
+                                  height: double.infinity,                                  
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Positioned(
+                                left: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_left, color: Colors.white,)
+                              ),
+                              Positioned(
+                                right: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_right, color: Colors.white,)
+                              )
+                            ],
                           ),
                         ),
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 8),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: Image.asset(
-                              'assets/suggest3.jpg',
-                              fit: BoxFit.cover,
-                            ),
+                          child: Stack(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(24),
+                                child: Image.asset('assets/suggest3.jpg',
+                                  width: double.infinity,
+                                  height: double.infinity,                                  
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Positioned(
+                                left: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_left, color: Colors.white,)
+                              ),
+                              Positioned(
+                                right: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_right, color: Colors.white,)
+                              )
+                            ],
                           ),
                         ),
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 8),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: Image.asset(
-                              'assets/suggest4.jpg',
-                              fit: BoxFit.cover,
-                            ),
+                          child: Stack(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(24),
+                                child: Image.asset('assets/suggest4.jpg',
+                                  width: double.infinity,
+                                  height: double.infinity,                                  
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Positioned(
+                                left: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_left, color: Colors.white,)
+                              ),
+                              Positioned(
+                                right: 0, top: 0, bottom: 0,
+                                child: Icon(Icons.arrow_right, color: Colors.white,)
+                              )
+                            ],
                           ),
                         ),
                       ],
@@ -169,150 +225,369 @@ class _IndexState extends State<Index> {
                 child: GridView.count(
                   crossAxisCount: 2, // 2 cards per row
                   children: [
-                    Card(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                      margin: EdgeInsets.all(8.0),
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
                       child: InkWell(
                         onTap: () { Get.toNamed('/diseases'); },
-                        child: Column(
+                        child: Stack(
                           children: [
                             ClipRRect(
-                              borderRadius: BorderRadius.only(topRight: Radius.circular(12), topLeft: Radius.circular(12)),
-                              child: Image.asset('assets/diseases/cancer.jpg', fit: BoxFit.cover),
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/diseases/cancer.jpg',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
                             ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Text('Diseases'.tr, style: Theme.of(context).textTheme.headline6),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Card(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),       
-                      margin: EdgeInsets.all(8.0),
-                      child: InkWell(
-                        onTap: () { Get.toNamed('/junks');},
-                        child: Column(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.only(topRight: Radius.circular(12), topLeft: Radius.circular(12)),
-                              child: Image.asset('assets/junks/lechon.jpg', fit: BoxFit.cover),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Text('Unhealthy Foods'.tr, style: Theme.of(context).textTheme.headline6),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),          
-                    Card(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),                      
-                      margin: EdgeInsets.all(8.0),
-                      child: InkWell(
-                        onTap: () {Get.toNamed('/vegs');},
-                        child: Column(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.only(topRight: Radius.circular(12), topLeft: Radius.circular(12)),
-                              child: Image.asset('assets/vegs/ampalaya.jpg', fit: BoxFit.cover),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Text('Healing Foods'.tr, style: Theme.of(context).textTheme.headline5),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Card(
-                      margin: EdgeInsets.all(8.0),
-                      // margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                      child: InkWell(
-                        onTap: () {
-                          Get.toNamed('/nutris');
-                        },
-                        child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/vegs/tomato.jpg"),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text('Nutrients'.tr, style: Theme.of(context).textTheme.headline5),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),  
-                    Card(
-                      margin: EdgeInsets.all(8.0),
-                      child: InkWell(
-                        // onTap: () { Get.toNamed('/sellers') },
-                        child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/seller.jpg"),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text('Sellers'.tr, style: Theme.of(context).textTheme.headline2),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),                            
-                    Card(
-                      margin: EdgeInsets.all(8.0),
-                      child: InkWell(
-                        onTap: () {
-                          Get.toNamed('/diseases');
-                        },
-                        child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/yoga.jpg"),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text('Healthy Practices'.tr, style: Theme.of(context).textTheme.headline2),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),          
-                    Card(
-                      margin: EdgeInsets.all(8.0),
-                      child: InkWell(
-                        onTap: () {
-                          Get.toNamed('/quiz');
-                        },
-                        child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/phd.png"),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text(
-                                'Planetary Health Diet Game',
-                                style: Theme.of(context).textTheme.headline4,
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.red.withOpacity(0.6),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Diseases'.tr,
+                                  textAlign: TextAlign.center,                                  
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ),
                             ),
                           ],
                         ),
                       ),
                     ),
-                    Card(
-                      margin: EdgeInsets.all(8.0),
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {
-                          Get.toNamed('/carbons');
-                        },
-                        child: Column(
-                          children: <Widget>[
-                            Image.asset("assets/bicycle.jpg"),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 12.0),
-                              child: Text('Carbon Reference'.tr, style: Theme.of(context).textTheme.headline4),
+                        onTap: () { Get.toNamed('/junks'); },
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/junks/lechon.jpg',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.red.withOpacity(0.4),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Unhealthy Foods'.tr,
+                                  textAlign: TextAlign.center,                                  
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
                             ),
                           ],
                         ),
-                      ),            
-                    ),          
+                      ),
+                    ),                    
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
+                      child: InkWell(
+                        onTap: () { Get.toNamed('/vegs'); },
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/vegs/ampalaya.jpg',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.green.withOpacity(0.6),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Healthy Foods'.tr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),   
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
+                      child: InkWell(
+                        onTap: () { Get.toNamed('/nutris'); },
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/nutrients/vita.jpg',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.green.withOpacity(0.6),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Nutrients'.tr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),               
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
+                      child: InkWell(
+                        onTap: () { Get.toNamed('/sellers'); },
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/seller.jpg',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.teal.withOpacity(0.8),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Sellers'.tr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),               
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
+                      child: InkWell(
+                        onTap: () { 
+                          // Get.toNamed(); 
+                        },
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/yoga.jpg',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.teal.withOpacity(0.8),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Healthy Practices'.tr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),   
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
+                      child: InkWell(
+                        onTap: () { Get.toNamed('/carbons'); },
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/bicycle.jpg',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.blue.withOpacity(0.8),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Carbon Reference'.tr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),   
+
+                    Padding(
+                      padding:EdgeInsets.all(8.0),
+                      child: InkWell(
+                        onTap: () { Get.toNamed('/quiz'); },
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                'assets/phd.png',
+                                width: double.infinity,
+                                height: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                color: Colors.blue.withOpacity(0.8),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 3,
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],                                                                
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Planetary Health Diet Game'.tr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),   
                   ],
                 ),
               ),

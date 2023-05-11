@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
+
 abstract class BaseListItemController extends GetxController{
   RxList items = [].obs;
   RxList filteredItems = [].obs;

@@ -4,10 +4,6 @@ import 'package:get/get.dart';
 import 'package:suggest/locale/locale.dart';
 // import 'locale/locale.dart';
 
-import 'package:suggest/bindings/carbon_binder.dart';
-import 'package:suggest/bindings/carbon_list_binder.dart';
-import 'package:suggest/presentations/carbon_screen.dart';
-
 import 'package:suggest/bindings/disease_binder.dart';
 import 'package:suggest/bindings/disease_list_binder.dart';
 import 'package:suggest/presentations/disease_screen.dart';
@@ -15,7 +11,6 @@ import 'package:suggest/presentations/disease_screen.dart';
 import 'package:suggest/bindings/junk_binder.dart';
 import 'package:suggest/bindings/junk_list_binder.dart';
 import 'package:suggest/presentations/junk_screen.dart';
-import 'package:suggest/presentations/junks.dart';
 
 import 'package:suggest/bindings/veg_binder.dart';
 import 'package:suggest/bindings/veg_list_binder.dart';
@@ -25,10 +20,23 @@ import 'package:suggest/presentations/nutri_screen.dart';
 import 'package:suggest/bindings/nutri_binder.dart';
 import 'package:suggest/bindings/nutri_list_binder.dart';
 
+import 'package:suggest/presentations/seller_screen.dart';
+import 'package:suggest/bindings/seller_binder.dart';
+import 'package:suggest/bindings/seller_list_binder.dart';
+
+// import 'package:suggest/presentations/practice_screen.dart';
+// import 'package:suggest/bindings/practice_binder.dart';
+// import 'package:suggest/bindings/practice_list_binder.dart';
+
+import 'package:suggest/bindings/carbon_binder.dart';
+import 'package:suggest/bindings/carbon_list_binder.dart';
+import 'package:suggest/presentations/carbon_screen.dart';
+
 import 'package:suggest/presentations/quiz.dart';
 
 import 'package:suggest/presentations/index.dart';
 import 'package:suggest/presentations/widgets/list_item_page.dart';
+
 
 
 class SuggestApp extends StatelessWidget {
@@ -63,50 +71,31 @@ class SuggestApp extends StatelessWidget {
               page: () => DiseaseScreen(),
               binding: DiseaseBinding()
             ),
-            // GetPage(
-            //     name: '/vegs',
-            //     page: () => VegScreen(),
-            //     binding: VegListBinding()),
-            // GetPage(
-            //     name: '/nutris',
-            //     page: () => NutriScreen(),
-            //     binding: NutriListBinding()),
           ]
         ),
-        // GetPage(
-        //   name: '/junks',
-        //   page: () => ListItemPage(
-        //     title: "Unhealthy Foods",
-        //     backIcon: const Icon(Icons.arrow_back),
-        //     itemRoute: "/junks/junk"
-        //   ),
-        //   binding: JunkListBinding(),
-        //   children: [
-        //     GetPage(
-        //       name: '/junkk',
-        //       page: () => JunkScreen(),
-        //       binding: JunkBinding()
-        //     ),
-        //   ]
-        // ),
-        // GetPage(
-        //   name: '/junks',
-        //   page: () => Junks(),
-        //   binding: JunkListBinding(),
-        //   children: [
-        //     GetPage(
-        //       name: '/junk',
-        //       page: () => JunkScreen(),
-        //       binding: JunkBinding()
-        //     ),
-        //   ]
-        // ),
+        GetPage(
+          name: '/junks',
+          page: () => ListItemPage(
+            title: "Unhealthy Foods",
+            backIcon: const Icon(Icons.arrow_back),
+            itemRoute: "/junks/junk"
+          ),
+          binding: JunkListBinding(),
+          children: [
+            GetPage(
+              name: '/junk',
+              page: () => JunkScreen(),
+              binding: JunkBinding()
+            ),
+          ]
+        ),
         GetPage(
           name: '/vegs',
           page: () => ListItemPage(
-              title: "Vegetables",
-              backIcon: Icon(Icons.arrow_back),
-              itemRoute: "/vegs/veg"),
+            title: "Vegetables",
+            backIcon: Icon(Icons.arrow_back),
+            itemRoute: "/vegs/veg"
+          ),
           binding: VegListBinding(),
           children: [
             GetPage(
@@ -117,9 +106,58 @@ class SuggestApp extends StatelessWidget {
           ]
         ),
         GetPage(
+          name: '/nutris',
+          page: () => ListItemPage(
+            title: "Nutritions",
+            backIcon: Icon(Icons.arrow_back),
+            itemRoute: "nutris/nutri"
+          ),
+          binding: NutriListBinding(),
+          children: [
+          GetPage(
+            name: '/nutri',
+            page: () => NutriScreen(),
+            binding: NutriBinding()),
+          ]
+        ),
+        GetPage(
+          name: '/sellers',
+          page: () => ListItemPage(
+            title: "Sellers".tr,
+            backIcon: const Icon(Icons.arrow_back),
+            itemRoute: "/sellers/seller"
+          ),
+          binding: SellerListBinding(),
+          children: [
+            GetPage(
+              name: '/seller',
+              page: () => SellerScreen(),
+              binding: SellerBinding()
+            ),
+          ]
+        ),        
+        GetPage(
+          name: '/carbons',
+          page: () => ListItemPage(
+              title: "Carbons",
+              backIcon: Icon(Icons.arrow_back),
+              itemRoute: "/carbons/carbon"),
+          binding: CarbonListBinding(),
+          children: [
+            GetPage(
+                name: '/carbon',
+                page: () => CarbonScreen(),
+                binding: CarbonBinding()),
+          ],
+        ),
+        GetPage(
           name: '/quiz',
           page: () => Quiz()
-        ),        
+        )
+      ],
+    );
+  }
+
         //   page: () => Vegs(),
         //   binding: VegListBinding(),
         //   children: [
@@ -140,37 +178,6 @@ class SuggestApp extends StatelessWidget {
         //     ),
         //   ]
         // ),
-        GetPage(
-          name: '/nutris',
-          page: () => ListItemPage(
-              title: "Nutritions",
-              backIcon: Icon(Icons.arrow_back),
-              itemRoute: "nutris/nutri"),
-          binding: NutriListBinding(),
-          children: [
-          GetPage(
-              name: '/nutri',
-              page: () => NutriScreen(),
-              binding: NutriBinding()),
-          ]
-        ),
-        GetPage(
-          name: '/carbons',
-          page: () => ListItemPage(
-              title: "Carbons",
-              backIcon: Icon(Icons.arrow_back),
-              itemRoute: "/carbons/carbon"),
-          binding: CarbonListBinding(),
-          children: [
-            GetPage(
-                name: '/carbon',
-                page: () => CarbonScreen(),
-                binding: CarbonBinding()),
-          ],
-        ),
-      ],
-    );
-  }
 
   ThemeData _themeData() {
     return ThemeData(
@@ -179,13 +186,13 @@ class SuggestApp extends StatelessWidget {
       fontFamily: 'Quicksand',
       textTheme: TextTheme(
         headline1: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: Colors.indigo[900]),
-        headline2: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.teal[800]),
-        headline3: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.pink),
-        headline4: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.blue),
-        headline5: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.green),
-        headline6: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.red),        
-        bodyText1: TextStyle(fontSize: 16.0, color: Colors.black.withOpacity(0.8)),
-        bodyText2: TextStyle(fontSize: 16.0, color: Colors.black.withOpacity(0.8)),
+        headline2: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.teal[800]),
+        headline3: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.pink),
+        headline4: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.blue),
+        headline5: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.green),
+        headline6: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.red),        
+        bodyText1: TextStyle(fontSize: 15.0, color: Colors.black.withOpacity(0.9)),
+        bodyText2: TextStyle(fontSize: 15.0, color: Colors.black.withOpacity(0.9)),
       ),
     );
   }
